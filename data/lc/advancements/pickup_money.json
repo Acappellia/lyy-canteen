@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "pickup_money": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:iron_nugget",
+                            "minecraft:gold_nugget"
+                        ],
+                        "nbt": "{money:1}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "lc:advancements/pickup_money"
+    }
+}

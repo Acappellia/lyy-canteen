@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "open_menu":{
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "location": {
+                    "block": {
+                        "blocks": [
+                            "minecraft:ender_chest"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "lc:advancements/open_enderchest"
+    }
+}
