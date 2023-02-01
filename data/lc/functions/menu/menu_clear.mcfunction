@@ -2,7 +2,7 @@
 
 ##giveback normal items
 ##find a block to place shulker box first
-execute positioned ~ -64 ~ run function lc:menu/giveback/find_pos_loop
+execute positioned ~ -63 ~ run function lc:menu/giveback/find_pos_loop
 
 #summon chest_minecart ~ ~ ~ {Tags:["ender_clone"]}
 #execute as @e[sort=nearest,limit=1,distance=..2,type=chest_minecart,tag=ender_clone] run data modify entity @s Items set from entity @p[distance=..2] EnderItems
