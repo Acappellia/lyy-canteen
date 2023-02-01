@@ -21,5 +21,6 @@ scoreboard players set $8 number 8
 scoreboard players set $4 number 4
 scoreboard players set $2 number 2
 
+scoreboard objectives add menu_index dummy
 scoreboard objectives add menu_click dummy
 scoreboard objectives add menu_sellcount dummy
