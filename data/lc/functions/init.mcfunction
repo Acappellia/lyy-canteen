@@ -1,6 +1,7 @@
 ##initialize
 
 gamerule keepInventory true
+gamerule doEntityDrops false
 
 scoreboard objectives add money dummy {"text": "LYY 金币","color": "green"}
 scoreboard objectives add money_add_to_level dummy

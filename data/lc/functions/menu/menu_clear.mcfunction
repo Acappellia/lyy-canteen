@@ -3,8 +3,9 @@
 ##summon a chest minecart and clone enderchest items into it
 ##filter ui items and kill itself to drop normal items
 summon chest_minecart ~ ~ ~ {Tags:["ender_clone"]}
-execute as @e[distance=..2,type=chest_minecart,tag=ender_clone] run data modify entity @s Items set from entity @p[distance=..2] EnderItems
-execute as @e[distance=..2,type=chest_minecart,tag=ender_clone] run data remove entity @s Items[{tag:{menu_ui:1}}]
+execute as @e[sort=nearest,limit=1,distance=..2,type=chest_minecart,tag=ender_clone] run data modify entity @s Items set from entity @p[distance=..2] EnderItems
+execute as @e[sort=nearest,limit=1,distance=..2,type=chest_minecart,tag=ender_clone] run data remove entity @s Items[{tag:{menu_ui:1}}]
+#loot give @s kill @e[sort=nearest,limit=1,distance=..2,type=chest_minecart,tag=ender_clone]
 kill @e[distance=..2,type=chest_minecart,tag=ender_clone]
 
 ##clear enderchest

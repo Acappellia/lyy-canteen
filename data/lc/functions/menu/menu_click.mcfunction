@@ -14,4 +14,3 @@ function lc:menu/menu_init
 
 ##actual clear
 clear @s #lc:ui_items{menu_ui:1}
-
