@@ -2,8 +2,9 @@
 
 gamerule keepInventory true
 
-scoreboard objectives add money dummy {"text": "LYY 货币","color": "green"}
+scoreboard objectives add money dummy {"text": "LYY 金币","color": "green"}
 scoreboard objectives add money_add_to_level dummy
+scoreboard objectives add money_add_to_score dummy
 
 scoreboard objectives add number dummy
 scoreboard players set $8192 number 8192
@@ -21,3 +22,4 @@ scoreboard players set $4 number 4
 scoreboard players set $2 number 2
 
 scoreboard objectives add menu_click dummy
+scoreboard objectives add menu_sellcount dummy
