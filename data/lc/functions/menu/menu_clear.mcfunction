@@ -1,12 +1,13 @@
 ##called to clear enderchest
 
-##summon a chest minecart and clone enderchest items into it
-##filter ui items and kill itself to drop normal items
-summon chest_minecart ~ ~ ~ {Tags:["ender_clone"]}
-execute as @e[sort=nearest,limit=1,distance=..2,type=chest_minecart,tag=ender_clone] run data modify entity @s Items set from entity @p[distance=..2] EnderItems
-execute as @e[sort=nearest,limit=1,distance=..2,type=chest_minecart,tag=ender_clone] run data remove entity @s Items[{tag:{menu_ui:1}}]
-#loot give @s kill @e[sort=nearest,limit=1,distance=..2,type=chest_minecart,tag=ender_clone]
-kill @e[distance=..2,type=chest_minecart,tag=ender_clone]
+##giveback normal items
+##find a block to place shulker box first
+execute positioned ~ -64 ~ run function lc:menu/giveback/find_pos_loop
+
+#summon chest_minecart ~ ~ ~ {Tags:["ender_clone"]}
+#execute as @e[sort=nearest,limit=1,distance=..2,type=chest_minecart,tag=ender_clone] run data modify entity @s Items set from entity @p[distance=..2] EnderItems
+#execute as @e[sort=nearest,limit=1,distance=..2,type=chest_minecart,tag=ender_clone] run data remove entity @s Items[{tag:{menu_ui:1}}]
+#kill @e[distance=..2,type=chest_minecart,tag=ender_clone]
 
 ##clear enderchest
 item replace entity @s enderchest.0 with air
