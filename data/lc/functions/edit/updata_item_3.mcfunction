@@ -1,13 +1,7 @@
-## add hand item to storage
+## update item with the same id from hand -3
 
-#input 
-#   #lc_setprize
-
-##prepend handitem to list
-data modify storage lc:data items prepend from entity @p SelectedItem
-
-##set id & prize
-execute store result storage lc:data items[0].tag.lc_itemid int 1 run scoreboard players add #lc_itemid lc_var 1
+##update item
+data modify storage lc:data items[0] set from entity @p SelectedItem
 execute store result storage lc:data items[0].tag.prize int 1 run scoreboard players get #lc_setprize lc_var
 data modify storage lc:data items[0].Count set value 1b
 
@@ -17,4 +11,4 @@ summon item ~ ~0.5 ~ {Tags:["update_handitem"],Item:{id:"minecraft:stone",Count:
 data modify entity @e[type=item,tag=update_handitem,sort=nearest,limit=1] Item set from storage lc:data items[0]
 
 ##tellraw
-tellraw @p [{"text": "added item with id "},{"score":{"name":"#lc_itemid","objective":"lc_var"}}]
+tellraw @p [{"text": "updated item with id "},{"score":{"name":"#search_lcid","objective":"lc_var"}}]
