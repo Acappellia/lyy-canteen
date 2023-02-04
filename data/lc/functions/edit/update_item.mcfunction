@@ -1,6 +1,6 @@
 ## update item with the same id from hand
 
-#input 
+#input (optional)
 #   #lc_setprize
 
 ##check if hand item have id
