@@ -3,6 +3,8 @@
 ##update item
 data modify storage lc:data items[0] set from entity @p SelectedItem
 execute store result storage lc:data items[0].tag.prize int 1 run scoreboard players get #lc_setprize lc_var
+execute store result storage lc:data items[0].tag.baseprize int 1 run scoreboard players get #lc_setprize lc_var
+execute store result storage lc:data items[0].tag.quality int 1 run scoreboard players get #default_quality lc_var
 data modify storage lc:data items[0].Count set value 1b
 
 ##update handitems

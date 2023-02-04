@@ -1,8 +1,22 @@
 ##called to clear enderchest
 
 ##giveback normal items
-##find a block to place shulker box first
-execute positioned ~ -63 ~ run function lc:menu/giveback/find_pos_loop
+##place a shulkerbox and clone enderchest items
+setblock 0 2 0 minecraft:shulker_box
+data modify block 0 2 0 Items set from entity @s EnderItems
+
+##filter menu items
+data remove block 0 2 0 Items[{tag:{menu_ui:1}}]
+
+##give contents to player and remove itself
+##if player backpack have no space, drop it to ground
+execute store result score #inv_slots lc_var if data entity @s Inventory[]
+scoreboard players operation #inv_slots lc_var -= #36 lc_var
+scoreboard players operation #inv_slots lc_var *= #-1 lc_var
+execute store result score #give_slots lc_var if data block 0 2 0 Items[]
+execute if score #give_slots lc_var <= #inv_slots lc_var run loot give @s mine 0 2 0 stone{drop_contents:1}
+execute if score #give_slots lc_var > #inv_slots lc_var run loot spawn ~ ~ ~ mine 0 2 0 stone{drop_contents:1}
+setblock 0 2 0 air
 
 #summon chest_minecart ~ ~ ~ {Tags:["ender_clone"]}
 #execute as @e[sort=nearest,limit=1,distance=..2,type=chest_minecart,tag=ender_clone] run data modify entity @s Items set from entity @p[distance=..2] EnderItems

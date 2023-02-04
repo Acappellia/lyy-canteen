@@ -2,7 +2,10 @@
 
 data modify storage random:input List set from storage lc:data items
 function random:choose
-summon item ~ ~0.5 ~ {Tags:["update_handitem"],Item:{id:"minecraft:stone",Count:1b}}
-data modify entity @e[type=item,tag=update_handitem,sort=nearest,limit=1] Item set from storage random:output Tag
+data modify storage lc:data items prepend from storage random:output Tag
+scoreboard players set #get_qmin lc_var 0
+scoreboard players set #get_qmin lc_var 100
+function lc:items/get_item_first
+data remove storage lc:data items[0]
 
 tellraw @p [{"text": "get random items"}]

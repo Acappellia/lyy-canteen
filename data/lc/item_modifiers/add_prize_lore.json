@@ -1,0 +1,22 @@
+{
+    "function": "set_lore",
+    "entity": "this",
+    "replace": false,
+    "lore": [
+        [
+            {
+                "text": "Prize: ",
+                "color": "gold",
+                "italic": false
+            },
+            {
+                "score": {
+                    "name": "#addlore_prize",
+                    "objective": "lc_var"
+                },
+                "italic": false,
+                "color": "yellow"
+            }
+        ]
+    ]
+}

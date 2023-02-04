@@ -9,4 +9,5 @@ data remove block ~ ~ ~ Items[{tag:{menu_ui:1}}]
 
 ##give contents to player and remove itself
 loot give @s mine ~ ~ ~ stone{drop_contents:1}
+#loot spawn ~ ~ ~ mine ~ ~ ~ stone{drop_contents:1}
 setblock ~ ~ ~ air

@@ -1,0 +1,22 @@
+{
+    "function": "set_lore",
+    "entity": "this",
+    "replace": false,
+    "lore": [
+        [
+            {
+                "text": "Base prize: ",
+                "color": "blue",
+                "italic": false
+            },
+            {
+                "score": {
+                    "name": "#addlore_base_prize",
+                    "objective": "lc_var"
+                },
+                "italic": false,
+                "color": "aqua"
+            }
+        ]
+    ]
+}

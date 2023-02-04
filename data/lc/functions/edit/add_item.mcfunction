@@ -9,6 +9,8 @@ data modify storage lc:data items prepend from entity @p SelectedItem
 ##set id & prize
 execute store result storage lc:data items[0].tag.lc_itemid int 1 run scoreboard players add #lc_itemid lc_var 1
 execute store result storage lc:data items[0].tag.prize int 1 run scoreboard players get #lc_setprize lc_var
+execute store result storage lc:data items[0].tag.baseprize int 1 run scoreboard players get #lc_setprize lc_var
+execute store result storage lc:data items[0].tag.quality int 1 run scoreboard players get #default_quality lc_var
 data modify storage lc:data items[0].Count set value 1b
 
 ##update handitems
