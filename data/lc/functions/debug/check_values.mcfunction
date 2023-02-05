@@ -10,3 +10,5 @@ tellraw @p [{"text": "#shop_page: "},{"score":{"name":"#shop_page","objective":"
 tellraw @p [{"text": "#shop_setbuyprize: "},{"score":{"name":"#shop_setbuyprize","objective":"lc_var"}}]
 tellraw @p [{"text": "#shop_setqmin: "},{"score":{"name":"#shop_setqmin","objective":"lc_var"}}]
 tellraw @p [{"text": "#shop_setqmax: "},{"score":{"name":"#shop_setqmax","objective":"lc_var"}}]
+
+data get block ~ ~ ~ Items[0].tag.BlockEntityTag.Items[{Slot:12b}].tag
