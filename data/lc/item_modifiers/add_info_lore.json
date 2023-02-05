@@ -1,0 +1,24 @@
+{
+    "function": "set_lore",
+    "entity": "this",
+    "replace": false,
+    "lore": [
+        [
+            {
+                "text": ""
+            }
+        ],
+        [
+            {
+                "text": "----- Item Info -----",
+                "color": "white",
+                "italic": false
+            }
+        ],
+        [
+            {
+                "text": ""
+            }
+        ]
+    ]
+}

@@ -11,4 +11,4 @@ data remove storage lc:data items[0]
 execute store result score #search_lcid_tmp lc_var run data get storage lc:data items[0].tag.lc_itemid 1
 
 ##loop
-function lc:edit/search_loop_2
+function lc:edit/private/search_loop_2

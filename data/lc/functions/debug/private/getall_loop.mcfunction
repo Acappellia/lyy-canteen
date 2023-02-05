@@ -7,4 +7,4 @@ tag @e[type=item,distance=..2,tag=update_handitem] remove update_handitem
 data remove storage lc:debug items[0]
 
 ##loop
-execute if data storage lc:debug items[0] run function lc:debug/getall_loop
+execute if data storage lc:debug items[0] run function lc:debug/private/getall_loop

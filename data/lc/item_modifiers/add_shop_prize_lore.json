@@ -5,13 +5,13 @@
     "lore": [
         [
             {
-                "text": "Sell prize: ",
+                "text": "Buy prize: ",
                 "color": "gold",
                 "italic": false
             },
             {
                 "score": {
-                    "name": "#addlore_prize",
+                    "name": "#shop_setbuyprize",
                     "objective": "lc_var"
                 },
                 "italic": false,

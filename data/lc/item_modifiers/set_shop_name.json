@@ -1,0 +1,20 @@
+{
+    "function": "set_name",
+    "entity": "this",
+    "replace": false,
+    "name": [
+        {
+            "text": "shop_page: ",
+            "color": "dark_green",
+            "italic": false
+        },
+        {
+            "score": {
+                "name": "#setname_page",
+                "objective": "lc_var"
+            },
+            "italic": false,
+            "color": "green"
+        }
+    ]
+}

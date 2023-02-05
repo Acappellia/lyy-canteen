@@ -5,17 +5,17 @@
     "lore": [
         [
             {
-                "text": "Sell prize: ",
-                "color": "gold",
+                "text": "Quality: ",
+                "color": "dark_green",
                 "italic": false
             },
             {
                 "score": {
-                    "name": "#addlore_prize",
+                    "name": "#shop_setqmin",
                     "objective": "lc_var"
                 },
                 "italic": false,
-                "color": "yellow"
+                "color": "green"
             }
         ]
     ]

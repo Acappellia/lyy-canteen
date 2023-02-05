@@ -1,0 +1,35 @@
+{
+    "function": "set_lore",
+    "entity": "this",
+    "replace": false,
+    "lore": [
+        [
+            {
+                "text": "Possible quality: ",
+                "color": "dark_green",
+                "italic": false
+            },
+            {
+                "score": {
+                    "name": "#shop_setqmin",
+                    "objective": "lc_var"
+                },
+                "italic": false,
+                "color": "green"
+            },
+            {
+                "text": " ~ ",
+                "color": "dark_green",
+                "italic": false
+            },
+            {
+                "score": {
+                    "name": "#shop_setqmax",
+                    "objective": "lc_var"
+                },
+                "italic": false,
+                "color": "green"
+            }
+        ]
+    ]
+}
