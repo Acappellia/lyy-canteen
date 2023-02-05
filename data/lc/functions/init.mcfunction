@@ -25,5 +25,6 @@ execute unless data storage lc:data items run data modify storage lc:data items 
 
 scoreboard objectives add money dummy {"text": "LYY 金币","color": "green"}
 
+scoreboard objectives add menu_page dummy
 scoreboard objectives add menu_index dummy
 scoreboard objectives add menu_click dummy
