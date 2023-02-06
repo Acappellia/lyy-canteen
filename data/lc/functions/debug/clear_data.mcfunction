@@ -1,12 +1,14 @@
 ## clear all storage
 
-execute unless score #confirm_clear lc_var matches 1 run tellraw @s {"text": "ARE YOU SURE TO ERAZE ALL DATA?\nIf so, type '/scoreboard players set #confirm_clear lc_var 1' and run this function again","color": "red"}
+scoreboard players set $min random 0
+scoreboard players set $max random 999999
+execute unless score #confirm_clear lc_var = $out random run function random:uniform
+execute unless score #confirm_clear lc_var = $out random run tellraw @s [{"text": "ARE YOU SURE TO ERAZE ALL DATA?\n","color": "red"},{"text": "To confirm this action, type\n","color": "gray"},{"text": "/scoreboard players set #confirm_clear lc_var ","color": "white"},{"score":{"name": "$out","objective": "random"},"color": "white"},{"text":"\nand run this function again","color": "gray"}]
 
-execute if score #confirm_clear lc_var matches 1 run data remove storage lc:data items
-execute if score #confirm_clear lc_var matches 1 run data remove storage lc:data shops
-execute if score #confirm_clear lc_var matches 1 run scoreboard objectives remove money
-execute if score #confirm_clear lc_var matches 1 run tellraw @s {"text": "REMOVED ALL DATA","color": "red"}
-execute if score #confirm_clear lc_var matches 1 run schedule function lc:init 1t replace
-execute if score #confirm_clear lc_var matches 1 run scoreboard objectives remove lc_var
-
-scoreboard players reset #confirm_clear lc_var
+execute if score #confirm_clear lc_var = $out random run data remove storage lc:data items
+execute if score #confirm_clear lc_var = $out random run data remove storage lc:data shops
+execute if score #confirm_clear lc_var = $out random run data remove storage lc:data recipes
+execute if score #confirm_clear lc_var = $out random run scoreboard objectives remove money
+execute if score #confirm_clear lc_var = $out random run tellraw @s {"text": "ERAZED ALL DATA","color": "red"}
+execute if score #confirm_clear lc_var = $out random run schedule function lc:init 1t replace
+execute if score #confirm_clear lc_var = $out random run scoreboard objectives remove lc_var
