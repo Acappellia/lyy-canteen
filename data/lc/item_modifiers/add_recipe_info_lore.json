@@ -1,0 +1,69 @@
+{
+    "function": "set_lore",
+    "entity": "this",
+    "replace": false,
+    "lore": [
+        [
+            {
+                "text": ""
+            }
+        ],
+        [
+            {
+                "text": "----- Recipe info -----",
+                "color": "gray",
+                "italic": false
+            }
+        ],
+        [
+            {
+                "text": ""
+            }
+        ],
+        [
+            {
+                "text": "cooktime: ",
+                "color": "gold",
+                "italic": false
+            },
+            {
+                "score": {
+                    "name": "#recipe_setcook",
+                    "objective": "lc_var"
+                },
+                "italic": false,
+                "color": "yellow"
+            }
+        ],
+        [
+            {
+                "text": "tolerance: ",
+                "color": "gold",
+                "italic": false
+            },
+            {
+                "score": {
+                    "name": "#recipe_settol",
+                    "objective": "lc_var"
+                },
+                "italic": false,
+                "color": "yellow"
+            }
+        ],
+        [
+            {
+                "text": "weight: ",
+                "color": "gold",
+                "italic": false
+            },
+            {
+                "score": {
+                    "name": "#recipe_setweight",
+                    "objective": "lc_var"
+                },
+                "italic": false,
+                "color": "yellow"
+            }
+        ]
+    ]
+}
