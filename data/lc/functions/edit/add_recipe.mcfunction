@@ -6,6 +6,7 @@
 ## create new recipe
 data modify storage lc:data recipes prepend value {}
 execute store result storage lc:data recipes[0].recipe_id int 1 run scoreboard players add #recipe_id lc_var 1
+data modify storage lc:data recipes[0].in_id_sort prepend value 2147483647
 
 ## set output
 data modify storage lc:data recipes[0].out_id set from entity @s Inventory[{Slot:-106b}].tag.lc_itemid

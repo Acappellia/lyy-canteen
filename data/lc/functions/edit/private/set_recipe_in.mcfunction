@@ -8,5 +8,6 @@ data modify storage lc:data recipes[0].in[0].tolerance set from entity @s Invent
 data modify storage lc:data recipes[0].in[0].weight set from entity @s Inventory[{Slot:0b}].tag.weight
 
 #sort id
-execute store result score #recipe_sortloopi lc_var if data storage lc:data recipes[0].in_id_sort[]
+scoreboard players reset #recipe_sortout lc_var
+execute store result score #recipe_sortid lc_var run data get entity @s Inventory[{Slot:0b}].tag.in_id
 function lc:edit/private/set_recipe_sortloop
