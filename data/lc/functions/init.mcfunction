@@ -53,6 +53,7 @@ scoreboard players set #0 lc_var 0
 scoreboard players set #-1 lc_var -1
 scoreboard players set #5 lc_var 5
 scoreboard players set #10 lc_var 10
+scoreboard players set #200 lc_var 200
 scoreboard players set #1000 lc_var 1000
 scoreboard players set #64 lc_var 64
 scoreboard players set #36 lc_var 36
@@ -70,4 +71,5 @@ scoreboard objectives add money dummy {"text": "LYY 金币","color": "green"}
 scoreboard objectives add menu_page dummy
 scoreboard objectives add menu_index dummy
 scoreboard objectives add menu_click dummy
-scoreboard objectives add cook_skill dummy
+scoreboard objectives add cookskill dummy
+## cook skill range: 200~300
