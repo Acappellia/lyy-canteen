@@ -12,3 +12,7 @@ tellraw @p [{"text": "#shop_setbuyprize: "},{"score":{"name":"#shop_setbuyprize"
 tellraw @p [{"text": "#shop_setqmin: "},{"score":{"name":"#shop_setqmin","objective":"lc_var"}}]
 tellraw @p [{"text": "#shop_setqmax: "},{"score":{"name":"#shop_setqmax","objective":"lc_var"}}]
 tellraw @p [{"text": "#recipe_id: "},{"score":{"name":"#recipe_id","objective":"lc_var"}}]
+tellraw @p [{"text": "#recipe_setcook: "},{"score":{"name":"#recipe_setcook","objective":"lc_var"}}]
+tellraw @p [{"text": "#recipe_settol: "},{"score":{"name":"#recipe_settol","objective":"lc_var"}}]
+tellraw @p [{"text": "#recipe_setweight: "},{"score":{"name":"#recipe_setweight","objective":"lc_var"}}]
+tellraw @p [{"text": "#get_recipeid: "},{"score":{"name":"#get_recipeid","objective":"lc_var"}}]

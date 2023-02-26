@@ -19,6 +19,51 @@
             {
                 "text": ""
             }
+        ],
+        [
+            {
+                "text": "Base prize: ",
+                "color": "blue",
+                "italic": false
+            },
+            {
+                "score": {
+                    "name": "#addlore_base_prize",
+                    "objective": "lc_var"
+                },
+                "italic": false,
+                "color": "aqua"
+            }
+        ],
+        [
+            {
+                "text": "Quality: ",
+                "color": "dark_green",
+                "italic": false
+            },
+            {
+                "score": {
+                    "name": "#addlore_quality",
+                    "objective": "lc_var"
+                },
+                "italic": false,
+                "color": "green"
+            }
+        ],
+        [
+            {
+                "text": "Sell prize: ",
+                "color": "gold",
+                "italic": false
+            },
+            {
+                "score": {
+                    "name": "#addlore_prize",
+                    "objective": "lc_var"
+                },
+                "italic": false,
+                "color": "yellow"
+            }
         ]
     ]
 }
