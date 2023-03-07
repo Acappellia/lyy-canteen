@@ -1,10 +1,12 @@
 ##initialize
 
 # Definitions for Data-pack Helper Plus
-#define storage lc:data stores items shops recipes for loopup
+#define storage lc:data stores items shops for look up
+#define storage lc:recipes stores recipes
 #define storage lc:edit tmp storage in editing
 #define storage lc:debug tmp storage in debugging
 #define storage lc:var player-using tmp storage
+#define storage lc:user stores player data 
 #define score_holder #default_quality default quality of items
 #define score_holder #default_prize default sell prize of items
 #define score_holder #default_buy_prize default buy prize of items
@@ -67,6 +69,7 @@ execute unless score #recipe_id lc_var matches -2147483648..2147483647 run score
 execute unless data storage lc:data items run data modify storage lc:data items set value []
 
 scoreboard objectives add money dummy {"text": "LYY 金币","color": "green"}
+scoreboard objectives add gallery_unlock dummy {"text": "图鉴解锁数","color": "yellow"}
 
 scoreboard objectives add menu_page dummy
 scoreboard objectives add menu_index dummy

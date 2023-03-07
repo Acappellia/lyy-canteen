@@ -1,0 +1,32 @@
+{
+    "function": "set_lore",
+    "entity": "this",
+    "replace": false,
+    "lore": [
+        [
+            {
+                "nbt": "Inventory[{Slot:0b}].tag.display.Name",
+                "interpret": true,
+                "entity": "@s"
+            },
+            {
+                "text": ": ",
+                "color": "white",
+                "italic": false
+            },
+            {
+                "score": {
+                    "name": "#recipe_setcook_sec",
+                    "objective": "lc_var"
+                },
+                "italic": false,
+                "color": "yellow"
+            },
+            {
+                "text": " seconds",
+                "color": "white",
+                "italic": false
+            }
+        ]
+    ]
+}

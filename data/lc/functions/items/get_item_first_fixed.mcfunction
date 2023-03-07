@@ -27,5 +27,5 @@ scoreboard players operation #addlore_prize lc_var = #calc_prize lc_var
 ##addlore
 item modify block 0 2 0 container.0 lc:add_info_lore
 
-####give contents to player and remove itself
+##give contents to player and remove itself
 execute unless score #getitem_nogive lc_var matches 1.. run function lc:items/get_item_giveonly
