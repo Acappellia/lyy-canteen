@@ -10,7 +10,7 @@
         ],
         [
             {
-                "text": "----- Item Info -----",
+                "text": "----- 品质及价格 -----",
                 "color": "white",
                 "italic": false
             }
@@ -22,7 +22,7 @@
         ],
         [
             {
-                "text": "Base prize: ",
+                "text": "基础价格: ",
                 "color": "blue",
                 "italic": false
             },
@@ -37,7 +37,7 @@
         ],
         [
             {
-                "text": "Quality: ",
+                "text": "品质分: ",
                 "color": "dark_green",
                 "italic": false
             },
@@ -52,7 +52,7 @@
         ],
         [
             {
-                "text": "Sell prize: ",
+                "text": "出售价格: ",
                 "color": "gold",
                 "italic": false
             },

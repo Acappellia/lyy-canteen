@@ -10,14 +10,9 @@
         ],
         [
             {
-                "text": "----- 购买信息 -----",
-                "color": "yellow",
+                "text": "烹饪方式: 水煮",
+                "color": "green",
                 "italic": false
-            }
-        ],
-        [
-            {
-                "text": ""
             }
         ]
     ]

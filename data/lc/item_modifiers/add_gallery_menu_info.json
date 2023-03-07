@@ -1,0 +1,46 @@
+{
+    "function": "set_lore",
+    "entity": "this",
+    "replace": false,
+    "lore": [
+        [
+            {
+                "text": ""
+            }
+        ],
+        [
+            {
+                "text": "----- 烹饪统计 -----",
+                "color": "aqua",
+                "italic": false
+            }
+        ],
+        [
+            {
+                "text": ""
+            }
+        ],
+        [
+            {
+                "text": "烹饪次数: ",
+                "color": "white",
+                "italic": false
+            },
+            {
+                "nbt": "Items[{Slot:9b}].tag.cook_count",
+                "block": "0 2 0"
+            }
+        ],
+        [
+            {
+                "text": "最高品质分: ",
+                "color": "white",
+                "italic": false
+            },
+            {
+                "nbt":"Items[{Slot:9b}].tag.best_quality",
+                "block": "0 2 0"
+            }
+        ]
+    ]
+}

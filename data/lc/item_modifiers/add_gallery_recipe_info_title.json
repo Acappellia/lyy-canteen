@@ -10,7 +10,7 @@
         ],
         [
             {
-                "text": "----- Recipe to Cook -----",
+                "text": "----- 烹饪方式 -----",
                 "color": "green",
                 "italic": false
             }

@@ -46,6 +46,9 @@ item replace entity @s inventory.0 from entity @s inventory.8
 execute if data entity @s Inventory[{Slot:0b}] run function lc:edit/private/set_recipe_in
 item replace entity @s inventory.17 from entity @s inventory.0
 
+##add type lore in offhand
+execute if score #recipe_settype lc_var matches 0 run item modify entity @s weapon.offhand lc:add_gallery_recipe_info_type/pot
+
 ##set out display
 data modify storage lc:data recipes[0].out_display set from entity @s Inventory[{Slot:-106b}]
 data remove storage lc:data recipes[0].out_display.Slot
