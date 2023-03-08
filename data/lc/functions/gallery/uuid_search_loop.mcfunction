@@ -11,6 +11,7 @@
 
 ##init
 scoreboard players reset #search_uuid_out
+data remove storage lc:var UUID_tmp
 
 ##check the current id, if it has a value, continue loop
 data modify storage lc:var UUID_tmp set from storage lc:user gallery[0].UUID

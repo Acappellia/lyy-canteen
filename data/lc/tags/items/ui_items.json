@@ -48,6 +48,9 @@
       "minecraft:gold_ingot",
       "minecraft:diamond",
       "minecraft:brick",
-      "minecraft:emerald"
+      "minecraft:emerald",
+      "minecraft:structure_void",
+      "minecraft:dark_oak_sign",
+      "minecraft:rabbit_stew"
     ]
   }

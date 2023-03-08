@@ -1,5 +1,7 @@
 ##called to create gallery menu
 
+#define score_holder #gallery_collectratio
+
 ##search uuid
 function lc:gallery/uuid_search_loop
 execute unless score #search_uuid_out lc_var matches 0 run function lc:gallery/player_init_gallery
@@ -12,8 +14,13 @@ execute if score #menu_gallery lc_var matches 2 run function lc:menu/menus/galle
 setblock 0 2 0 minecraft:shulker_box
 data modify block 0 2 0 Items set from storage lc:user gallery[0].pages[0]
 
+##update stat
+scoreboard players operation #gallery_collectratio lc_var = @s gallery_unlock
+scoreboard players operation #gallery_collectratio lc_var *= #100 lc_var
+scoreboard players operation #gallery_collectratio lc_var /= #gallery_totalcount lc_var
+
 ##clone to enderchest
-item replace entity @s enderchest.0 from block 0 2 0 container.0
+item replace entity @s enderchest.0 from block 0 2 0 container.0 lc:add_gallery_stat
 
 item replace block 0 2 0 container.9 from block 0 2 0 container.1
 item replace entity @s enderchest.1 from block 0 2 0 container.9 lc:add_gallery_menu_info

@@ -2,7 +2,6 @@
 
 # Definitions for Data-pack Helper Plus
 #define storage lc:data stores items shops for look up
-#define storage lc:recipes stores recipes
 #define storage lc:edit tmp storage in editing
 #define storage lc:debug tmp storage in debugging
 #define storage lc:var player-using tmp storage
@@ -55,6 +54,7 @@ scoreboard players set #0 lc_var 0
 scoreboard players set #-1 lc_var -1
 scoreboard players set #5 lc_var 5
 scoreboard players set #10 lc_var 10
+scoreboard players set #100 lc_var 100
 scoreboard players set #200 lc_var 200
 scoreboard players set #1000 lc_var 1000
 scoreboard players set #64 lc_var 64

@@ -5,68 +5,68 @@ setblock 0 2 0 shulker_box{Items:[{Count:1b,Slot:0b,id:"minecraft:dark_oak_sign"
 
 ## put recipes into gallery
 execute if data storage lc:edit recipes[0] run function lc:gallery/put_in_gallery
-data modify block 0 2 0 Items[{Slot:1b}] set from block 0 2 0 Items[{Slot:9b}]
-data remove block 0 2 0 Items[{Slot:9b}]
+item replace block 0 2 0 container.1 from block 0 2 0 container.9
+item replace block 0 2 0 container.9 with air
 execute if data storage lc:edit recipes[0] run function lc:gallery/put_in_gallery
-data modify block 0 2 0 Items[{Slot:2b}] set from block 0 2 0 Items[{Slot:9b}]
-data remove block 0 2 0 Items[{Slot:9b}]
+item replace block 0 2 0 container.2 from block 0 2 0 container.9
+item replace block 0 2 0 container.9 with air
 execute if data storage lc:edit recipes[0] run function lc:gallery/put_in_gallery
-data modify block 0 2 0 Items[{Slot:3b}] set from block 0 2 0 Items[{Slot:9b}]
-data remove block 0 2 0 Items[{Slot:9b}]
+item replace block 0 2 0 container.3 from block 0 2 0 container.9
+item replace block 0 2 0 container.9 with air
 execute if data storage lc:edit recipes[0] run function lc:gallery/put_in_gallery
-data modify block 0 2 0 Items[{Slot:4b}] set from block 0 2 0 Items[{Slot:9b}]
-data remove block 0 2 0 Items[{Slot:9b}]
+item replace block 0 2 0 container.4 from block 0 2 0 container.9
+item replace block 0 2 0 container.9 with air
 execute if data storage lc:edit recipes[0] run function lc:gallery/put_in_gallery
-data modify block 0 2 0 Items[{Slot:5b}] set from block 0 2 0 Items[{Slot:9b}]
-data remove block 0 2 0 Items[{Slot:9b}]
+item replace block 0 2 0 container.5 from block 0 2 0 container.9
+item replace block 0 2 0 container.9 with air
 execute if data storage lc:edit recipes[0] run function lc:gallery/put_in_gallery
-data modify block 0 2 0 Items[{Slot:6b}] set from block 0 2 0 Items[{Slot:9b}]
-data remove block 0 2 0 Items[{Slot:9b}]
+item replace block 0 2 0 container.6 from block 0 2 0 container.9
+item replace block 0 2 0 container.9 with air
 execute if data storage lc:edit recipes[0] run function lc:gallery/put_in_gallery
-data modify block 0 2 0 Items[{Slot:7b}] set from block 0 2 0 Items[{Slot:9b}]
-data remove block 0 2 0 Items[{Slot:9b}]
+item replace block 0 2 0 container.7 from block 0 2 0 container.9
+item replace block 0 2 0 container.9 with air
 execute if data storage lc:edit recipes[0] run function lc:gallery/put_in_gallery
-data modify block 0 2 0 Items[{Slot:10b}] set from block 0 2 0 Items[{Slot:9b}]
-data remove block 0 2 0 Items[{Slot:9b}]
+item replace block 0 2 0 container.10 from block 0 2 0 container.9
+item replace block 0 2 0 container.9 with air
 execute if data storage lc:edit recipes[0] run function lc:gallery/put_in_gallery
-data modify block 0 2 0 Items[{Slot:11b}] set from block 0 2 0 Items[{Slot:9b}]
-data remove block 0 2 0 Items[{Slot:9b}]
+item replace block 0 2 0 container.11 from block 0 2 0 container.9
+item replace block 0 2 0 container.9 with air
 execute if data storage lc:edit recipes[0] run function lc:gallery/put_in_gallery
-data modify block 0 2 0 Items[{Slot:12b}] set from block 0 2 0 Items[{Slot:9b}]
-data remove block 0 2 0 Items[{Slot:9b}]
+item replace block 0 2 0 container.12 from block 0 2 0 container.9
+item replace block 0 2 0 container.9 with air
 execute if data storage lc:edit recipes[0] run function lc:gallery/put_in_gallery
-data modify block 0 2 0 Items[{Slot:13b}] set from block 0 2 0 Items[{Slot:9b}]
-data remove block 0 2 0 Items[{Slot:9b}]
+item replace block 0 2 0 container.13 from block 0 2 0 container.9
+item replace block 0 2 0 container.9 with air
 execute if data storage lc:edit recipes[0] run function lc:gallery/put_in_gallery
-data modify block 0 2 0 Items[{Slot:14b}] set from block 0 2 0 Items[{Slot:9b}]
-data remove block 0 2 0 Items[{Slot:9b}]
+item replace block 0 2 0 container.14 from block 0 2 0 container.9
+item replace block 0 2 0 container.9 with air
 execute if data storage lc:edit recipes[0] run function lc:gallery/put_in_gallery
-data modify block 0 2 0 Items[{Slot:15b}] set from block 0 2 0 Items[{Slot:9b}]
-data remove block 0 2 0 Items[{Slot:9b}]
+item replace block 0 2 0 container.15 from block 0 2 0 container.9
+item replace block 0 2 0 container.9 with air
 execute if data storage lc:edit recipes[0] run function lc:gallery/put_in_gallery
-data modify block 0 2 0 Items[{Slot:16b}] set from block 0 2 0 Items[{Slot:9b}]
-data remove block 0 2 0 Items[{Slot:9b}]
+item replace block 0 2 0 container.16 from block 0 2 0 container.9
+item replace block 0 2 0 container.9 with air
 execute if data storage lc:edit recipes[0] run function lc:gallery/put_in_gallery
-data modify block 0 2 0 Items[{Slot:19b}] set from block 0 2 0 Items[{Slot:9b}]
-data remove block 0 2 0 Items[{Slot:9b}]
+item replace block 0 2 0 container.19 from block 0 2 0 container.9
+item replace block 0 2 0 container.9 with air
 execute if data storage lc:edit recipes[0] run function lc:gallery/put_in_gallery
-data modify block 0 2 0 Items[{Slot:20b}] set from block 0 2 0 Items[{Slot:9b}]
-data remove block 0 2 0 Items[{Slot:9b}]
+item replace block 0 2 0 container.20 from block 0 2 0 container.9
+item replace block 0 2 0 container.9 with air
 execute if data storage lc:edit recipes[0] run function lc:gallery/put_in_gallery
-data modify block 0 2 0 Items[{Slot:21b}] set from block 0 2 0 Items[{Slot:9b}]
-data remove block 0 2 0 Items[{Slot:9b}]
+item replace block 0 2 0 container.21 from block 0 2 0 container.9
+item replace block 0 2 0 container.9 with air
 execute if data storage lc:edit recipes[0] run function lc:gallery/put_in_gallery
-data modify block 0 2 0 Items[{Slot:22b}] set from block 0 2 0 Items[{Slot:9b}]
-data remove block 0 2 0 Items[{Slot:9b}]
+item replace block 0 2 0 container.22 from block 0 2 0 container.9
+item replace block 0 2 0 container.9 with air
 execute if data storage lc:edit recipes[0] run function lc:gallery/put_in_gallery
-data modify block 0 2 0 Items[{Slot:23b}] set from block 0 2 0 Items[{Slot:9b}]
-data remove block 0 2 0 Items[{Slot:9b}]
+item replace block 0 2 0 container.23 from block 0 2 0 container.9
+item replace block 0 2 0 container.9 with air
 execute if data storage lc:edit recipes[0] run function lc:gallery/put_in_gallery
-data modify block 0 2 0 Items[{Slot:24b}] set from block 0 2 0 Items[{Slot:9b}]
-data remove block 0 2 0 Items[{Slot:9b}]
+item replace block 0 2 0 container.24 from block 0 2 0 container.9
+item replace block 0 2 0 container.9 with air
 execute if data storage lc:edit recipes[0] run function lc:gallery/put_in_gallery
-data modify block 0 2 0 Items[{Slot:25b}] set from block 0 2 0 Items[{Slot:9b}]
-data remove block 0 2 0 Items[{Slot:9b}]
+item replace block 0 2 0 container.25 from block 0 2 0 container.9
+item replace block 0 2 0 container.9 with air
 
 ## write to storage
 data modify storage lc:data gallery.pages append from block 0 2 0 Items
