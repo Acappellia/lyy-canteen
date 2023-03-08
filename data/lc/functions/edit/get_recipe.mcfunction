@@ -5,7 +5,6 @@
 
 ##search for recipe id
 execute unless score #get_recipeid lc_var matches 1..2147483647 run scoreboard players set #get_recipeid lc_var -1
-scoreboard players reset #get_recipeid_out lc_var
 function lc:edit/private/recipe/search_loop
 execute unless score #get_recipeid_out lc_var matches 0 run tellraw @p [{"text": "found no recipe with id ","color": "red"},{"score":{"name":"#get_recipeid","objective":"lc_var"}}]
 execute if score #get_recipeid_out lc_var matches 0 run function lc:edit/private/get_recipe_2
