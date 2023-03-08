@@ -10,6 +10,9 @@
 #define score_holder #search_recipe_out cook search result
 #define score_holder #search_recipe_tmp cook search tmp val
 
+##init
+scoreboard players reset #search_recipe_out lc_var
+
 ##check the current id, if it has a value, continue loop
 execute store result score #search_recipe_tmp lc_var run data get storage lc:data recipes[0].recipe_id 1
-execute if score #search_recipe_tmp lc_var matches 1.. run function lc:cook/recipe_search_loop_2
+execute if data storage lc:var cookinput.search if score #search_recipe_tmp lc_var matches 1.. run function lc:cook/recipe_search_loop_2

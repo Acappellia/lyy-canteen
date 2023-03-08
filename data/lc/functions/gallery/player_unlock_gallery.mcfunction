@@ -5,7 +5,6 @@
 #   #get_quality
 
 ##search for uuid
-scoreboard players reset #search_uuid_out
 function lc:gallery/uuid_search_loop
 execute unless score #search_uuid_out lc_var matches 0 run function lc:gallery/player_init_gallery
 
