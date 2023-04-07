@@ -76,3 +76,6 @@ scoreboard objectives add menu_index dummy
 scoreboard objectives add menu_click dummy
 scoreboard objectives add cookskill dummy
 ## cook skill range: 200~300
+
+scoreboard objectives add pot_type dummy
+scoreboard objectives add time_interaction dummy
