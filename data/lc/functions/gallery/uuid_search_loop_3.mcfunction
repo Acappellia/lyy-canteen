@@ -1,5 +1,7 @@
 ##called to search uuid in gallery - 3
 
+say uuid_search_loop_3
+
 ##init a marker to track full cycle
 execute unless data storage lc:var UUID_init run data modify storage lc:var UUID_init set from storage lc:var UUID_tmp
 

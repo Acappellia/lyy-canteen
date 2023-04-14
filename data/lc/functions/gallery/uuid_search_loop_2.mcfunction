@@ -1,5 +1,7 @@
 ##called to search uuid in gallery - 2
 
+say uuid_search_loop_2
+
 #define score_holder #search_uuid_init
 
 ##check the current id
