@@ -10,7 +10,11 @@ data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.recipe_id set from 
 data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.best_quality set value 0
 data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.cook_count set value 1
 data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.unlocked set value 1
+data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.new_unlock set value 1
 data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.menu_ui set value 1
+data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.actual_id set from block 0 2 0 Items[{Slot:9b}].tag.out_display.id
+data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.id set value "minecraft:knowledge_book"
+data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.display.Lore prepend value '{"text":"新解锁的图鉴！","color":"green","bold":true}'
 
 ##count
 scoreboard players add #gallery_totalcount lc_var 1

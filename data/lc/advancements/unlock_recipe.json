@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "unlock_recipe": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:knowledge_book"
+                        ],
+                        "nbt": "{recipe_unlock:1}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "lc:advancements/unlock_recipe"
+    }
+}
