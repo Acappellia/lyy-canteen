@@ -12,3 +12,4 @@ execute as @e[distance=..5,type=interaction,tag=pot] if score @s time_interactio
 ##determine if the pot exists
 execute at @e[distance=..5,type=interaction,tag=add_ing,tag=pot,limit=1] run function lc:cook/add_ing/ing_add
 execute unless entity @e[distance=..5,type=interaction,tag=pot,tag=add_ing] run tellraw @s {"text":"离得太远啦，靠近一点再操作啦！","color": "red"}
+tag @e[type=interaction,tag=pot] remove add_ing 

@@ -1,5 +1,8 @@
 ##called to calculate cook result and store to storage
 
+##clear
+data remove storage lc:var cookinput
+
 ##record pot type
 execute store result storage lc:var cookinput.search.cooktype int 1 run scoreboard players get @e[type=interaction,sort=nearest,limit=1] pot_type
 

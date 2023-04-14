@@ -8,7 +8,7 @@ data modify block 0 2 0 Items[{Slot:9b}].tag.cook_count set value 0
 data modify block 0 2 0 Items[{Slot:9b}].tag.out_display set from storage lc:edit recipes[0].out_display
 data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.recipe_id set from storage lc:edit recipes[0].recipe_id
 data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.best_quality set value 0
-data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.cook_count set value 1
+data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.cook_count set value 0
 data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.unlocked set value 1
 data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.new_unlock set value 1
 data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.menu_ui set value 1
