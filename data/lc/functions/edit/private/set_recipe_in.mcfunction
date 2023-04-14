@@ -8,7 +8,7 @@ data modify storage lc:data recipes[0].in[0].in_id set from entity @s Inventory[
 data modify storage lc:data recipes[0].in[0].cooktime set from entity @s Inventory[{Slot:9b}].tag.cooktime
 data modify storage lc:data recipes[0].in[0].tolerance set from entity @s Inventory[{Slot:9b}].tag.tolerance
 data modify storage lc:data recipes[0].in[0].weight set from entity @s Inventory[{Slot:9b}].tag.weight
-execute store result score #recipe_setcook_sec lc_var run data get entity @s Inventory[{Slot:9b}].tag.cooktime 0.05
+execute store result score #recipe_setcook_sec lc_var run data get entity @s Inventory[{Slot:9b}].tag.cooktime 1
 
 ##add lore in offhand
 item modify entity @s weapon.offhand lc:add_gallery_recipe_info_main

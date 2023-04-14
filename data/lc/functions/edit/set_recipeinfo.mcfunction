@@ -6,9 +6,9 @@
 #   #recipe_setweight
 
 ##if no input or illegal, set default value
-execute unless score #recipe_setcook lc_var matches 1.. run scoreboard players set #recipe_setcook lc_var 600
-execute if score #recipe_setcook lc_var > #max_cooktime lc_var run scoreboard players set #recipe_setcook lc_var 600
-execute unless score #recipe_settol lc_var matches 1.. run scoreboard players set #recipe_settol lc_var 100
+execute unless score #recipe_setcook lc_var matches 1.. run scoreboard players set #recipe_setcook lc_var 30
+execute if score #recipe_setcook lc_var > #max_cooktime lc_var run scoreboard players operation #recipe_setcook lc_var = #max_cooktime lc_var
+execute unless score #recipe_settol lc_var matches 1.. run scoreboard players set #recipe_settol lc_var 10
 execute unless score #recipe_setweight lc_var matches 0.. run scoreboard players set #recipe_setweight lc_var 10
 
 ##add lore

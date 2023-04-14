@@ -62,7 +62,7 @@ scoreboard players set #36 lc_var 36
 scoreboard players set #default_quality lc_var 60
 scoreboard players set #default_prize lc_var 100
 scoreboard players set #default_buy_prize lc_var 200
-scoreboard players set #max_cooktime lc_var 36000
+scoreboard players set #max_cooktime lc_var 300
 execute unless score #lc_itemid lc_var matches -2147483648..2147483647 run scoreboard players set #lc_itemid lc_var 0
 execute unless score #shop_page lc_var matches -2147483648..2147483647 run scoreboard players set #shop_page lc_var 0
 execute unless score #recipe_id lc_var matches -2147483648..2147483647 run scoreboard players set #recipe_id lc_var 0
