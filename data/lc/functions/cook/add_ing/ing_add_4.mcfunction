@@ -18,9 +18,8 @@ execute if score #pot_displaycount lc_var matches 7 run summon item_display ~0.3
 execute if score #pot_displaycount lc_var matches 8 run summon item_display ~ ~1 ~ {Tags:["pot_display","new_display"]}
 
 ##edit display item
-execute positioned ~ ~1 ~ run data modify entity @e[distance=..0.5,tag=new_display,limit=1] item set from entity @s SelectedItem
-#TODO add animation
-execute positioned ~ ~1 ~ run tag @e[distance=..0.5,type=item_display] remove new_display
+data modify entity @e[distance=..2,tag=new_display,limit=1] item set from entity @s SelectedItem
+execute as @e[distance=..2,tag=new_display] at @s run function lc:cook/add_ing/ing_add_editdisplay
 
 ##remove 1 item from hand
 item modify entity @s weapon.mainhand lc:set_count_-1

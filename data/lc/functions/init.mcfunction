@@ -79,3 +79,8 @@ scoreboard objectives add cookskill dummy
 
 scoreboard objectives add pot_type dummy
 scoreboard objectives add time_interaction dummy
+scoreboard objectives add time_cooked dummy
+
+
+##start slow tick
+function lc:slow_tick
