@@ -1,0 +1,19 @@
+{
+    "function": "set_lore",
+    "entity": "this",
+    "replace": false,
+    "lore": [
+        [
+            {
+                "nbt": "Inventory[{Slot:9b}].tag.display.Name",
+                "interpret": true,
+                "entity": "@s"
+            },
+            {
+                "text": " 1 份",
+                "color": "white",
+                "italic": false
+            }
+        ]
+    ]
+}

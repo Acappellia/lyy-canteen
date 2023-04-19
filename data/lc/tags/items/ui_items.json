@@ -1,6 +1,7 @@
 {
     "values": [
       "minecraft:knowledge_book",
+      "minecraft:enchanted_book",
       "minecraft:arrow",
       "minecraft:book",
       "minecraft:glass_pane",
@@ -51,6 +52,7 @@
       "minecraft:brick",
       "minecraft:emerald",
       "minecraft:structure_void",
+      "minecraft:barrier",
       "minecraft:dark_oak_sign",
       "minecraft:rabbit_stew"
     ]

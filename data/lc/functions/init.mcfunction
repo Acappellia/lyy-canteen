@@ -69,7 +69,8 @@ execute unless score #recipe_id lc_var matches -2147483648..2147483647 run score
 execute unless data storage lc:data items run data modify storage lc:data items set value []
 
 scoreboard objectives add money dummy {"text": "LYY 金币","color": "green"}
-scoreboard objectives add gallery_unlock dummy {"text": "图鉴解锁数","color": "yellow"}
+scoreboard objectives add gallery_unlock dummy {"text": "全图鉴解锁数","color": "yellow"}
+scoreboard objectives add gallery_unlock_main dummy {"text": "主图鉴解锁数","color": "yellow"}
 
 scoreboard objectives add menu_page dummy
 scoreboard objectives add menu_index dummy

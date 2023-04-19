@@ -1,8 +1,10 @@
 ## update the full gallery by recipe
 
 #define score_holder #gallery_totalcount
+#define score_holder #gallery_maincount
 
 ##clear
+scoreboard players reset #gallery_maincount lc_var
 scoreboard players reset #gallery_totalcount lc_var
 data remove storage lc:data gallery
 

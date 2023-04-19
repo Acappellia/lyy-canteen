@@ -1,4 +1,4 @@
-## get recipe from id
+## get recipe from id and move the recipe to first
 
 #input
 #   #get_recipeid
@@ -10,4 +10,5 @@ execute unless score #get_recipeid_out lc_var matches 0 run tellraw @p [{"text":
 execute if score #get_recipeid_out lc_var matches 0 run function lc:edit/private/get_recipe_2
 
 ##tellraw
-tellraw @p [{"text": "gived recipe template with id ","color": "red"},{"score":{"name":"#get_recipeid","objective":"lc_var"}}]
+execute if score #get_recipeid_out lc_var matches 0 run tellraw @p [{"text": "gived recipe template with id ","color": "red"},{"score":{"name":"#get_recipeid","objective":"lc_var"}}]
+execute if score #get_recipeid_out lc_var matches 0 run tellraw @p [{"text": "the recipe is moved to the first of list"}]

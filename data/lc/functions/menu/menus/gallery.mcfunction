@@ -1,6 +1,7 @@
 ##called to create gallery menu
 
 #define score_holder #gallery_collectratio
+#define score_holder #gallery_collectratio_main
 
 ##search uuid
 function lc:gallery/uuid_search_loop
@@ -18,6 +19,10 @@ data modify block 0 2 0 Items set from storage lc:user gallery[0].pages[0]
 scoreboard players operation #gallery_collectratio lc_var = @s gallery_unlock
 scoreboard players operation #gallery_collectratio lc_var *= #100 lc_var
 scoreboard players operation #gallery_collectratio lc_var /= #gallery_totalcount lc_var
+
+scoreboard players operation #gallery_collectratio_main lc_var = @s gallery_unlock_main
+scoreboard players operation #gallery_collectratio_main lc_var *= #100 lc_var
+scoreboard players operation #gallery_collectratio_main lc_var /= #gallery_maincount lc_var
 
 ##clone to enderchest
 item replace entity @s enderchest.0 from block 0 2 0 container.0 lc:add_gallery_stat
