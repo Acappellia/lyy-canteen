@@ -14,5 +14,7 @@ execute if data storage lc:edit recipes[0] run function lc:gallery/create_page
 
 ##reset gallery progress
 scoreboard objectives remove gallery_unlock
+scoreboard objectives remove gallery_unlock_main
 scoreboard objectives add gallery_unlock dummy
+scoreboard objectives add gallery_unlock_main dummy
 data remove storage lc:user gallery

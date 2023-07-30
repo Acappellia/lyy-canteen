@@ -6,6 +6,9 @@
 #use inv slot 0-8 as input (must use defined recipe items)
 #define score_holder #recipe_settype
 #define score_holder #recipe_isvariant
+#   0 or null for ORIGINAL
+#   1 for VARIANT
+#   -1 for MID PRODUCT
 
 ## create new recipe
 data modify storage lc:data recipes prepend value {}
@@ -51,5 +54,6 @@ data remove storage lc:data recipes[0].out_display.Slot
 
 ##tellraw
 tellraw @p [{"text": "added recipe with id "},{"score":{"name":"#recipe_id","objective":"lc_var"}}]
-execute unless score #recipe_isvariant lc_var matches 1.. run tellraw @p [{"text": "recipe added as ORIGINAL"}]
+execute unless score #recipe_isvariant lc_var matches 1.. unless score #recipe_isvariant lc_var matches ..-1 run tellraw @p [{"text": "recipe added as ORIGINAL"}]
 execute if score #recipe_isvariant lc_var matches 1.. run tellraw @p [{"text": "recipe added as VARIANT"}]
+execute if score #recipe_isvariant lc_var matches ..-1 run tellraw @p [{"text": "recipe added as MID PRODUCT"}]

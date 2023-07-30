@@ -9,10 +9,6 @@ data modify storage lc:user gallery[0].pages[0][0].tag.display.Lore prepend valu
 data modify storage lc:user gallery[0].pages[0][0].tag.unlocked set value 1
 data modify storage lc:user gallery[0].pages[0][0].tag.new_unlock set value 1
 
-
-##update best quality
-data modify storage lc:user gallery[0].pages[0][0].tag.best_quality set value "未烹饪"
-
 ##unlock following variants
 execute store result score #unlock_slot lc_var run data get storage lc:user gallery[0].pages[0][0].Slot
 execute if score #unlock_slot lc_var matches 25 run function lc:gallery/player_unlock_turnpage
