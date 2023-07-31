@@ -14,9 +14,8 @@ data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.new_unlock set valu
 data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.menu_ui set value 1
 data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.actual_id set from block 0 2 0 Items[{Slot:9b}].tag.out_display.id
 data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.id set value "minecraft:enchanted_book"
-data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.display.Lore prepend value '{"text":"新获得！","color":"green","bold":true}'
 data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.display.Lore prepend value '{"text":"成功烹饪这道菜，解锁该项图鉴！","color":"white","bold":true}'
-data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.display.Lore prepend value '{"text":" "}'
+data modify block 0 2 0 Items[{Slot:9b}].tag.out_display.tag.display.Lore prepend value '{"text":"新获得！","color":"green","bold":true}'
 
 ##count
 scoreboard players add #gallery_maincount lc_var 1

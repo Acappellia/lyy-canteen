@@ -1,7 +1,8 @@
 ## called to display qte
 # perfect time 24-28 standard -16
 
-title @p times 0t 10t 5t
+title @p[distance=..5] times 0t 10t 5t
+playsound block.note_block.snare block @p[distance=..5] ~ ~ ~ 0.3 1
 
 execute if score @s pot_qte_timer matches -41 run title @p[distance=..5] subtitle "< |-----------------------====------------- >"
 execute if score @s pot_qte_timer matches -40 run title @p[distance=..5] subtitle "< -|----------------------====------------- >"
@@ -45,4 +46,4 @@ execute if score @s pot_qte_timer matches -3 run title @p[distance=..5] subtitle
 execute if score @s pot_qte_timer matches -2 run title @p[distance=..5] subtitle "< -----------------------====------------|- >"
 execute if score @s pot_qte_timer matches -1 run title @p[distance=..5] subtitle "< -----------------------====-------------| >"
 
-title @p[distance=..5] title ""
+title @p[distance=..5] title " 在最佳处点击！"

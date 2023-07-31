@@ -79,6 +79,7 @@ item replace block 0 2 0 container.9 from block 0 2 0 container.25
 item replace entity @s enderchest.25 from block 0 2 0 container.9 lc:add_gallery_menu_info
 
 item replace entity @s enderchest.26 from block 0 2 0 container.26
+item replace entity @s enderchest.9 with air
 
 ##remove shulkerbox
 setblock 0 2 0 air

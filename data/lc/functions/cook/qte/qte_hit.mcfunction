@@ -7,6 +7,7 @@ scoreboard players operation #qte_gradescore lc_var = @s pot_qte_timer
 scoreboard players operation #qte_gradescore lc_var -= @s pot_qte_standard
 execute if score #qte_gradescore lc_var matches 1.. run scoreboard players operation #qte_gradescore lc_var *= #-1 lc_var
 scoreboard players operation #qte_gradescore lc_var += #10 lc_var
+execute if score @s pot_qte_timer matches -1 run scoreboard players set #qte_gradescore lc_var 0
 
 ##show title result
 execute if score #qte_gradescore lc_var matches 8..10 as @p[distance=..5] run function lc:cook/qte/title_result/perfect

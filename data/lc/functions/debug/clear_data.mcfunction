@@ -1,4 +1,5 @@
 ## clear all storage
+#TODO
 
 scoreboard players set $min random 100000
 scoreboard players set $max random 999999

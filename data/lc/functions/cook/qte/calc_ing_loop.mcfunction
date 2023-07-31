@@ -2,7 +2,6 @@
 
 #define score_holder #cook_calc_score
 #define score_holder #cook_calc_weight
-
 ## search the first item in cookinput
 execute store result score #search_ing lc_var run data get storage lc:var cookinput.in[0].in_id
 function lc:cook/ing_search_loop
@@ -19,4 +18,4 @@ scoreboard players operation #cook_weight_sum lc_var += #cook_calc_weight lc_var
 
 ##remove first item in input and loop
 data remove storage lc:var cookinput.in[0]
-execute if data storage lc:var cookinput.in[0] run function lc:cook/calc_ing_loop
+execute if data storage lc:var cookinput.in[0] run function lc:cook/qte/calc_ing_loop

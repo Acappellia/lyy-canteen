@@ -10,7 +10,7 @@
         ],
         [
             {
-                "text": "----- 烹饪统计 -----",
+                "text": "----- 烹制统计 -----",
                 "color": "aqua",
                 "italic": false
             }
@@ -22,7 +22,7 @@
         ],
         [
             {
-                "text": "烹饪次数: ",
+                "text": "烹制次数: ",
                 "color": "white",
                 "italic": false
             },
