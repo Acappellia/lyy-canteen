@@ -7,6 +7,7 @@ execute unless score #recipe_settype lc_var matches 0.. run scoreboard players s
 execute align xz run kill @e[type=interaction,distance=..1,tag=pot]
 execute align xz run summon interaction ~ ~ ~ {Tags:["pot"],response:1b}
 scoreboard players operation @e[type=interaction,limit=1,sort=nearest] pot_type = #recipe_settype lc_var
+execute if score #recipe_settype lc_var matches 4 run tag @e[type=interaction,limit=1,sort=nearest] add on
 
 ##summon display model
 #TODO

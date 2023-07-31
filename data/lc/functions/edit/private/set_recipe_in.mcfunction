@@ -13,8 +13,9 @@ execute store result score #recipe_setcook_sec lc_var run data get entity @s Inv
 execute store result score #recipe_setcook_weight lc_var run data get entity @s Inventory[{Slot:9b}].tag.weight 1
 
 ##add lore in offhand
-execute unless score #recipe_setcook_weight lc_var matches 0 run item modify entity @s weapon.offhand lc:add_gallery_recipe_info_main
-execute if score #recipe_setcook_weight lc_var matches 0 run item modify entity @s weapon.offhand lc:add_gallery_recipe_info_main2
+execute if score #recipe_settype lc_var matches 3 run item modify entity @s weapon.offhand lc:add_gallery_recipe_info_main2
+execute unless score #recipe_settype lc_var matches 3 unless score #recipe_setcook_weight lc_var matches 0 run item modify entity @s weapon.offhand lc:add_gallery_recipe_info_main
+execute unless score #recipe_settype lc_var matches 3 if score #recipe_setcook_weight lc_var matches 0 run item modify entity @s weapon.offhand lc:add_gallery_recipe_info_main2
 
 ##sort id
 scoreboard players reset #recipe_sortout lc_var

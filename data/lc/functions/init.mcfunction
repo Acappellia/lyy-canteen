@@ -48,6 +48,7 @@
 
 gamerule keepInventory true
 gamerule doEntityDrops false
+forceload add 0 0 0 0
 
 scoreboard objectives add lc_var dummy
 scoreboard players set #0 lc_var 0
@@ -77,11 +78,14 @@ scoreboard objectives add menu_index dummy
 scoreboard objectives add menu_click dummy
 scoreboard objectives add cookskill dummy
 ## cook skill range: 200~300
+scoreboard objectives add totalcookcount dummy
 
 scoreboard objectives add pot_type dummy
 scoreboard objectives add time_interaction dummy
 scoreboard objectives add time_cooked dummy
-
+scoreboard objectives add pot_qte_rndseed dummy
+scoreboard objectives add pot_qte_timer dummy
+scoreboard objectives add pot_qte_standard dummy
 
 ##start slow tick
 function lc:slow_tick

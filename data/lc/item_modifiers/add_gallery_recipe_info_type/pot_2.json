@@ -1,0 +1,19 @@
+{
+    "function": "set_lore",
+    "entity": "this",
+    "replace": false,
+    "lore": [
+        [
+            {
+                "text": ""
+            }
+        ],
+        [
+            {
+                "text": "使用烤架烤制",
+                "color": "green",
+                "italic": false
+            }
+        ]
+    ]
+}

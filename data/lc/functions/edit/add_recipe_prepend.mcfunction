@@ -46,7 +46,11 @@ item replace entity @s inventory.0 from entity @s hotbar.8
 execute if data entity @s Inventory[{Slot:9b}] run function lc:edit/private/set_recipe_in
 
 ##add type lore in offhand
-execute if score #recipe_settype lc_var matches 0 run item modify entity @s weapon.offhand lc:add_gallery_recipe_info_type/boil
+execute if score #recipe_settype lc_var matches 0 run item modify entity @s weapon.offhand lc:add_gallery_recipe_info_type/pot_0
+execute if score #recipe_settype lc_var matches 1 run item modify entity @s weapon.offhand lc:add_gallery_recipe_info_type/pot_1
+execute if score #recipe_settype lc_var matches 2 run item modify entity @s weapon.offhand lc:add_gallery_recipe_info_type/pot_2
+execute if score #recipe_settype lc_var matches 3 run item modify entity @s weapon.offhand lc:add_gallery_recipe_info_type/pot_3
+execute if score #recipe_settype lc_var matches 4 run item modify entity @s weapon.offhand lc:add_gallery_recipe_info_type/pot_4
 
 ##set out display
 data modify storage lc:data recipes[0].out_display set from entity @s Inventory[{Slot:-106b}]

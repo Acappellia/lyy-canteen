@@ -1,0 +1,19 @@
+{
+    "function": "set_lore",
+    "entity": "this",
+    "replace": false,
+    "lore": [
+        [
+            {
+                "text": ""
+            }
+        ],
+        [
+            {
+                "text": "使用风干台处理",
+                "color": "green",
+                "italic": false
+            }
+        ]
+    ]
+}

@@ -10,6 +10,26 @@
         ],
         [
             {
+                "text": "烹饪熟练度: ",
+                "color": "gold",
+                "italic": false
+            },
+            {
+                "score": {
+                    "name": "@s",
+                    "objective": "totalcookcount"
+                },
+                "italic": false,
+                "color": "yellow"
+            }
+        ],
+        [
+            {
+                "text": ""
+            }
+        ],
+        [
+            {
                 "text": "已解锁主图鉴数: ",
                 "color": "gold",
                 "italic": false

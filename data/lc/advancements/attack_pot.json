@@ -1,16 +1,16 @@
 {
     "criteria": {
-        "interact_pot":{
-            "trigger": "minecraft:player_interacted_with_entity",
+        "attack_pot":{
+            "trigger": "minecraft:player_hurt_entity",
             "conditions": {
                 "entity": {
                     "type": "interaction",
-                    "nbt": "{Tags:[\"pot\"],}"
+                    "nbt": "{Tags:[\"pot\"]}"
                 }
             }
         }
     },
     "rewards": {
-        "function": "lc:advancements/interact_pot"
+        "function": "lc:advancements/attack_pot"
     }
 }
