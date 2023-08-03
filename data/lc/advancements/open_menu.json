@@ -3,13 +3,13 @@
         "open_menu":{
             "trigger": "minecraft:item_used_on_block",
             "conditions": {
-                "location": {
-                    "block": {
-                        "blocks": [
-                            "minecraft:ender_chest"
-                        ]
-                    }
-                }
+                "location": [
+                  {
+                    "condition": "block_state_property",
+                    "block": "minecraft:ender_chest",
+                    "properties": {}
+                  }
+                ]
             }
         }
     },
