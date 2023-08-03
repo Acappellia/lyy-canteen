@@ -3,7 +3,7 @@
 ##reset score
 scoreboard players reset @s menu_click
 
-##check each slot if they could be selled (have a prize)
+##check each slot if they could be sold (have a prize)
 ##if so, sell them and clear this slot
 execute store result score #money_add_to_score lc_var run data get entity @s EnderItems[{Slot:0b}].tag.prize 1
 execute store result score #menu_sellcount lc_var run data get entity @s EnderItems[{Slot:0b}].Count 1

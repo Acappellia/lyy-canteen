@@ -52,12 +52,16 @@ forceload add 0 0 0 0
 
 scoreboard objectives add lc_var dummy
 scoreboard players set #0 lc_var 0
+scoreboard players set #2 lc_var 2
 scoreboard players set #-1 lc_var -1
 scoreboard players set #5 lc_var 5
 scoreboard players set #10 lc_var 10
 scoreboard players set #100 lc_var 100
 scoreboard players set #200 lc_var 200
+scoreboard players set #720 lc_var 720
 scoreboard players set #1000 lc_var 1000
+scoreboard players set #6000 lc_var 6000
+scoreboard players set #72000 lc_var 72000
 scoreboard players set #64 lc_var 64
 scoreboard players set #36 lc_var 36
 scoreboard players set #default_quality lc_var 60

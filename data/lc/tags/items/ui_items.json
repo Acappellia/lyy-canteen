@@ -54,6 +54,10 @@
       "minecraft:structure_void",
       "minecraft:barrier",
       "minecraft:dark_oak_sign",
-      "minecraft:rabbit_stew"
+      "minecraft:rabbit_stew",
+      "minecraft:birch_fence",
+      "minecraft:spruce_fence",
+      "minecraft:oak_fence",
+      "minecraft:beehive"
     ]
   }

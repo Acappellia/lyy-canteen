@@ -42,9 +42,6 @@ item replace entity @s enderchest.6 from block 0 2 0 container.9 lc:add_gallery_
 item replace block 0 2 0 container.9 from block 0 2 0 container.7
 item replace entity @s enderchest.7 from block 0 2 0 container.9 lc:add_gallery_menu_info
 
-item replace entity @s enderchest.8 from block 0 2 0 container.8
-item replace entity @s enderchest.9 from block 0 2 0 container.9
-
 item replace block 0 2 0 container.9 from block 0 2 0 container.10
 item replace entity @s enderchest.10 from block 0 2 0 container.9 lc:add_gallery_menu_info
 item replace block 0 2 0 container.9 from block 0 2 0 container.11
@@ -60,7 +57,6 @@ item replace entity @s enderchest.15 from block 0 2 0 container.9 lc:add_gallery
 item replace block 0 2 0 container.9 from block 0 2 0 container.16
 item replace entity @s enderchest.16 from block 0 2 0 container.9 lc:add_gallery_menu_info
 
-item replace entity @s enderchest.17 from block 0 2 0 container.17
 item replace entity @s enderchest.18 from block 0 2 0 container.18
 
 item replace block 0 2 0 container.9 from block 0 2 0 container.19
@@ -79,7 +75,6 @@ item replace block 0 2 0 container.9 from block 0 2 0 container.25
 item replace entity @s enderchest.25 from block 0 2 0 container.9 lc:add_gallery_menu_info
 
 item replace entity @s enderchest.26 from block 0 2 0 container.26
-item replace entity @s enderchest.9 with air
 
 ##remove shulkerbox
 setblock 0 2 0 air
