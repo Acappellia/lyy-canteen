@@ -26,5 +26,12 @@ execute as @s[scores={menu_click=1..}] run function lc:farm/farm_click_2
 execute store result score @s menu_click run clear @s #lc:ui_items{menu_ui:1,farm_slot:3} 0
 execute as @s[scores={menu_click=1..}] run function lc:farm/farm_click_3
 
-execute store result score @s menu_click run clear @s #lc:ui_items{menu_ui:1,farm_food:1} 0
+execute store result score @s menu_click run clear @s #lc:ui_items{menu_ui:1,farm_harvest:1} 0
+execute as @s[scores={menu_click=1..}] run function lc:farm/farm_harvest_1
+execute store result score @s menu_click run clear @s #lc:ui_items{menu_ui:1,farm_harvest:2} 0
+execute as @s[scores={menu_click=1..}] run function lc:farm/farm_harvest_2
+execute store result score @s menu_click run clear @s #lc:ui_items{menu_ui:1,farm_harvest:3} 0
+execute as @s[scores={menu_click=1..}] run function lc:farm/farm_harvest_3
+
+execute store result score @s menu_click run clear @s #lc:ui_items{menu_ui:1,farm_food_ui:1} 0
 execute as @s[scores={menu_click=1..}] run function lc:farm/farm_click_food

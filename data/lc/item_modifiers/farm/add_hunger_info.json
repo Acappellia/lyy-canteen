@@ -1,0 +1,26 @@
+{
+    "function": "set_lore",
+    "entity": "this",
+    "replace": false,
+    "lore": [
+        [
+            {
+                "text": ""
+            }
+        ],
+        [
+            {
+                "text": "↓ 低速成长中",
+                "color": "gold",
+                "italic": false
+            }
+        ],
+        [
+            {
+                "text": "↓ 品质下降中",
+                "color": "red",
+                "italic": false
+            }
+        ]
+    ]
+}

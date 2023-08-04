@@ -58,10 +58,7 @@ scoreboard players set #5 lc_var 5
 scoreboard players set #10 lc_var 10
 scoreboard players set #100 lc_var 100
 scoreboard players set #200 lc_var 200
-scoreboard players set #720 lc_var 720
 scoreboard players set #1000 lc_var 1000
-scoreboard players set #6000 lc_var 6000
-scoreboard players set #72000 lc_var 72000
 scoreboard players set #64 lc_var 64
 scoreboard players set #36 lc_var 36
 scoreboard players set #default_quality lc_var 60
@@ -90,6 +87,33 @@ scoreboard objectives add time_cooked dummy
 scoreboard objectives add pot_qte_rndseed dummy
 scoreboard objectives add pot_qte_timer dummy
 scoreboard objectives add pot_qte_standard dummy
+
+scoreboard players set #farm_pork_id lc_var 1
+scoreboard players set #farm_beef_id lc_var 2
+scoreboard players set #farm_chicken_id lc_var 3
+
+scoreboard players set #farm_milk_id lc_var 4
+scoreboard players set #farm_egg_id lc_var 5
+scoreboard players set #farm_honey_id lc_var 6
+
+#define score_holder #farm_grow_time
+#define score_holder #farm_interact_time
+#define score_holder #farm_produce_time
+#define score_holder #farm_food_consume
+#define score_holder #farm_food_max
+#define score_holder #farm_qdrop_time
+scoreboard players set #farm_grow_time lc_var 21600
+#216000 default
+scoreboard players set #farm_produce_time lc_var 144
+#1440 default
+scoreboard players set #farm_interact_time lc_var 72
+#720 default
+scoreboard players set #farm_food_consume lc_var 3600
+#36000 default
+scoreboard players operation #farm_food_max lc_var = #farm_food_consume lc_var
+scoreboard players operation #farm_food_max lc_var *= #64 lc_var
+scoreboard players set #farm_qdrop_time lc_var 600
+#6000 default
 
 ##start slow tick
 function lc:slow_tick

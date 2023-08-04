@@ -1,0 +1,27 @@
+{
+    "function": "set_lore",
+    "entity": "this",
+    "replace": false,
+    "lore": [
+        [
+            {
+                "text": ""
+            }
+        ],
+        [
+            {
+                "text": "已成熟！",
+                "color": "gold",
+                "italic": true,
+                "bold": true
+            }
+        ],
+        [
+            {
+                "text": "点击可进行收获",
+                "color": "white",
+                "italic": false
+            }
+        ]
+    ]
+}

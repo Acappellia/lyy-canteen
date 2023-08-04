@@ -1,0 +1,27 @@
+{
+    "function": "set_lore",
+    "entity": "this",
+    "replace": false,
+    "lore": [
+        [
+            {
+                "text": ""
+            }
+        ],
+        [
+            {
+                "text": "互动机会！",
+                "color": "aqua",
+                "italic": true,
+                "bold": true
+            }
+        ],
+        [
+            {
+                "text": "点击进行互动，增加动物品质",
+                "color": "white",
+                "italic": false
+            }
+        ]
+    ]
+}

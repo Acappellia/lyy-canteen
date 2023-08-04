@@ -1,0 +1,19 @@
+{
+    "function": "set_lore",
+    "entity": "this",
+    "replace": false,
+    "lore": [
+        [
+            {
+                "text": ""
+            }
+        ],
+        [
+            {
+                "text": "即将耗尽！",
+                "color": "gold",
+                "italic": true
+            }
+        ]
+    ]
+}

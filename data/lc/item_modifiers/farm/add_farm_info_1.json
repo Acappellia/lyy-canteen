@@ -1,0 +1,72 @@
+{
+    "function": "set_lore",
+    "entity": "this",
+    "replace": false,
+    "lore": [
+        [
+            {
+                "text": ""
+            }
+        ],
+        [
+            {
+                "text": "----------------",
+                "color": "white",
+                "italic": false
+            }
+        ],
+        [
+            {
+                "text": "成长值: ",
+                "color": "green",
+                "italic": false
+            },
+            {
+                "nbt": "Items[{Slot:11b}].tag.growth",
+                "block": "0 2 0",
+                "color": "white"
+            },
+            {
+                "text": " / ",
+                "color": "green",
+                "italic": false
+            },
+            {
+                "score":{
+                    "objective": "lc_var",
+                    "name": "#farm_grow_time"
+                },
+                "color": "white",
+                "italic": false
+            }
+        ],
+        [
+            {
+                "text": "品质: ",
+                "color": "gold",
+                "italic": false
+            },
+            {
+                "nbt":"Items[{Slot:11b}].tag.quality",
+                "block": "0 2 0"
+            },
+            {
+                "text": " / ",
+                "color": "yellow",
+                "italic": false
+            },
+            {
+                "text": "100",
+                "color": "white",
+                "italic": false
+            }
+        ],
+        [
+            {
+                "text": "----------------",
+                "color": "white",
+                "italic": false
+            }
+        ]
+    ]
+}

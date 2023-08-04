@@ -2,22 +2,27 @@
 
 #define score_holder #farm_food_left
 #define score_holder #farm_food
+#define score_holder #farm_food_in
 #define score_holder #farm_last_open
 #define score_holder #farm_time
+#define score_holder #farm_time_in
 #define score_holder #farm_time2
 
 ##check food left
 execute store result score #farm_food_left lc_var run data get block 0 2 0 Items[{Slot:15b}].tag.count
 execute store result score #farm_last_open lc_var run data get block 0 2 0 Items[{Slot:15b}].tag.last_open
 execute store result score #farm_time lc_var store result block 0 2 0 Items[{Slot:15b}].tag.last_open int 1 run time query gametime
-execute store result score #farm_time2 lc_var run scoreboard players operation #farm_time lc_var -= #farm_last_open lc_var
+execute store result score #farm_time_in lc_var store result score #farm_time2 lc_var run scoreboard players operation #farm_time lc_var -= #farm_last_open lc_var
 scoreboard players operation #farm_food lc_var = #farm_food_left lc_var
-scoreboard players operation #farm_food lc_var /= #farm_animal_count lc_var
-execute if score #farm_time lc_var <= #farm_food lc_var run function lc:farm/calc_food_enough
-execute if score #farm_time lc_var > #farm_food lc_var run function lc:farm/calc_food_lack
+execute store result score #farm_food_in lc_var run scoreboard players operation #farm_food lc_var /= #farm_animal_count lc_var
+
+execute if score @s menu_page matches -5 run function lc:farm/calc/calc_pig
+execute if score @s menu_page matches -4 run function lc:farm/calc/calc_cow
+execute if score @s menu_page matches -3 run function lc:farm/calc/calc_chicken
+execute if score @s menu_page matches -2 run function lc:farm/calc/calc_bee
 
 ##calc interaction chance
-scoreboard players operation #farm_time2 lc_var /= #720 lc_var
+scoreboard players operation #farm_time2 lc_var /= #farm_interact_time lc_var
 
 ##add interaction
 scoreboard players set $max random 100
