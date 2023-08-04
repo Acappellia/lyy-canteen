@@ -62,6 +62,7 @@
       "minecraft:pig_spawn_egg",
       "minecraft:cow_spawn_egg",
       "minecraft:chicken_spawn_egg",
-      "minecraft:bee_spawn_egg"
+      "minecraft:bee_spawn_egg",
+      "acacia_hanging_sign"
     ]
   }
