@@ -1,7 +1,7 @@
 {
     "criteria": {
         "attack_pot":{
-            "trigger": "minecraft:player_hurt_entity",
+            "trigger": "minecraft:entity_hurt_player",
             "conditions": {
                 "entity": {
                     "type": "player"
