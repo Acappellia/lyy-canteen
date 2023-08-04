@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "attack_pot":{
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "player"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "lc:advancements/attack_player"
+    }
+}
