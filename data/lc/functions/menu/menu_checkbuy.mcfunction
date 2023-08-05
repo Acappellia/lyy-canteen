@@ -58,7 +58,7 @@ scoreboard players reset @s menu_click
 execute store result score @s menu_click run clear @s #lc:ui_items{menu_ui:1,index:18} 0
 execute as @s[scores={menu_click=1..}] run scoreboard players set @s menu_index 18
 scoreboard players reset @s menu_click
-execute store result score @s menu_click run clear @s #lc:ui_items{menu_ui:1,index:10} 0
+execute store result score @s menu_click run clear @s #lc:ui_items{menu_ui:1,index:19} 0
 execute as @s[scores={menu_click=1..}] run scoreboard players set @s menu_index 19
 scoreboard players reset @s menu_click
 execute store result score @s menu_click run clear @s #lc:ui_items{menu_ui:1,index:20} 0
