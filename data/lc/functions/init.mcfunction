@@ -47,7 +47,9 @@
 #define score_holder #money_add_to_level money to add to levels when updating display
 
 gamerule keepInventory true
+gamerule doFireTick false
 gamerule doEntityDrops false
+gamerule doMobSpawning false
 forceload add 0 0 0 0
 
 scoreboard objectives add lc_var dummy
@@ -114,6 +116,26 @@ scoreboard players operation #farm_food_max lc_var = #farm_food_consume lc_var
 scoreboard players operation #farm_food_max lc_var *= #64 lc_var
 scoreboard players set #farm_qdrop_time lc_var 600
 #6000 default
+
+scoreboard objectives add gather_id dummy
+scoreboard objectives add gather_itemid dummy
+scoreboard objectives add gather_lasttime dummy
+
+#define score_holder #gather_stamina_interval
+#define score_holder #gather_max_stamina
+#define score_holder #gather_refresh_interval
+scoreboard objectives add player_gather_lasttime dummy
+scoreboard objectives add player_gather_stamina dummy
+scoreboard players set #gather_check_stamina lc_var 1
+#1 default
+scoreboard players set #gather_stamina_interval lc_var 2400
+#2400 default
+scoreboard players set #gather_max_stamina lc_var 72000
+#30*2400 default
+scoreboard players set #gather_refresh_interval lc_var 24000
+#24000 default
+
+scoreboard objectives add fishrod_use minecraft.used:fishing_rod
 
 ##start slow tick
 function lc:slow_tick

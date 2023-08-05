@@ -11,16 +11,18 @@ data modify block 0 2 0 Items[{Slot:0b}] set from storage lc:data items[0]
 
 ##setquality
 execute store result block 0 2 0 Items[{Slot:0b}].tag.quality int 1 run scoreboard players get #get_quality lc_var
-scoreboard players operation #addlore_quality lc_var = #get_quality lc_var
+execute store result score #calc_quality lc_var run scoreboard players operation #addlore_quality lc_var = #get_quality lc_var
+
+#define score_holder #calc_quality
 
 ##setprize
 execute store result score #calc_prize lc_var run data get block 0 2 0 Items[{Slot:0b}].tag.baseprize
 scoreboard players operation #addlore_base_prize lc_var = #calc_prize lc_var
-scoreboard players operation #get_quality lc_var -= #default_quality lc_var
-execute if score #get_quality lc_var matches 0.. run scoreboard players operation #get_quality lc_var *= #5 lc_var
-execute if score #get_quality lc_var matches ..-1 run scoreboard players operation #get_quality lc_var *= #10 lc_var
-scoreboard players add #get_quality lc_var 1000
-scoreboard players operation #calc_prize lc_var *= #get_quality lc_var
+scoreboard players operation #calc_quality lc_var -= #default_quality lc_var
+execute if score #calc_quality lc_var matches 0.. run scoreboard players operation #calc_quality lc_var *= #5 lc_var
+execute if score #calc_quality lc_var matches ..-1 run scoreboard players operation #calc_quality lc_var *= #10 lc_var
+scoreboard players add #calc_quality lc_var 1000
+scoreboard players operation #calc_prize lc_var *= #calc_quality lc_var
 execute store result block 0 2 0 Items[{Slot:0b}].tag.prize int 1 run scoreboard players operation #calc_prize lc_var /= #1000 lc_var
 scoreboard players operation #addlore_prize lc_var = #calc_prize lc_var
 

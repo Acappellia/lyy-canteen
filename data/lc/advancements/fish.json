@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "pickup_fish": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:cod"
+                        ],
+                        "nbt": "{fish_roll:1}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "lc:advancements/fish_pickup"
+    }
+}
