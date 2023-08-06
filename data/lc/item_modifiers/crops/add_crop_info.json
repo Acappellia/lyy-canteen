@@ -22,7 +22,7 @@
                 "italic": false
             },
             {
-                "nbt": "Items[{Slot:13b}].tag.growth",
+                "nbt": "Items[{Slot:0b}].tag.growth",
                 "block": "0 2 0",
                 "color": "white"
             },
@@ -34,7 +34,7 @@
             {
                 "score":{
                     "objective": "lc_var",
-                    "name": "#farm_grow_time"
+                    "name": "#crops_grow_time"
                 },
                 "color": "white",
                 "italic": false
@@ -47,9 +47,10 @@
                 "italic": false
             },
             {
-                "nbt":"Items[{Slot:13b}].tag.quality",
+                "nbt":"Items[{Slot:0b}].tag.quality",
                 "block": "0 2 0",
-                "color": "white"
+                "color": "white",
+                "italic": false
             },
             {
                 "text": " / ",

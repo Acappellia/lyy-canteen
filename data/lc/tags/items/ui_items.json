@@ -63,8 +63,9 @@
       "minecraft:cow_spawn_egg",
       "minecraft:chicken_spawn_egg",
       "minecraft:bee_spawn_egg",
-      "acacia_hanging_sign",
-      "fermented_spider_eye",
-      "fishing_rod"
+      "minecraft:acacia_hanging_sign",
+      "minecraft:fermented_spider_eye",
+      "minecraft:fishing_rod",
+      "minecraft:flower_pot"
     ]
   }

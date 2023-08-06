@@ -35,3 +35,7 @@ execute as @s[scores={menu_click=1..}] run function lc:farm/farm_harvest_3
 
 execute store result score @s menu_click run clear @s #lc:ui_items{menu_ui:1,farm_food_ui:1} 0
 execute as @s[scores={menu_click=1..}] run function lc:farm/farm_click_food
+
+##crops icon
+execute store result score @s menu_click run clear @s #lc:ui_items{menu_ui:1,crops_menu:1} 0
+execute as @s[scores={menu_click=1..}] run function lc:menu/menu_checkcrops

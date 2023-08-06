@@ -48,7 +48,8 @@
             },
             {
                 "nbt":"Items[{Slot:12b}].tag.quality",
-                "block": "0 2 0"
+                "block": "0 2 0",
+                "color": "white"
             },
             {
                 "text": " / ",
