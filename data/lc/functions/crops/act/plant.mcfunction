@@ -29,4 +29,5 @@ data modify storage lc:user crops[0].page[0].tag.have_crops set value 1
 data modify storage lc:user crops[0].page[0].id set from storage lc:var crops_plant.id
 data modify storage lc:user crops[0].page[0].tag.quality set from storage lc:var crops_plant.tag.quality
 data modify storage lc:user crops[0].page[0].tag.seed_result_id set from storage lc:var crops_plant.tag.seed_result_id
+data modify storage lc:user crops[0].page[0].tag.seed_grow_time set from storage lc:var crops_plant.tag.seed_grow_time
 data modify storage lc:user crops[0].page[0].tag.display set from storage lc:var crops_plant.tag.display
