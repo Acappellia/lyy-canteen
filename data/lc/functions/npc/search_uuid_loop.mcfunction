@@ -14,7 +14,7 @@ data remove storage lc:user npc[0]
 data modify storage lc:var UUID_check set from storage lc:user npc[0].UUID
 
 ##check if looped a full cucle
-execute store success score #search_uuid_check lc_var run data modify storage lc:var UUID_check set from storage lc:var UUID_init
+execute store success score #search_uuid_check lc_var run data modify storage lc:var UUID_check set from storage lc:var UUID_mark
 data modify storage lc:var UUID_check set from storage lc:user npc[0].UUID
 execute if score #search_uuid_check lc_var matches 0 run return -1
 
