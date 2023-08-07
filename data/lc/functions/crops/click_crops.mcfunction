@@ -7,7 +7,7 @@ execute unless score #search_uuid_out lc_var matches 0 run function lc:crops/pla
 ##search by slot
 scoreboard players operation #search_farmslot lc_var = @s menu_index
 execute store result score #search_farmslot_out lc_var run function lc:crops/search_slot_loop
-execute unless score #search_farmslot_out lc_var matches 0 run return 1
+execute unless score #search_farmslot_out lc_var matches 1 run return 1
 
 ##check plant
 execute if data storage lc:user crops[0].page[0].tag.unlocked unless data storage lc:user crops[0].page[0].tag.have_crops run function lc:crops/act/plant

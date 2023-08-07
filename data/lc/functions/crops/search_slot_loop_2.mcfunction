@@ -1,7 +1,7 @@
 ##called to find slot in crops farm
 
 ##check the current id
-execute if score #search_farmslot_tmp lc_var = #search_farmslot lc_var run return 0
+execute if score #search_farmslot_tmp lc_var = #search_farmslot lc_var run return 1
 
 ##init a marker to track full cycle
 execute unless score #search_farmslot_mark lc_var matches 1.. run scoreboard players operation #search_farmslot_mark lc_var = #search_farmslot_tmp lc_var
