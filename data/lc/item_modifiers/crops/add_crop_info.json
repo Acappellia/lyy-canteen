@@ -32,12 +32,9 @@
                 "italic": false
             },
             {
-                "score":{
-                    "objective": "lc_var",
-                    "name": "#crops_grow_time"
-                },
-                "color": "white",
-                "italic": false
+                "nbt": "Items[{Slot:0b}].tag.seed_grow_time",
+                "block": "0 2 0",
+                "color": "white"
             }
         ],
         [

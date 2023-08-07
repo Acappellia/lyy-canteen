@@ -140,8 +140,6 @@ scoreboard objectives add fishrod_use minecraft.used:fishing_rod
 
 #define score_holder #crops_grow_time
 #define score_holder #crops_interact_time
-scoreboard players set #crops_grow_time lc_var 2160
-#216000 default
 scoreboard players set #crops_interact_time lc_var 72
 #720 default
 
