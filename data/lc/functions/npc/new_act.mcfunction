@@ -21,7 +21,7 @@ execute store result score #npc_search_state lc_var run data get storage lc:user
 
 ##find state
 scoreboard players reset #npc_search_state_noitem lc_var
-execute if data entity @s SelectedItem.Count run function lc:npc/new_act_haveitem
-execute unless data entity @s SelectedItem.Count run function lc:npc/new_act_barehand
+execute if data entity @s SelectedItem.tag.lc_itemid run function lc:npc/new_act_haveitem
+execute unless data entity @s SelectedItem.tag.lc_itemid run function lc:npc/new_act_barehand
 
 function lc:npc/new_act_2

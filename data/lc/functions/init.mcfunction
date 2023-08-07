@@ -45,6 +45,8 @@
 #define score_holder #money_add_to_score money to add in selling
 #define score_holder #menu_sellcount item count to sell
 #define score_holder #money_add_to_level money to add to levels when updating display
+#define score_holder #npc_id
+#define score_holder #player_id
 
 gamerule keepInventory true
 gamerule doFireTick false
@@ -71,18 +73,20 @@ execute unless score #lc_itemid lc_var matches -2147483648..2147483647 run score
 execute unless score #shop_page lc_var matches -2147483648..2147483647 run scoreboard players set #shop_page lc_var 0
 execute unless score #recipe_id lc_var matches -2147483648..2147483647 run scoreboard players set #recipe_id lc_var 0
 execute unless score #npc_id lc_var matches -2147483648..2147483647 run scoreboard players set #npc_id lc_var 0
+execute unless score #player_id lc_var matches -2147483648..2147483647 run scoreboard players set #player_id lc_var 0
 execute unless data storage lc:data items run data modify storage lc:data items set value []
 
 scoreboard objectives add money dummy {"text": "LYY 金币","color": "green"}
 scoreboard objectives add gallery_unlock dummy {"text": "全图鉴解锁数","color": "yellow"}
 scoreboard objectives add gallery_unlock_main dummy {"text": "主图鉴解锁数","color": "yellow"}
+scoreboard objectives add player_id dummy
 
 scoreboard objectives add menu_page dummy
 scoreboard objectives add menu_index dummy
 scoreboard objectives add menu_click dummy
 scoreboard objectives add cookskill dummy
 ## cook skill range: 200~300
-scoreboard objectives add totalcookcount dummy
+scoreboard objectives add totalcookcount dummy {"text": "烹饪熟练度","color": "gold"}
 
 scoreboard objectives add pot_type dummy
 scoreboard objectives add time_interaction dummy
@@ -151,3 +155,6 @@ scoreboard objectives add player_npc_next dummy
 
 ##start slow tick
 function lc:slow_tick
+
+##start very slow tick
+function lc:veryslow_tick
