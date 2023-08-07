@@ -1,16 +1,16 @@
 {
     "criteria": {
-        "interact_gather":{
+        "interact_npc":{
             "trigger": "minecraft:player_interacted_with_entity",
             "conditions": {
                 "entity": {
                     "type": "interaction",
-                    "nbt": "{Tags:[\"npc\",\"can_interact\"],}"
+                    "nbt": "{Tags:[\"npc\"]}"
                 }
             }
         }
     },
     "rewards": {
-        "function": "lc:advancements/interact_gather"
+        "function": "lc:advancements/interact_npc"
     }
 }

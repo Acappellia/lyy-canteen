@@ -10,5 +10,6 @@
 #   -1: not found
 
 ##init a mark, check the current id. if it has a value, enter loop
-execute store result score #search_storageid_mark lc_var store result score #search_storageid_check lc_var run data get storage lc:data npc[0].acts[0].require_state
-execute if score #search_storageid_check lc_var matches 1.. run function lc:npc/search_storage_state_loop
+execute store result score #search_storageid_check lc_var run data get storage lc:data npc[0].acts[0].require_state
+execute store result score #search_storageid_mark lc_var run data get storage lc:data npc[0].acts[0].act_id
+execute if score #search_storageid_check lc_var matches 1.. if score #search_storageid_mark lc_var matches 1.. run function lc:npc/search_storage_state_loop

@@ -2,6 +2,7 @@
 
 #define score_holder #npc_search_state_noitem
 #define score_holder #npc_search_state
+#define score_holder #player_barehand
 
 ##search for npc id in storage
 execute store result score #npc_search_result lc_var run function lc:npc/search_storage_npcid
@@ -21,7 +22,7 @@ execute store result score #npc_search_state lc_var run data get storage lc:user
 
 ##find state
 scoreboard players reset #npc_search_state_noitem lc_var
-execute if data entity @s SelectedItem.tag.lc_itemid run function lc:npc/new_act_haveitem
-execute unless data entity @s SelectedItem.tag.lc_itemid run function lc:npc/new_act_barehand
-
-function lc:npc/new_act_2
+scoreboard players set #player_barehand lc_var 1
+execute if data entity @s SelectedItem.tag.lc_itemid run scoreboard players set #player_barehand lc_var -1
+execute if score #player_barehand lc_var matches 1 run function lc:npc/new_act_barehand
+execute if score #player_barehand lc_var matches -1 run function lc:npc/new_act_haveitem
