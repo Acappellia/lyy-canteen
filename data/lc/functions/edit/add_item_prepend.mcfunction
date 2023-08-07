@@ -14,7 +14,6 @@ execute unless score #lc_setprize lc_var matches 1.. unless data storage lc:data
 execute store result storage lc:data items[0].tag.prize int 1 run data get storage lc:data items[0].tag.baseprize
 execute store result storage lc:data items[0].tag.quality int 1 run scoreboard players get #default_quality lc_var
 data modify storage lc:data items[0].Count set value 1b
-scoreboard players reset #lc_setprize lc_var
 
 ##update handitems
 item replace entity @p weapon.mainhand with air

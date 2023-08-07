@@ -11,5 +11,5 @@ execute as @e[distance=..5,type=interaction,tag=pot] if score @s time_interactio
 
 ##determine if the pot exists
 execute as @e[distance=..5,type=interaction,tag=attack,tag=pot,limit=1] if score @s pot_type matches 3 at @s run function lc:cook/qte/start_qte
-execute unless entity @e[distance=..5,type=interaction,tag=pot,tag=attack] run tellraw @s {"text":"离得太远啦，靠近一点再操作啦！","color": "red"}
+execute unless entity @e[distance=..5,type=interaction,tag=pot,tag=attack] run tellraw @s {"text":"离得太远啦，靠近一点再操作啦！","color": "#FF9060"}
 tag @e[type=interaction,tag=pot] remove attack

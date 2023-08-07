@@ -11,5 +11,5 @@ execute as @e[distance=..5,type=interaction,tag=npc] if score @s time_interactio
 
 ##determine if the point exists
 execute at @e[distance=..5,type=interaction,tag=npc_interact,tag=npc,limit=1] run function lc:npc/player_interact
-execute unless entity @e[distance=..5,type=interaction,tag=npc,tag=npc_interact] run tellraw @s {"text":"离得太远啦，靠近一点再操作啦！","color": "red"}
+execute unless entity @e[distance=..5,type=interaction,tag=npc,tag=npc_interact] run tellraw @s {"text":"离得太远啦，靠近一点再操作啦！","color": "#FF9060"}
 tag @e[type=interaction,tag=npc] remove npc_interact

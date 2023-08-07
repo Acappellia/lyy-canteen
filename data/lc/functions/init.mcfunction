@@ -76,9 +76,9 @@ execute unless score #npc_id lc_var matches -2147483648..2147483647 run scoreboa
 execute unless score #player_id lc_var matches -2147483648..2147483647 run scoreboard players set #player_id lc_var 0
 execute unless data storage lc:data items run data modify storage lc:data items set value []
 
-scoreboard objectives add money dummy {"text": "LYY 金币","color": "green"}
-scoreboard objectives add gallery_unlock dummy {"text": "全图鉴解锁数","color": "yellow"}
-scoreboard objectives add gallery_unlock_main dummy {"text": "主图鉴解锁数","color": "yellow"}
+scoreboard objectives add money dummy {"text": "LYY 金币","color": "#EEFF88"}
+scoreboard objectives add gallery_unlock dummy {"text": "全图鉴解锁数","color": "#EEFF88"}
+scoreboard objectives add gallery_unlock_main dummy {"text": "主图鉴解锁数","color": "#EEFF88"}
 scoreboard objectives add player_id dummy
 
 scoreboard objectives add menu_page dummy
@@ -86,7 +86,7 @@ scoreboard objectives add menu_index dummy
 scoreboard objectives add menu_click dummy
 scoreboard objectives add cookskill dummy
 ## cook skill range: 200~300
-scoreboard objectives add totalcookcount dummy {"text": "烹饪熟练度","color": "gold"}
+scoreboard objectives add totalcookcount dummy {"text": "烹饪熟练度","color": "#EEFF88"}
 
 scoreboard objectives add pot_type dummy
 scoreboard objectives add time_interaction dummy

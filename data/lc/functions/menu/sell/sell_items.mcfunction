@@ -168,7 +168,7 @@ scoreboard players operation #money_add_to_score lc_var *= #menu_sellcount lc_va
 execute if score #money_add_to_score lc_var matches 1.. run scoreboard players operation @s money += #money_add_to_score lc_var
 
 ##display
-tellraw @s {"text": "已经出售了所有的物品","color": "yellow"}
+tellraw @s {"text": "已经出售了所有的物品","color": "#EEFF88"}
 
 ##update money display
 function lc:money/update_display

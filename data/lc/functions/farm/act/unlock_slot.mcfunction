@@ -4,7 +4,7 @@
 
 ##check money
 execute store result score #farm_unlock_prize lc_var run data get storage lc:var farm_var.tag.unlock_cost
-execute unless score @s money >= #farm_unlock_prize lc_var run tellraw @s {"text": "没有足够的 LYY 金币","color": "dark_red"}
+execute unless score @s money >= #farm_unlock_prize lc_var run tellraw @s {"text": "没有足够的 LYY 金币","color": "#DD2000"}
 execute unless score @s money >= #farm_unlock_prize lc_var run return 1
 
 ##pay
