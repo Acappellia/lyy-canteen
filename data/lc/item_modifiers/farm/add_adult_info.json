@@ -10,6 +10,11 @@
         ],
         [
             {
+                "text": "-< ",
+                "color": "white",
+                "italic": false
+            },
+            {
                 "text": "☀ ",
                 "color": "#FFD62A",
                 "italic": false
@@ -23,12 +28,17 @@
                 "text": " ☀",
                 "color": "#FFD62A",
                 "italic": false
+            },
+            {
+                "text": " >-",
+                "color": "white",
+                "italic": false
             }
         ],
         [
             {
-                "text": "点击可进行收获",
-                "color": "#EEEEEE",
+                "text": "   点击可进行收获",
+                "color": "#CCCCCC",
                 "italic": false
             }
         ]

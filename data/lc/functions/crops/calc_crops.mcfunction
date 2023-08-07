@@ -7,7 +7,7 @@ execute store result score #farm_crops_growth lc_var run data get storage lc:var
 execute store result score #crops_grow_time lc_var run data get storage lc:var crops.tag.seed_grow_time
 execute if data storage lc:var crops.tag.have_crops store result storage lc:var crops.tag.growth int 1 run scoreboard players operation #farm_crops_growth lc_var += #farm_time lc_var
 execute if score #farm_crops_growth lc_var >= #crops_grow_time lc_var store result storage lc:var crops.tag.growth int 1 run scoreboard players get #crops_grow_time lc_var
-execute if score #farm_crops_growth lc_var >= #crops_grow_time lc_var run data modify storage lc:var crops.tag.is_grown set value 1
+execute if data storage lc:var crops.tag.have_crops if score #farm_crops_growth lc_var >= #crops_grow_time lc_var run data modify storage lc:var crops.tag.is_grown set value 1
 
 ##calc interaction
 scoreboard players set $min random 1
@@ -26,4 +26,4 @@ data modify block 0 2 0 Items[{Slot:0b}].tag set from storage lc:var crops.tag
 ##add lore
 execute if data storage lc:var crops.tag.have_crops run item modify block 0 2 0 container.0 lc:crops/add_crop_info
 execute if data storage lc:var crops.tag.is_grown run item modify block 0 2 0 container.0 lc:crops/add_grow_info
-execute if data storage lc:var crops.tag.can_interact run item modify block 0 2 0 container.0 lc:crops/add_interact_info
+execute unless data storage lc:var crops.tag.is_grown if data storage lc:var crops.tag.can_interact run item modify block 0 2 0 container.0 lc:crops/add_interact_info

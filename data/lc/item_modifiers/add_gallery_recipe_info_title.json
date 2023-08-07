@@ -10,18 +10,28 @@
         ],
         [
             {
+                "text": "-< ",
+                "color": "#0DAFFF",
+                "italic": false
+            },
+            {
                 "text": "⏳ ",
                 "color": "aqua",
                 "italic": false
             },
             {
                 "text": "烹制方式",
-                "color": "white",
+                "color": "#0DAFFF",
                 "italic": false
             },
             {
                 "text": " ⏳",
                 "color": "aqua",
+                "italic": false
+            },
+            {
+                "text": " >-",
+                "color": "#0DAFFF",
                 "italic": false
             }
         ]

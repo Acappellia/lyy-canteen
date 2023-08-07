@@ -18,7 +18,7 @@
         [
             {
                 "text": "  成长: ",
-                "color": "#EEEEEE",
+                "color": "#CCCCCC",
                 "italic": false
             },
             {
@@ -28,7 +28,7 @@
             },
             {
                 "text": " / ",
-                "color": "#EEEEEE",
+                "color": "#CCCCCC",
                 "italic": false
             },
             {
@@ -43,7 +43,7 @@
         [
             {
                 "text": "  品质: ",
-                "color": "#EEEEEE",
+                "color": "#CCCCCC",
                 "italic": false
             },
             {
@@ -54,7 +54,7 @@
             },
             {
                 "text": " / ",
-                "color": "#EEEEEE",
+                "color": "#CCCCCC",
                 "italic": false
             },
             {

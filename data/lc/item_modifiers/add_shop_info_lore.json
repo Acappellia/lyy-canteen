@@ -10,18 +10,28 @@
         ],
         [
             {
+                "text": "-< ",
+                "color": "#FF8875",
+                "italic": false
+            },
+            {
                 "text": "🔔 ",
                 "color": "#FFD62A",
                 "italic": false
             },
             {
-                "text": "品质与价格",
-                "color": "white",
+                "text": "购买信息",
+                "color": "#FF8875",
                 "italic": false
             },
             {
                 "text": " 🔔",
                 "color": "#FFD62A",
+                "italic": false
+            },
+            {
+                "text": " >-",
+                "color": "#FF8875",
                 "italic": false
             }
         ]

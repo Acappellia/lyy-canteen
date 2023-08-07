@@ -5,8 +5,8 @@
     "lore": [
         [
             {
-                "text": "  价格: ",
-                "color": "#EEEEEE",
+                "text": "   价格: ",
+                "color": "#CCCCCC",
                 "italic": false
             },
             {

@@ -1,0 +1,19 @@
+data remove storage lc:data npc
+data modify storage lc:data npc prepend value {npc_id:1}
+data modify storage lc:data npc[0].acts prepend value {act_id:1,require_state:0,end_state:0}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:0,text:'[{"text":"请给我id为5的物品","color":"red"}]',next:1}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1,text:'[{"text":"请给我id为5的物品!","color":"red"}]',next:2}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2,text:'[{"text":"请给我id为5的物品!!!!!","color":"red"}]',next:0}
+data modify storage lc:data npc[0].acts prepend value {act_id:2,require_state:0,require_item:1,end_state:1,reward_item:[{lc_itemid:11,quality:88},{lc_itemid:11,quality:90}],edit_state:[{npc_id:2,state:1}]}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:0,text:'[{"text":"谢谢你，你人真好","color":"green"}]',next:1}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1,text:'[{"text":"送你两个id11的物品当作回报","color":"green"}]',next:0}
+data modify storage lc:data npc[0].acts prepend value {act_id:3,require_state:1,end_state:1}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:0,text:'[{"text":"我已经不需要啦","color":"green"}]',next:0}
+data modify storage lc:data npc prepend value {npc_id:2}
+data modify storage lc:data npc[0].acts prepend value {act_id:1,require_state:0,end_state:0}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:0,text:'[{"text":"请给他id为5的物品","color":"red"}]',next:1}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1,text:'[{"text":"求求你了","color":"red"}]',next:0}
+data modify storage lc:data npc[0].acts prepend value {act_id:2,require_state:1,end_state:1}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:0,text:'[{"text":"太好了！","color":"red"}]',next:1}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1,text:'[{"text":"太好了！！！","color":"red"}]',next:2}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2,text:'[{"text":"太好了！！！！！","color":"red"}]',next:0}

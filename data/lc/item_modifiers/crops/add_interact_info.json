@@ -10,6 +10,11 @@
         ],
         [
             {
+                "text": "-< ",
+                "color": "white",
+                "italic": false
+            },
+            {
                 "text": "✂ ",
                 "color": "#0DAFFF",
                 "italic": false
@@ -23,12 +28,17 @@
                 "text": " ✂",
                 "color": "#0DAFFF",
                 "italic": false
+            },
+            {
+                "text": " >-",
+                "color": "white",
+                "italic": false
             }
         ],
         [
             {
-                "text": "点击进行护理，增加作物品质",
-                "color": "#EEEEEE",
+                "text": "   点击进行护理，增加作物品质",
+                "color": "#CCCCCC",
                 "italic": false
             }
         ]

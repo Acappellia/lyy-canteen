@@ -4,7 +4,7 @@
 #define score_holder #gather_no_stamina
 
 ##check avalibility
-execute as @e[tag=gathering,sort=nearest,limit=1] if entity @s[tag=!can_gather] as @p[distance=..5] run tellraw @s [{"text": "这里还没有可采集的东西……","color": "#EEEEEE"}]
+execute as @e[tag=gathering,sort=nearest,limit=1] if entity @s[tag=!can_gather] as @p[distance=..5] run tellraw @s [{"text": "这里还没有可采集的东西……","color": "#CCCCCC"}]
 execute as @e[tag=gathering,sort=nearest,limit=1] if entity @s[tag=!can_gather] run return 1
 
 ##check stamina

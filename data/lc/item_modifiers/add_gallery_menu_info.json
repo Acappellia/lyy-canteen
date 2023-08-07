@@ -10,30 +10,35 @@
         ],
         [
             {
+                "text": "-< ",
+                "color": "#FFD62A",
+                "italic": false
+            },
+            {
                 "text": "🍖 ",
                 "color": "gold",
                 "italic": false
             },
             {
                 "text": "烹制统计",
-                "color": "white",
+                "color": "#FFD62A",
                 "italic": false
             },
             {
                 "text": " 🍖",
                 "color": "gold",
                 "italic": false
+            },
+            {
+                "text": " >-",
+                "color": "#FFD62A",
+                "italic": false
             }
         ],
         [
             {
-                "text": ""
-            }
-        ],
-        [
-            {
-                "text": "  烹制次数: ",
-                "color": "#EEEEEE",
+                "text": "   烹制次数: ",
+                "color": "#CCCCCC",
                 "italic": false
             },
             {
@@ -44,8 +49,8 @@
         ],
         [
             {
-                "text": "  最高品质分: ",
-                "color": "#EEEEEE",
+                "text": "   最高品质分: ",
+                "color": "#CCCCCC",
                 "italic": false
             },
             {

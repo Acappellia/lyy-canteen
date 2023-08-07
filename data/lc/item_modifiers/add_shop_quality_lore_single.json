@@ -5,8 +5,8 @@
     "lore": [
         [
             {
-                "text": "  品质: ",
-                "color": "#EEEEEE",
+                "text": "   品质: ",
+                "color": "#CCCCCC",
                 "italic": false
             },
             {

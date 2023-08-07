@@ -5,13 +5,18 @@
     "lore": [
         [
             {
+                "text": "   ",
+                "color": "#CCCCCC",
+                "italic": false
+            },
+            {
                 "nbt": "Inventory[{Slot:9b}].tag.display.Name",
                 "interpret": true,
                 "entity": "@s"
             },
             {
                 "text": " 1 份，等待约 ",
-                "color": "#EEEEEE",
+                "color": "#CCCCCC",
                 "italic": false
             },
             {

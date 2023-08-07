@@ -5,8 +5,8 @@
     "lore": [
         [
             {
-                "text": "在",
-                "color": "#EEEEEE",
+                "text": "  在",
+                "color": "#CCCCCC",
                 "italic": false
             },
             {
@@ -16,7 +16,7 @@
             },
             {
                 "text": "上放入：",
-                "color": "#EEEEEE",
+                "color": "#CCCCCC",
                 "italic": false
             }
         ]

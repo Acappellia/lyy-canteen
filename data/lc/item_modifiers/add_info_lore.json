@@ -10,7 +10,7 @@
         ],
         [
             {
-                "text": "--=< ",
+                "text": "|| ",
                 "color": "white",
                 "italic": false
             },
@@ -21,7 +21,7 @@
             },
             {
                 "text": "品质: ",
-                "color": "#EEEEEE",
+                "color": "#CCCCCC",
                 "italic": false
             },
             {
@@ -49,7 +49,7 @@
             },
             {
                 "text": "售价: ",
-                "color": "#EEEEEE",
+                "color": "#CCCCCC",
                 "italic": false
             },
             {
@@ -66,7 +66,7 @@
                 "italic": false
             },
             {
-                "text": " >=--",
+                "text": " ||",
                 "color": "white",
                 "italic": false
             }
