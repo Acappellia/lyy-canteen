@@ -10,16 +10,25 @@
         ],
         [
             {
-                "text": "已成熟！",
-                "color": "gold",
-                "italic": true,
-                "bold": true
+                "text": "☀ ",
+                "color": "#FFD62A",
+                "italic": false
+            },
+            {
+                "text": "已成熟",
+                "color": "white",
+                "italic": false
+            },
+            {
+                "text": " ☀",
+                "color": "#FFD62A",
+                "italic": false
             }
         ],
         [
             {
                 "text": "点击可进行收获",
-                "color": "white",
+                "color": "#EEEEEE",
                 "italic": false
             }
         ]

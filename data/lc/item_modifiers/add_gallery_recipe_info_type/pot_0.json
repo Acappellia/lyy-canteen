@@ -5,13 +5,18 @@
     "lore": [
         [
             {
-                "text": ""
-            }
-        ],
-        [
+                "text": "在",
+                "color": "#EEEEEE",
+                "italic": false
+            },
             {
-                "text": "使用深口锅煮制",
-                "color": "green",
+                "text": " 深口锅 ",
+                "color": "#0DAFFF",
+                "italic": false
+            },
+            {
+                "text": "中放入：",
+                "color": "#EEEEEE",
                 "italic": false
             }
         ]

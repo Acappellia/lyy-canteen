@@ -10,16 +10,25 @@
         ],
         [
             {
-                "text": "互动机会！",
-                "color": "aqua",
-                "italic": true,
-                "bold": true
+                "text": "☺ ",
+                "color": "#A0FF50",
+                "italic": false
+            },
+            {
+                "text": "互动机会",
+                "color": "white",
+                "italic": false
+            },
+            {
+                "text": " ☺",
+                "color": "#A0FF50",
+                "italic": false
             }
         ],
         [
             {
                 "text": "点击进行互动，增加动物品质",
-                "color": "white",
+                "color": "#EEEEEE",
                 "italic": false
             }
         ]

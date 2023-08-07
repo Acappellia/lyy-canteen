@@ -10,60 +10,60 @@
         ],
         [
             {
-                "text": "----------------",
-                "color": "white",
+                "text": "=-=-=-=-=-=-=-=-=",
+                "color": "#E5FFFF",
                 "italic": false
             }
         ],
         [
             {
-                "text": "成长值: ",
-                "color": "green",
+                "text": "  成长: ",
+                "color": "#EEEEEE",
                 "italic": false
             },
             {
                 "nbt": "Items[{Slot:0b}].tag.growth",
                 "block": "0 2 0",
-                "color": "white"
+                "color": "#EEFF88"
             },
             {
                 "text": " / ",
-                "color": "green",
+                "color": "#EEEEEE",
                 "italic": false
             },
             {
                 "nbt": "Items[{Slot:0b}].tag.seed_grow_time",
                 "block": "0 2 0",
-                "color": "white"
+                "color": "#EEFF88"
             }
         ],
         [
             {
-                "text": "品质: ",
-                "color": "gold",
+                "text": "  品质: ",
+                "color": "#EEEEEE",
                 "italic": false
             },
             {
                 "nbt":"Items[{Slot:0b}].tag.quality",
                 "block": "0 2 0",
-                "color": "white",
+                "color": "#A0FF50",
                 "italic": false
             },
             {
                 "text": " / ",
-                "color": "yellow",
+                "color": "#EEEEEE",
                 "italic": false
             },
             {
                 "text": "100",
-                "color": "white",
+                "color": "#A0FF50",
                 "italic": false
             }
         ],
         [
             {
-                "text": "----------------",
-                "color": "white",
+                "text": "=-=-=-=-=-=-=-=-=",
+                "color": "#E5FFFF",
                 "italic": false
             }
         ]

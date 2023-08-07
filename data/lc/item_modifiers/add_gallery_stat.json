@@ -11,7 +11,7 @@
         [
             {
                 "text": "烹饪熟练度: ",
-                "color": "gold",
+                "color": "white",
                 "italic": false
             },
             {
@@ -20,7 +20,7 @@
                     "objective": "totalcookcount"
                 },
                 "italic": false,
-                "color": "yellow"
+                "color": "#EEFF88"
             }
         ],
         [
@@ -30,8 +30,8 @@
         ],
         [
             {
-                "text": "已解锁主图鉴数: ",
-                "color": "gold",
+                "text": "主图鉴解锁: ",
+                "color": "white",
                 "italic": false
             },
             {
@@ -40,7 +40,7 @@
                     "objective": "gallery_unlock_main"
                 },
                 "italic": false,
-                "color": "yellow"
+                "color": "#EEFF88"
             },
             {
                 "text": " / ",
@@ -53,13 +53,13 @@
                     "objective": "lc_var"
                 },
                 "italic": false,
-                "color": "yellow"
+                "color": "#EEFF88"
             }
         ],
         [
             {
-                "text": "主图鉴收集率: ",
-                "color": "gold",
+                "text": "    收集率: ",
+                "color": "white",
                 "italic": false
             },
             {
@@ -68,7 +68,7 @@
                     "objective": "lc_var"
                 },
                 "italic": false,
-                "color": "yellow"
+                "color": "#A0FF50"
             },
             {
                 "text": " %",
@@ -83,8 +83,8 @@
         ],
         [
             {
-                "text": "已解锁总图鉴数: ",
-                "color": "gold",
+                "text": "总图鉴解锁: ",
+                "color": "white",
                 "italic": false
             },
             {
@@ -93,7 +93,7 @@
                     "objective": "gallery_unlock"
                 },
                 "italic": false,
-                "color": "yellow"
+                "color": "#EEFF88"
             },
             {
                 "text": " / ",
@@ -106,13 +106,13 @@
                     "objective": "lc_var"
                 },
                 "italic": false,
-                "color": "yellow"
+                "color": "#EEFF88"
             }
         ],
         [
             {
-                "text": "总图鉴收集率: ",
-                "color": "gold",
+                "text": "    收集率: ",
+                "color": "white",
                 "italic": false
             },
             {
@@ -121,7 +121,7 @@
                     "objective": "lc_var"
                 },
                 "italic": false,
-                "color": "yellow"
+                "color": "#A0FF50"
             },
             {
                 "text": " %",

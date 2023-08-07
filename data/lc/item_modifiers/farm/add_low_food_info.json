@@ -11,8 +11,8 @@
         [
             {
                 "text": "即将耗尽！",
-                "color": "gold",
-                "italic": true
+                "color": "#FF9060",
+                "italic": false
             }
         ]
     ]

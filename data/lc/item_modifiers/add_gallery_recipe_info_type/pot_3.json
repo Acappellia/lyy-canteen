@@ -5,13 +5,18 @@
     "lore": [
         [
             {
-                "text": ""
-            }
-        ],
-        [
+                "text": "在",
+                "color": "#EEEEEE",
+                "italic": false
+            },
             {
-                "text": "使用料理台处理",
-                "color": "green",
+                "text": " 料理台 ",
+                "color": "#C289FF",
+                "italic": false
+            },
+            {
+                "text": "上料理：",
+                "color": "#EEEEEE",
                 "italic": false
             }
         ]

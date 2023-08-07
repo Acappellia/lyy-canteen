@@ -10,15 +10,13 @@
         ],
         [
             {
-                "text": "↓ 低速成长中",
-                "color": "gold",
+                "text": "☹↓ ",
+                "color": "#DD2000",
                 "italic": false
-            }
-        ],
-        [
+            },
             {
-                "text": "↓ 品质下降中",
-                "color": "red",
+                "text": "品质下降中",
+                "color": "white",
                 "italic": false
             }
         ]

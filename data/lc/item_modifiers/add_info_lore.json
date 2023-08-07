@@ -10,35 +10,18 @@
         ],
         [
             {
-                "text": "----- 品质及价格 -----",
+                "text": "--=< ",
                 "color": "white",
-                "italic": false
-            }
-        ],
-        [
-            {
-                "text": ""
-            }
-        ],
-        [
-            {
-                "text": "基础价格: ",
-                "color": "blue",
                 "italic": false
             },
             {
-                "score": {
-                    "name": "#addlore_base_prize",
-                    "objective": "lc_var"
-                },
-                "italic": false,
-                "color": "aqua"
-            }
-        ],
-        [
+                "text": "⭐ ",
+                "color": "#FF77A5",
+                "italic": false
+            },
             {
-                "text": "品质分: ",
-                "color": "dark_green",
+                "text": "品质: ",
+                "color": "#EEEEEE",
                 "italic": false
             },
             {
@@ -47,13 +30,26 @@
                     "objective": "lc_var"
                 },
                 "italic": false,
-                "color": "green"
-            }
-        ],
-        [
+                "color": "#A0FF50"
+            },
             {
-                "text": "出售价格: ",
-                "color": "gold",
+                "text": " ⭐",
+                "color": "#FF77A5",
+                "italic": false
+            },
+            {
+                "text": " | ",
+                "color": "white",
+                "italic": false
+            },
+            {
+                "text": "☀ ",
+                "color": "#FFD62A",
+                "italic": false
+            },
+            {
+                "text": "售价: ",
+                "color": "#EEEEEE",
                 "italic": false
             },
             {
@@ -62,7 +58,17 @@
                     "objective": "lc_var"
                 },
                 "italic": false,
-                "color": "yellow"
+                "color": "#EEFF88"
+            },
+            {
+                "text": " ☀",
+                "color": "#FFD62A",
+                "italic": false
+            },
+            {
+                "text": " >=--",
+                "color": "white",
+                "italic": false
             }
         ]
     ]

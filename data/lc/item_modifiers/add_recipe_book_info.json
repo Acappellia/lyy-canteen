@@ -11,7 +11,7 @@
         [
             {
                 "text": "获得后自动解锁以下菜谱：",
-                "color": "gold",
+                "color": "#EEFF88",
                 "italic": false
             }
         ],

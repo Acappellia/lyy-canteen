@@ -5,8 +5,8 @@
     "lore": [
         [
             {
-                "text": "购买价格: ",
-                "color": "gold",
+                "text": "  价格: ",
+                "color": "#EEEEEE",
                 "italic": false
             },
             {
@@ -15,7 +15,7 @@
                     "objective": "lc_var"
                 },
                 "italic": false,
-                "color": "yellow"
+                "color": "#EEFF88"
             }
         ]
     ]

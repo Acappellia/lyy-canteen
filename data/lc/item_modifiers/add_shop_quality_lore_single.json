@@ -5,8 +5,8 @@
     "lore": [
         [
             {
-                "text": "品质: ",
-                "color": "dark_green",
+                "text": "  品质: ",
+                "color": "#EEEEEE",
                 "italic": false
             },
             {
@@ -15,7 +15,7 @@
                     "objective": "lc_var"
                 },
                 "italic": false,
-                "color": "green"
+                "color": "#A0FF50"
             }
         ]
     ]

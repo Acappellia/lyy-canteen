@@ -11,8 +11,8 @@
         [
             {
                 "text": "已耗尽！",
-                "color": "red",
-                "italic": true
+                "color": "#DD2000",
+                "italic": false
             }
         ]
     ]

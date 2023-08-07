@@ -10,8 +10,8 @@
                 "entity": "@s"
             },
             {
-                "text": " 1 份: 烹制 ",
-                "color": "white",
+                "text": " 1 份，等待约 ",
+                "color": "#EEEEEE",
                 "italic": false
             },
             {
@@ -24,7 +24,7 @@
             },
             {
                 "text": " 秒",
-                "color": "white",
+                "color": "#E5FFFF",
                 "italic": false
             }
         ]

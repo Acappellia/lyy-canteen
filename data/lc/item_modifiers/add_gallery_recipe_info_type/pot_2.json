@@ -5,13 +5,18 @@
     "lore": [
         [
             {
-                "text": ""
-            }
-        ],
-        [
+                "text": "在",
+                "color": "#EEEEEE",
+                "italic": false
+            },
             {
-                "text": "使用烤架烤制",
-                "color": "green",
+                "text": " 烤架 ",
+                "color": "#FF8875",
+                "italic": false
+            },
+            {
+                "text": "上放入：",
+                "color": "#EEEEEE",
                 "italic": false
             }
         ]

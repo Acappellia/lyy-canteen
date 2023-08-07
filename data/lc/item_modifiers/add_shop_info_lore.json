@@ -10,14 +10,19 @@
         ],
         [
             {
-                "text": "----- 购买信息 -----",
-                "color": "yellow",
+                "text": "🔔 ",
+                "color": "#FFD62A",
                 "italic": false
-            }
-        ],
-        [
+            },
             {
-                "text": ""
+                "text": "品质与价格",
+                "color": "white",
+                "italic": false
+            },
+            {
+                "text": " 🔔",
+                "color": "#FFD62A",
+                "italic": false
             }
         ]
     ]

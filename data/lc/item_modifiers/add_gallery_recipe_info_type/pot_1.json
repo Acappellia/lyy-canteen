@@ -5,13 +5,18 @@
     "lore": [
         [
             {
-                "text": ""
-            }
-        ],
-        [
+                "text": "在",
+                "color": "#EEEEEE",
+                "italic": false
+            },
             {
-                "text": "使用浅口锅煎制",
-                "color": "green",
+                "text": " 浅口锅 ",
+                "color": "#26FFE2",
+                "italic": false
+            },
+            {
+                "text": "中放入：",
+                "color": "#EEEEEE",
                 "italic": false
             }
         ]

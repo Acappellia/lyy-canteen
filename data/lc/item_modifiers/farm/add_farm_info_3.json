@@ -10,25 +10,25 @@
         ],
         [
             {
-                "text": "----------------",
-                "color": "white",
+                "text": "=-=-=-=-=-=-=-=-=",
+                "color": "#FFD62A",
                 "italic": false
             }
         ],
         [
             {
-                "text": "成长值: ",
-                "color": "green",
+                "text": "  成长: ",
+                "color": "#EEEEEE",
                 "italic": false
             },
             {
                 "nbt": "Items[{Slot:13b}].tag.growth",
                 "block": "0 2 0",
-                "color": "white"
+                "color": "#EEFF88"
             },
             {
                 "text": " / ",
-                "color": "green",
+                "color": "#EEEEEE",
                 "italic": false
             },
             {
@@ -36,36 +36,37 @@
                     "objective": "lc_var",
                     "name": "#farm_grow_time"
                 },
-                "color": "white",
+                "color": "#EEFF88",
                 "italic": false
             }
         ],
         [
             {
-                "text": "品质: ",
-                "color": "gold",
+                "text": "  品质: ",
+                "color": "#EEEEEE",
                 "italic": false
             },
             {
                 "nbt":"Items[{Slot:13b}].tag.quality",
                 "block": "0 2 0",
-                "color": "white"
+                "color": "#A0FF50",
+                "italic": false
             },
             {
                 "text": " / ",
-                "color": "yellow",
+                "color": "#EEEEEE",
                 "italic": false
             },
             {
                 "text": "100",
-                "color": "white",
+                "color": "#A0FF50",
                 "italic": false
             }
         ],
         [
             {
-                "text": "----------------",
-                "color": "white",
+                "text": "=-=-=-=-=-=-=-=-=",
+                "color": "#FFD62A",
                 "italic": false
             }
         ]

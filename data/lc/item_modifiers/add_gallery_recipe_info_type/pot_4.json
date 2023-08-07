@@ -5,13 +5,18 @@
     "lore": [
         [
             {
-                "text": ""
-            }
-        ],
-        [
+                "text": "在",
+                "color": "#EEEEEE",
+                "italic": false
+            },
             {
-                "text": "使用风干台处理",
-                "color": "green",
+                "text": " 干燥台 ",
+                "color": "#EEFF88",
+                "italic": false
+            },
+            {
+                "text": "上放入：",
+                "color": "#EEEEEE",
                 "italic": false
             }
         ]
