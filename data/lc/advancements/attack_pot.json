@@ -6,6 +6,15 @@
                 "entity": {
                     "type": "interaction",
                     "nbt": "{Tags:[\"pot\"]}"
+                },
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "iron_sword"
+                            ]
+                        }
+                    }
                 }
             }
         }
