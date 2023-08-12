@@ -59,6 +59,26 @@
             {
               "condition": "minecraft:location_check",
               "predicate": {
+                "biome": "plains"
+              }
+            }
+          ],
+          "name": "minecraft:cod",
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{fish_roll:1,water_type:1}"
+            }
+          ],
+          "weight": 0,
+          "quality": 85
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
                 "biome": "lukewarm_ocean"
               }
             }
