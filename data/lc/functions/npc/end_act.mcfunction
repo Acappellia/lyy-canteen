@@ -2,6 +2,12 @@
 
 #define score_holder #editstate_npc_id
 
+##ending words
+tellraw @s [{"text":"                                        -------- < ","color":"#CCCCCC"},{"text":"对话完","color":"#E5FFFF"},{"text":" >","color":"#CCCCCC"}]
+
+##add cooldown
+scoreboard players set @s npc_interact_cd -60
+
 ##find uuid
 function lc:npc/search_uuid
 

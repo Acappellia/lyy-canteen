@@ -12,6 +12,10 @@ execute unless data storage lc:data npc[0].acts[0].require_item run return 0
 
 ##check requirement
 execute store result score #npc_require_check lc_var run data get entity @s SelectedItem.tag.lc_itemid
-execute store result score #npc_require_check2 lc_var run data get storage lc:data npc[0].acts[0].require_item
+execute store result score #npc_require_check2 lc_var run data get storage lc:data npc[0].acts[0].require_item.lc_itemid
 #TODO check item count / check lc_itemid only / check quality
-execute if score #npc_require_check lc_var = #npc_require_check2 lc_var run return 1
+execute unless score #npc_require_check lc_var = #npc_require_check2 lc_var run return 0
+
+execute store result score #npc_require_check lc_var run data get entity @s SelectedItem.tag.quality
+execute store result score #npc_require_check2 lc_var run data get storage lc:data npc[0].acts[0].require_item.quality
+execute if score #npc_require_check lc_var >= #npc_require_check2 lc_var run return 1

@@ -52,6 +52,7 @@ gamerule keepInventory true
 gamerule doFireTick false
 gamerule doEntityDrops false
 gamerule doMobSpawning false
+gamerule fallDamage false
 forceload add 0 0 0 0
 
 scoreboard objectives add lc_var dummy
@@ -152,9 +153,13 @@ scoreboard objectives add npc_id dummy
 scoreboard objectives add player_npc_id dummy
 scoreboard objectives add player_npc_actid dummy
 scoreboard objectives add player_npc_next dummy
+scoreboard objectives add npc_interact_cd custom:time_since_death
 
 ##start slow tick
 function lc:slow_tick
 
 ##start very slow tick
 function lc:veryslow_tick
+
+##init npc
+function lc:debug/init_npc_config

@@ -6,7 +6,18 @@
                 "entity": {
                     "type": "interaction",
                     "nbt": "{Tags:[\"npc\"]}"
-                }
+                },
+                "player": [
+                    {
+                        "condition": "entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "npc_interact_cd": {
+                                "min": 0
+                            }
+                        }
+                    }
+                ]
             }
         }
     },

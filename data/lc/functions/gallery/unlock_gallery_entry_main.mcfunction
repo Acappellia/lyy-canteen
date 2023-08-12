@@ -10,6 +10,8 @@ data remove storage lc:user gallery[0].pages[0][0].tag.display.Lore[0]
 execute store result storage lc:user gallery[0].pages[0][0].tag.best_quality int 1 run scoreboard players get #get_quality lc_var
 data modify storage lc:user gallery[0].pages[0][0].tag.cook_count set value 1
 
+tellraw @s {"text": "首次制作！","color": "#A0FF50"}
+
 ##add stat
 execute unless data storage lc:user gallery[0].pages[0][0].tag.is_mid run scoreboard players add @s gallery_unlock 1
 execute unless data storage lc:user gallery[0].pages[0][0].tag.is_mid run scoreboard players add @s gallery_unlock_main 1

@@ -11,4 +11,4 @@ execute store result score #unlock_slot lc_var run data get storage lc:user gall
 execute if score #unlock_slot lc_var matches 25 run function lc:gallery/player_unlock_turnpage
 execute unless score #unlock_slot lc_var matches 25 run function lc:gallery/player_unlock_next
 
-tellraw @s {"text": "成功解锁配方！","color": "#A0FF50"}
+tellraw @s {"text": "学会了新的料理！","color": "#A0FF50"}
