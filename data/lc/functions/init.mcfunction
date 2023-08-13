@@ -64,6 +64,7 @@ scoreboard players set #10 lc_var 10
 scoreboard players set #100 lc_var 100
 scoreboard players set #200 lc_var 200
 scoreboard players set #1000 lc_var 1000
+scoreboard players set #16000 lc_var 16000
 scoreboard players set #64 lc_var 64
 scoreboard players set #650 lc_var 650
 scoreboard players set #36 lc_var 36
@@ -155,6 +156,16 @@ scoreboard objectives add player_npc_id dummy
 scoreboard objectives add player_npc_actid dummy
 scoreboard objectives add player_npc_next dummy
 scoreboard objectives add npc_interact_cd custom:time_since_death
+
+#define score_holder #tp_line
+#define score_holder #tp_column
+#define score_holder #tp_layer
+
+scoreboard players set #tp_line lc_var 7
+scoreboard players set #tp_column lc_var 7
+scoreboard players operation #tp_layer lc_var = #tp_line lc_var
+scoreboard players operation #tp_layer lc_var *= #tp_column lc_var
+
 
 ##start slow tick
 function lc:slow_tick
