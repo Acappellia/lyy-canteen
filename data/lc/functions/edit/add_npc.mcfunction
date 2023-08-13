@@ -17,7 +17,9 @@ tellraw @p [{"text": "added npc with id "},{"score":{"name":"#npc_id","objective
 ##summon display model
 #TODO
 
-execute align xz positioned ~0.5 ~0 ~0.5 run summon minecraft:item_display ~ ~ ~ {billboard:"vertical",item:{id:"minecraft:totem_of_undying",Count:1b},transformation:[4,0,0,0,0,6,0,3,0,0,4,0,0,0,0,3]}
+execute unless score #npc_id lc_var matches 7..8 align xz positioned ~0.5 ~0 ~0.5 run summon minecraft:item_display ~ ~ ~ {billboard:"vertical",item:{id:"minecraft:totem_of_undying",Count:1b},transformation:[4,0,0,0,0,6,0,3,0,0,4,0,0,0,0,3]}
+execute if score #npc_id lc_var matches 7 align xz positioned ~0.5 ~0 ~0.5 run summon minecraft:item_display ~ ~ ~ {item:{id:"minecraft:feather",Count:1b,tag:{CustomModelData:6}},transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
+execute if score #npc_id lc_var matches 8 align xz positioned ~0.5 ~0 ~0.5 run summon minecraft:item_display ~ ~ ~ {item:{id:"minecraft:feather",Count:1b,tag:{CustomModelData:7}},transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
 
 ##summon name tag
 execute if score #npc_id lc_var matches 1 align xz positioned ~0.5 ~2 ~0.5 run summon minecraft:text_display ~ ~ ~ {background:0,billboard:"vertical",text:'[{"text": "LYY没说这个NPC叫什么名字所以她就叫派蒙了","color": "light_purple"}]',transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
@@ -26,8 +28,8 @@ execute if score #npc_id lc_var matches 3 align xz positioned ~0.5 ~2 ~0.5 run s
 execute if score #npc_id lc_var matches 4 align xz positioned ~0.5 ~2 ~0.5 run summon minecraft:text_display ~ ~ ~ {background:0,billboard:"vertical",text:'[{"text": "埃币","color": "light_purple"}]',transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
 execute if score #npc_id lc_var matches 5 align xz positioned ~0.5 ~2 ~0.5 run summon minecraft:text_display ~ ~ ~ {background:0,billboard:"vertical",text:'[{"text": "nano","color": "light_purple"}]',transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
 execute if score #npc_id lc_var matches 6 align xz positioned ~0.5 ~2 ~0.5 run summon minecraft:text_display ~ ~ ~ {background:0,billboard:"vertical",text:'[{"text": "kukki","color": "light_purple"}]',transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
-execute if score #npc_id lc_var matches 7 align xz positioned ~0.5 ~2 ~0.5 run summon minecraft:text_display ~ ~ ~ {background:0,billboard:"vertical",text:'[{"text": "水池","color": "light_purple"}]',transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
-execute if score #npc_id lc_var matches 8 align xz positioned ~0.5 ~2 ~0.5 run summon minecraft:text_display ~ ~ ~ {background:0,billboard:"vertical",text:'[{"text": "洗碗机","color": "light_purple"}]',transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
+#execute if score #npc_id lc_var matches 7 align xz positioned ~0.5 ~2 ~0.5 run summon minecraft:text_display ~ ~ ~ {background:0,billboard:"vertical",text:'[{"text": "水池","color": "light_purple"}]',transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
+#execute if score #npc_id lc_var matches 8 align xz positioned ~0.5 ~2 ~0.5 run summon minecraft:text_display ~ ~ ~ {background:0,billboard:"vertical",text:'[{"text": "洗碗机","color": "light_purple"}]',transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
 execute if score #npc_id lc_var matches 9 align xz positioned ~0.5 ~2 ~0.5 run summon minecraft:text_display ~ ~ ~ {background:0,billboard:"vertical",text:'[{"text": "LYY没说这个NPC叫什么名字所以她就叫LYY了","color": "light_purple"}]',transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
 execute if score #npc_id lc_var matches 10 align xz positioned ~0.5 ~2 ~0.5 run summon minecraft:text_display ~ ~ ~ {background:0,billboard:"vertical",text:'[{"text": "八云蓝","color": "light_purple"}]',transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
 execute if score #npc_id lc_var matches 11 align xz positioned ~0.5 ~2 ~0.5 run summon minecraft:text_display ~ ~ ~ {background:0,billboard:"vertical",text:'[{"text": "八云紫","color": "light_purple"}]',transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
