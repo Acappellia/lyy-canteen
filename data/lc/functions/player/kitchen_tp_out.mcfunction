@@ -25,4 +25,4 @@ scoreboard players operation #tp_playerid_div lc_var %= #tp_line lc_var
 execute if score #tp_playerid_div lc_var matches 1.. run function lc:player/kitchen_tp_out_line
 
 ##tp back
-tp @s ~39 ~118 ~45 ~ ~
+execute at @s run tp @s ~39 ~118 ~45 ~ ~
