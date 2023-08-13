@@ -26,6 +26,6 @@ scoreboard players operation #tp_playerid_div lc_var %= #tp_line lc_var
 execute if score #tp_playerid_div lc_var matches 1.. run function lc:player/kitchen_tp_in_line
 
 ##init text
-data modify entity @e[sort=nearest,distance=..5,tag=new_room,limit=1] text set value '[{"selector":"@p[distance=..5]","color":"aqua"},{"text":"\\n的厨房","color":"white"}]'
-scoreboard players operation @e[sort=nearest,distance=..5,tag=new_room,limit=1] player_id = @s player_id
-tag @e[sort=nearest,distance=..5,tag=new_room,limit=1] remove new_room
+data modify entity @e[sort=nearest,distance=..7,tag=new_room,limit=1] text set value '[{"selector":"@p[distance=..7]","color":"aqua"},{"text":"\\n的厨房","color":"white"}]'
+scoreboard players operation @e[sort=nearest,distance=..7,tag=new_room,limit=1] player_id = @s player_id
+tag @e[sort=nearest,distance=..7,tag=new_room,limit=1] remove new_room
