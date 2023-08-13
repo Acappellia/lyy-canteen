@@ -4,7 +4,7 @@
 #   #npc_id
 
 ##summon interaction
-execute align xz positioned ~0.5 ~0 ~0.5 run kill @e[type=interaction,distance=..1,tag=npc]
+execute align xz positioned ~0.5 ~0 ~0.5 run kill @e[type=interaction,distance=..0.5,tag=npc]
 execute align xz positioned ~0.5 ~0 ~0.5 run summon interaction ~ ~ ~ {Tags:["npc"],response:1b,width:0.8,height:1.8}
 execute store result score @e[type=interaction,limit=1,sort=nearest] npc_id run scoreboard players get #npc_id lc_var
 
