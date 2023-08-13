@@ -29,8 +29,8 @@ execute if score #gather_id lc_var matches 18 run scoreboard players set #gather
 execute if score #gather_id lc_var matches 19 run scoreboard players set #gather_itemid lc_var 134
 
 ##summon interaction
-execute positioned ~0.5 ~0 ~0.5 run kill @e[type=interaction,distance=..1,tag=gather]
-execute positioned ~0.5 ~0 ~0.5 run summon interaction ~ ~ ~ {Tags:["gather"],response:1b,width:0.8,height:1.8}
+execute run kill @e[type=interaction,distance=..1,tag=gather]
+execute run summon interaction ~ ~ ~ {Tags:["gather"],response:1b,width:0.8,height:1.8}
 scoreboard players operation @e[type=interaction,limit=1,sort=nearest] gather_id = #gather_id lc_var
 scoreboard players operation @e[type=interaction,limit=1,sort=nearest] gather_itemid = #gather_itemid lc_var
 
