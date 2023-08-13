@@ -2,6 +2,7 @@
 
 #define score_holder #gather_check_stamina
 #define score_holder #gather_no_stamina
+#define score_holder #gather_plant_model
 
 ##check avalibility
 execute as @e[tag=gathering,sort=nearest,limit=1] if entity @s[tag=!can_gather] as @p[distance=..5] run tellraw @s [{"text": "这里还没有可采集的东西……","color": "#CCCCCC"}]
@@ -26,3 +27,7 @@ playsound entity.item_frame.remove_item block @s ~ ~ ~ 1 1
 ##reset plant
 tag @e[tag=gathering,sort=nearest,limit=1] remove can_gather
 scoreboard players operation @e[tag=gathering,sort=nearest,limit=1] gather_lasttime = @s player_gather_lasttime
+
+##reset model
+execute store result score #gather_plant_model lc_var run data get entity @e[type=item_display,sort=nearest,distance=..2,limit=1] item.tag.CustomModelData
+execute store result entity @e[type=item_display,sort=nearest,distance=..2,limit=1] item.tag.CustomModelData int 1 run scoreboard players add #gather_plant_model lc_var 100

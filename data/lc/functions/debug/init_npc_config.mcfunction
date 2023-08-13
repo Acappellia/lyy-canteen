@@ -460,7 +460,7 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 
 data modify storage lc:data npc[0].acts prepend value {act_id:2, require_state:2, end_state:2, reward_item:[{lc_itemid:489, quality:80}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, isbg:1, text:'["水龙头哗哗作响。"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:1, isplayer:1, text:'["你得到了一瓶清水。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:1, isbg:1, text:'["你得到了一瓶清水。"]'}
 
 #8 洗碗机
 data modify storage lc:data npc prepend value {npc_id:8}
