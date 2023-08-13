@@ -453,23 +453,23 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 #7 水池
 data modify storage lc:data npc prepend value {npc_id:7}
 data modify storage lc:data npc[0].acts prepend value {act_id:1, require_state:1, end_state:2, reward_item:[{lc_itemid:489, quality:80}]}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:8, next:9, isplayer:1, text:'["响子—— 普通的水从这里取就可以了嘛？"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:8, isbg:1, text:'["响子作了简单的肯定。"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:8, isbg:1, text:'["你打开水龙头，得到了一瓶干净的水。"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:8, next:9, isplayer:1, text:'["嗯，看上去不像是假的水！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, isplayer:1, text:'["响子—— 普通的水从这里取就可以了嘛？"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["响子作了简单的肯定。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["你打开水龙头，得到了一瓶干净的水。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, isplayer:1, text:'["嗯，看上去不像是假的水！"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:2, require_state:2, end_state:2, reward_item:[{lc_itemid:489, quality:80}]}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:8, isbg:1, text:'["水龙头哗哗作响。"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:8, next:9, isplayer:1, text:'["你得到了一瓶清水。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, isbg:1, text:'["水龙头哗哗作响。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:1, isplayer:1, text:'["你得到了一瓶清水。"]'}
 
 #8 洗碗机
 data modify storage lc:data npc prepend value {npc_id:8}
 data modify storage lc:data npc[0].acts prepend value {act_id:1, require_state:1, end_state:2, reward_item:[{lc_itemid:490, quality:80}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["滴滴…… 欢迎使用 LYY-VME50 型全自动洗碗机。"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["拍打一下可以获得一个干净的碗！"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:8, next:9, isplayer:1, text:'["好神奇的机器……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:8, isbg:1, text:'["你拍了拍机器，机器的出口蹦出了一个空碗。"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:8, isbg:1, text:'["的确很干净，看来可以放心的用它盛放料理。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, text:'["拍打一下可以获得一个干净的碗！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isplayer:1, text:'["好神奇的机器……"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, isbg:1, text:'["你拍了拍机器，机器的出口蹦出了一个空碗。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:1, isbg:1, text:'["的确很干净，看来可以放心的用它盛放料理。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:2, require_state:2, end_state:2, reward_item:[{lc_itemid:490, quality:80}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, isbg:1, text:'["机器发出了运作的声音。"]'}

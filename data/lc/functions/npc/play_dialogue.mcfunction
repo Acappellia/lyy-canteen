@@ -1,7 +1,7 @@
 ##called to play the dialogue
 
 ##play text
-execute unless data storage lc:data npc[0].acts[0].dialogues[0].isplayer unless data storage lc:data npc[0].acts[0].dialogues[0].isbg positioned ~ ~2 ~ run tellraw @s [{"text": "-- ","color": "#CCCCCC"},{"nbt":"text","entity": "@e[type=text_display,sort=nearest,limit=1]","interpret": true,"color": "#FFCFF4"},{"text": " --------\n  ","color": "#CCCCCC"},{"nbt":"npc[0].acts[0].dialogues[0].text","storage": "lc:data","interpret": true,"color": "#FF9EBB"}]
+execute unless data storage lc:data npc[0].acts[0].dialogues[0].isplayer unless data storage lc:data npc[0].acts[0].dialogues[0].isbg positioned ~ ~2 ~ run tellraw @s [{"text": "-- ","color": "#CCCCCC"},{"nbt":"text","entity": "@e[type=text_display,sort=nearest,limit=1,distance=..2]","interpret": true,"color": "#FFCFF4"},{"text": " --------\n  ","color": "#CCCCCC"},{"nbt":"npc[0].acts[0].dialogues[0].text","storage": "lc:data","interpret": true,"color": "#FF9EBB"}]
 execute if data storage lc:data npc[0].acts[0].dialogues[0].isplayer run tellraw @s [{"text": "-- ","color": "#CCCCCC"},{"selector":"@s","color": "#CCFFD6"},{"text": " --------\n  ","color": "#CCCCCC"},{"nbt":"npc[0].acts[0].dialogues[0].text","storage": "lc:data","interpret": true,"color": "#A8FFE7"}]
 execute if data storage lc:data npc[0].acts[0].dialogues[0].isbg run tellraw @s [{"text": "--\n  ","color": "#CCCCCC"},{"nbt":"npc[0].acts[0].dialogues[0].text","storage": "lc:data","interpret": true,"color": "#CCCCCC"}]
 
