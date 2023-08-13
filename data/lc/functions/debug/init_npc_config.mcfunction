@@ -19,7 +19,7 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 
 #2 橙
 data modify storage lc:data npc prepend value {npc_id:2}
-data modify storage lc:data npc[0].acts prepend value {act_id:1, require_state:1, end_state:2, reward_item:[{}, {}, {}], edit_state:[{npc_id:1, state:3}, {npc_id:3, state:2}]}
+data modify storage lc:data npc[0].acts prepend value {act_id:1, require_state:1, end_state:2, reward_item:[{lc_itemid:160, quality:80}, {lc_itemid:126, quality:80}, {lc_itemid:126, quality:80}], edit_state:[{npc_id:1, state:3}, {npc_id:3, state:2}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, isplayer:1, text:'["那个——"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, text:'["哎呀，",{"selector":"@s"}," 来了呀！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, text:'["怎么样，决定好加盟店铺了？"]'}
@@ -45,7 +45,7 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isplayer:1, text:'["这里的厨房…… 我还不熟悉。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:1, text:'["这些事去问后面的响子吧，厨房都是她在打理呢。"]'}
 
-data modify storage lc:data npc[0].acts prepend value {act_id:3, require_state:2, end_state:3, require_item:{lc_itemid:0, quality:0}, reward_item:[{}], edit_state:[{npc_id:3, state:4}]}
+data modify storage lc:data npc[0].acts prepend value {act_id:3, require_state:2, end_state:3, require_item:{lc_itemid:167, quality:0}, reward_item:[{}], edit_state:[{npc_id:3, state:4}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, isplayer:1, text:'["我做完了！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, text:'["不错，有模有样的嘛。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isplayer:1, text:'["那么加盟的事——"]'}
@@ -109,7 +109,7 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:6, text:'["是吗？你可是通过了我的考验的人哦。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:6, next:7, text:'["就请作为新店长好好努力吧！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:8, text:'["等你再作好准备的时候，我会帮你升级店铺。"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:8, next:1, text:'["不过在这之前先去一趟",{"text":" LYY 牧场","color":"white"},"，代我和xxx打声招呼吧。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:8, next:1, text:'["不过在这之前先去一趟",{"text":" LYY 牧场","color":"white"},"，代我和LYY打声招呼吧。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:9, require_state:6, end_state:6}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["LYY 牧场就在小镇的西南侧呢。"]'}
@@ -118,7 +118,7 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts prepend value {act_id:10, require_state:7, end_state:8}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["从 LYY 牧场那边回来了？"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isplayer:1, text:'["嗯，那边的设施很先进！"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isplayer:1, text:'["xxx也让我带她问好！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isplayer:1, text:'["LYY也让我带她问好！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, text:'["嗯。虽然那边只能培育小猪和小鸡，不过小镇周边还有一个培育小牛的牧场。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:6, text:'["也有一个专门养蜂的蜂场呢。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:6, next:7, isplayer:1, text:'["有这么多地方吗！"]'}
@@ -474,14 +474,14 @@ data modify storage lc:data npc[0].acts prepend value {act_id:2, require_state:2
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, isbg:1, text:'["机器发出了运作的声音。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:1, isbg:1, text:'["你得到了一个新的空碗。"]'}
 
-#9 牧场 xxx
+#9 牧场 LYY
 data modify storage lc:data npc prepend value {npc_id:9}
 data modify storage lc:data npc[0].acts prepend value {act_id:1, require_state:1, end_state:1}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["欢迎来到 LYY 牧场！精选牧草，优质培育！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:1, text:'["打开牧场管理终端就可以看到小动物们的成长状态哦！"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:2, require_state:2, end_state:1, reward_item:[{}, {}, {}, {}], edit_state:[{npc_id:2, state:7}]}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, isplayer:1, text:'["请问是xxx吗？"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, isplayer:1, text:'["请问是LYY吗？"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, text:'["你好—— 哦？是新的面孔诶。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isplayer:1, text:'["我是",{"selector":"@s"},"，刚刚从橙那边接下店长的工作。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, isplayer:1, text:'["我来这里替橙打个招呼—— 橙是这么交代给我的。"]'}
@@ -1043,3 +1043,9 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 
 #19 博丽灵梦
 data modify storage lc:data npc prepend value {npc_id:19}
+data modify storage lc:data npc[0].acts prepend value {act_id:1, require_state:1, end_state:1}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:1, text:'["……"]'}
+
+data modify storage lc:data npc[0].acts prepend value {act_id:1, require_state:2, end_state:2}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, isbg:1, text:'["恭喜你完成了目前为止的所有剧情！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:1, isbg:1, text:'["请等待之后的更新吧~"]'}

@@ -12,4 +12,8 @@ execute if score #recipe_settype lc_var matches 4 run tag @e[type=interaction,li
 ##summon display model
 #TODO
 
-execute align xz positioned ~0.5 ~0 ~0.5 run summon minecraft:item_display ~ ~ ~ {item:{id:"minecraft:grass",Count:1b},transformation:[2,0,0,0,0,2,0,1,0,0,2,0,0,0,0,1]}
+execute if score #recipe_settype lc_var matches 0 align xz positioned ~0.5 ~0.5 ~0.5 run summon minecraft:item_display ~ ~ ~ {item:{id:"minecraft:feather",Count:1b,tag:{CustomModelData:4}},transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
+execute if score #recipe_settype lc_var matches 1 align xz positioned ~0.5 ~0.5 ~0.5 run summon minecraft:item_display ~ ~ ~ {item:{id:"minecraft:feather",Count:1b,tag:{CustomModelData:3}},transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
+execute if score #recipe_settype lc_var matches 2 align xz positioned ~0.5 ~0.5 ~0.5 run summon minecraft:item_display ~ ~ ~ {item:{id:"minecraft:feather",Count:1b,tag:{CustomModelData:2}},transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
+execute if score #recipe_settype lc_var matches 3 align xz positioned ~0.5 ~0.5 ~0.5 run summon minecraft:item_display ~ ~ ~ {item:{id:"minecraft:feather",Count:1b,tag:{CustomModelData:1}},transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
+execute if score #recipe_settype lc_var matches 4 align xz positioned ~0.5 ~0.5 ~0.5 run summon minecraft:item_display ~ ~ ~ {item:{id:"minecraft:feather",Count:1b,tag:{CustomModelData:5}},transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
