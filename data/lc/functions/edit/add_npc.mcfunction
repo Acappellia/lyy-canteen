@@ -8,6 +8,7 @@ execute align xz positioned ~0.5 ~0 ~0.5 run kill @e[type=interaction,distance=.
 execute align xz positioned ~0.5 ~0 ~0.5 run summon interaction ~ ~ ~ {Tags:["npc"],response:1b,width:0.8,height:1.8}
 execute store result score @e[type=interaction,limit=1,sort=nearest] npc_id run scoreboard players get #npc_id lc_var
 
+execute if score #npc_id lc_var matches 3 run tag @e[type=interaction,limit=1,sort=nearest] add npc_3
 execute if score #npc_id lc_var matches 7 run tag @e[type=interaction,limit=1,sort=nearest] add npc_7
 execute if score #npc_id lc_var matches 8 run tag @e[type=interaction,limit=1,sort=nearest] add npc_8
 
