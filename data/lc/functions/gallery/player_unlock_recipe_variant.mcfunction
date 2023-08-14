@@ -10,5 +10,5 @@ data modify storage lc:user gallery[0].pages[0][0].tag.new_unlock set value 1
 
 ##unlock following variants
 execute store result score #unlock_slot lc_var run data get storage lc:user gallery[0].pages[0][0].Slot
-execute if score #unlock_slot lc_var matches 25 run function lc:gallery/player_unlock_turnpage
 execute unless score #unlock_slot lc_var matches 25 run function lc:gallery/player_unlock_next
+execute if score #unlock_slot lc_var matches 25 run function lc:gallery/player_unlock_turnpage

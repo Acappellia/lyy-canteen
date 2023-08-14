@@ -8,7 +8,7 @@ data modify storage lc:user gallery[0].pages[0][0] set from storage lc:user gall
 
 ##unlock following variants
 execute store result score #unlock_slot lc_var run data get storage lc:user gallery[0].pages[0][0].Slot
-execute if score #unlock_slot lc_var matches 25 run function lc:gallery/player_unlock_turnpage
 execute unless score #unlock_slot lc_var matches 25 run function lc:gallery/player_unlock_next
+execute if score #unlock_slot lc_var matches 25 run function lc:gallery/player_unlock_turnpage
 
 tellraw @s {"text": "学会了新的料理！","color": "#A0FF50"}

@@ -1045,8 +1045,39 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 #19 博丽灵梦
 data modify storage lc:data npc prepend value {npc_id:19}
 data modify storage lc:data npc[0].acts prepend value {act_id:1, require_state:1, end_state:1}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:1, text:'["……"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["是来参拜神社的么？"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:1, text:'["赛钱箱的话，在那边哦。"]'}
 
-data modify storage lc:data npc[0].acts prepend value {act_id:1, require_state:2, end_state:2}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, isbg:1, text:'["恭喜你完成了目前为止的所有剧情！"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:1, isbg:1, text:'["请等待之后的更新吧~"]'}
+data modify storage lc:data npc[0].acts prepend value {act_id:2, require_state:2, end_state:3}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, isbg:1, text:'["在你踏过神社鸟居的的那一刻，你感到一股股梦幻的丝线在你的四周萦绕。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["它们由四处而来，仿佛命运一般交织，汇入这座神社。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["在这些丝线的尽头，站着一位身穿红白巫女服的少女。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, isbg:1, text:'["她就是橙口中的，那位大人。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:6, text:'["你来了。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:6, next:7, isplayer:1, text:'["……"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:8, isbg:1, text:'["你没有说话。她的目光已经告诉了你，她就是那个知晓一切的人。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:8, next:9, text:'["这么久过去了，是否感觉自己有所长进呢？"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:9, next:10, isbg:1, text:'["你回忆起了自己的经历。那的确是一段漫长的时光。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:10, next:11, text:'["紫和我说，拯救幻想乡和幽幽子的人已经找到了。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:11, next:12, text:'["虽然我也不知道为什么会是你，但我可以相信紫的远见。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:12, next:13, isbg:1, text:'["灵梦突然用一种怪异的眼神看着你。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:13, next:14, text:'["奇怪，听到这些话，你好像一点也不吃惊的样子。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:14, next:15, isplayer:1, text:'["……"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:15, next:16, isbg:1, text:'["的确，如果是由其他人和你说出这些话，你一定会被吓一跳的吧。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:16, next:17, isbg:1, text:'["但在灵梦的面前，你仿佛已经忘记了吃惊的表达方式。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:17, next:18, text:'["果然不是一般人呢。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:18, next:19, text:'["好吧，我可以告诉你究竟发生了什么。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:19, next:20, text:'["但我必须亲自看到你的实力。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:20, next:21, isbg:1, text:'["实力？"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:21, next:22, isbg:1, text:'["听到这一熟悉的词语，仿如魂魄归来一般，你终于渐渐找回了操纵身体的感觉。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:22, next:23, isplayer:1, text:'["这是……新的考核？"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:23, next:24, text:'["没错，而且我的要求要比以往更高。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:24, next:25, text:'["用你能理解的话来说，",{"text":"90 分","color":"white"},"。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:25, next:26, isbg:1, text:'["你咽了咽口水。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:26, next:27, text:'["那么，就请听好了。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:27, next:1, text:'["第一份料理：",{"text":"超温暖饭团","color":"white"},"。"]'}
+
+data modify storage lc:data npc[0].acts prepend value {act_id:3, require_state:3, end_state:3}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:1, text:'["不拿来我想要的料理，我可不会认可你哦。"]'}
+
+data modify storage lc:data npc[0].acts prepend value {act_id:4, require_state:3, end_state:4, require_item:{lc_itemid:0, quality:90}}
