@@ -51,12 +51,16 @@ item replace block 0 2 0 container.0 from entity @s hotbar.7
 execute if data entity @s Inventory[{Slot:9b}] run function lc:edit/private/set_recipe_in
 item replace block 0 2 0 container.0 from entity @s hotbar.8
 execute if data entity @s Inventory[{Slot:9b}] run function lc:edit/private/set_recipe_in
-setblock 0 2 0 air
+
 
 ##set out display
 data modify storage lc:data recipes[0].out_display set from entity @s Inventory[{Slot:-106b}]
 data remove storage lc:data recipes[0].out_display.Slot
 data modify storage lc:data recipes[0].out_display.Count set value 1b
+item replace block 0 2 0 container.0 from entity @s weapon.offhand
+item replace entity @s weapon.offhand with air
+
+function lc:items/get_item_giveonly
 
 ##tellraw
 tellraw @p [{"text": "added recipe with id "},{"score":{"name":"#recipe_id","objective":"lc_var"}}]
