@@ -10,9 +10,9 @@
                 "italic": false
             },
             {
-                "nbt": "Inventory[{Slot:9b}].tag.display.Name",
+                "nbt": "Items[{Slot:0b}].tag.display.Name",
                 "interpret": true,
-                "entity": "@s"
+                "block": "0 2 0"
             },
             {
                 "text": " 1 份，等待约 ",
