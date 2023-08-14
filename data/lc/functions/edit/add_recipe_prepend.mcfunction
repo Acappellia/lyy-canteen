@@ -55,6 +55,7 @@ execute if data entity @s Inventory[{Slot:9b}] run function lc:edit/private/set_
 ##set out display
 data modify storage lc:data recipes[0].out_display set from entity @s Inventory[{Slot:-106b}]
 data remove storage lc:data recipes[0].out_display.Slot
+data modify storage lc:data recipes[0].out_display.Count set value 1b
 
 ##tellraw
 tellraw @p [{"text": "added recipe with id "},{"score":{"name":"#recipe_id","objective":"lc_var"}}]
