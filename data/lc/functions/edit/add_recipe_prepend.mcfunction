@@ -20,7 +20,6 @@ execute store result storage lc:data recipes[0].isvariant int 1 run scoreboard p
 
 ## set output
 data modify storage lc:data recipes[0].out_id set from entity @s Inventory[{Slot:-106b}].tag.lc_itemid
-item replace entity @s inventory.9 from entity @s weapon.offhand
 
 ##add lore in offhand
 item modify entity @s weapon.offhand lc:add_gallery_recipe_info_title
@@ -33,24 +32,26 @@ execute if score #recipe_settype lc_var matches 3 run item modify entity @s weap
 execute if score #recipe_settype lc_var matches 4 run item modify entity @s weapon.offhand lc:add_gallery_recipe_info_type/pot_4
 
 ## set ingredients
-item replace entity @s inventory.0 from entity @s hotbar.0
+setblock 0 2 0 shulker_box
+item replace block 0 2 0 container.0 from entity @s hotbar.0
 execute if data entity @s Inventory[{Slot:9b}] run function lc:edit/private/set_recipe_in
-item replace entity @s inventory.0 from entity @s hotbar.1
+item replace block 0 2 0 container.0 from entity @s hotbar.1
 execute if data entity @s Inventory[{Slot:9b}] run function lc:edit/private/set_recipe_in
-item replace entity @s inventory.0 from entity @s hotbar.2
+item replace block 0 2 0 container.0 from entity @s hotbar.2
 execute if data entity @s Inventory[{Slot:9b}] run function lc:edit/private/set_recipe_in
-item replace entity @s inventory.0 from entity @s hotbar.3
+item replace block 0 2 0 container.0 from entity @s hotbar.3
 execute if data entity @s Inventory[{Slot:9b}] run function lc:edit/private/set_recipe_in
-item replace entity @s inventory.0 from entity @s hotbar.4
+item replace block 0 2 0 container.0 from entity @s hotbar.4
 execute if data entity @s Inventory[{Slot:9b}] run function lc:edit/private/set_recipe_in
-item replace entity @s inventory.0 from entity @s hotbar.5
+item replace block 0 2 0 container.0 from entity @s hotbar.5
 execute if data entity @s Inventory[{Slot:9b}] run function lc:edit/private/set_recipe_in
-item replace entity @s inventory.0 from entity @s hotbar.6
+item replace block 0 2 0 container.0 from entity @s hotbar.6
 execute if data entity @s Inventory[{Slot:9b}] run function lc:edit/private/set_recipe_in
-item replace entity @s inventory.0 from entity @s hotbar.7
+item replace block 0 2 0 container.0 from entity @s hotbar.7
 execute if data entity @s Inventory[{Slot:9b}] run function lc:edit/private/set_recipe_in
-item replace entity @s inventory.0 from entity @s hotbar.8
+item replace block 0 2 0 container.0 from entity @s hotbar.8
 execute if data entity @s Inventory[{Slot:9b}] run function lc:edit/private/set_recipe_in
+setblock 0 2 0 air
 
 ##set out display
 data modify storage lc:data recipes[0].out_display set from entity @s Inventory[{Slot:-106b}]
