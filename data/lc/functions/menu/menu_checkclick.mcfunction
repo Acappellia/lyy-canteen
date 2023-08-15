@@ -3,7 +3,7 @@
 #define score_holder #menu_gallery
 
 ##sell items
-execute store result score @s menu_click run clear @s minecraft:emerald{menu_ui:1} 0
+execute store result score @s menu_click run clear @s minecraft:bell{menu_ui:1} 0
 execute as @s[scores={menu_click=1..}] run function lc:menu/sell/sell_items
 
 ##gallery turn page
