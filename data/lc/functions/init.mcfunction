@@ -71,8 +71,8 @@ scoreboard players set #36 lc_var 36
 scoreboard players set #30 lc_var 30
 scoreboard players set #default_quality lc_var 60
 scoreboard players set #default_prize lc_var 0
-scoreboard players set #default_buy_prize lc_var 200
-scoreboard players set #max_cooktime lc_var 300
+scoreboard players set #default_buy_prize lc_var 50
+scoreboard players set #max_cooktime lc_var 360
 execute unless score #lc_itemid lc_var matches -2147483648..2147483647 run scoreboard players set #lc_itemid lc_var 0
 execute unless score #shop_page lc_var matches -2147483648..2147483647 run scoreboard players set #shop_page lc_var 0
 execute unless score #recipe_id lc_var matches -2147483648..2147483647 run scoreboard players set #recipe_id lc_var 0
@@ -169,10 +169,10 @@ scoreboard players operation #tp_layer lc_var *= #tp_column lc_var
 scoreboard objectives add player_trash_cd custom:time_since_death
 
 ##start slow tick
-function lc:slow_tick
+schedule function lc:slow_tick 1t replace
 
 ##start very slow tick
-function lc:veryslow_tick
+schedule function lc:veryslow_tick 1t replace
 
 ##init npc
 function lc:debug/init_npc_config

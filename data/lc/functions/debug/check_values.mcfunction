@@ -1,6 +1,7 @@
 ## called to check all variable values
 
 scoreboard objectives setdisplay sidebar money
+tellraw @p [{"text": "#player_id: "},{"score":{"name":"#player_id","objective":"lc_var"}}]
 tellraw @p [{"text": "#lc_itemid: "},{"score":{"name":"#lc_itemid","objective":"lc_var"}}]
 tellraw @p [{"text": "#lc_setprize: ","hoverEvent":{"action":"show_text","contents":[{"text":"click to set value"}]},"clickEvent":{"action":"suggest_command","value":"/scoreboard players set #lc_setprize lc_var "}},{"score":{"name":"#lc_setprize","objective":"lc_var"}}]
 tellraw @p [{"text": "#get_lcid: ","hoverEvent":{"action":"show_text","contents":[{"text":"click to set value"}]},"clickEvent":{"action":"suggest_command","value":"/scoreboard players set #get_lcid lc_var "}},{"score":{"name":"#get_lcid","objective":"lc_var"}}]
@@ -23,3 +24,4 @@ tellraw @p [{"text": "#gather_itemid: ","hoverEvent":{"action":"show_text","cont
 tellraw @p [{"text": "#fish_weight_roll: ","hoverEvent":{"action":"show_text","contents":[{"text":"click to set value"}]},"clickEvent":{"action":"suggest_command","value":"/scoreboard players set #fish_weight_roll lc_var "}},{"score":{"name":"#fish_weight_roll","objective":"lc_var"}}]
 tellraw @p [{"text": "#seed_result_id: ","hoverEvent":{"action":"show_text","contents":[{"text":"click to set value"}]},"clickEvent":{"action":"suggest_command","value":"/scoreboard players set #seed_result_id lc_var "}},{"score":{"name":"#seed_result_id","objective":"lc_var"}}]
 tellraw @p [{"text": "#seed_grow_time: ","hoverEvent":{"action":"show_text","contents":[{"text":"click to set value"}]},"clickEvent":{"action":"suggest_command","value":"/scoreboard players set #seed_grow_time lc_var "}},{"score":{"name":"#seed_grow_time","objective":"lc_var"}}]
+tellraw @p [{"text": "#npc_id: ","hoverEvent":{"action":"show_text","contents":[{"text":"click to set value"}]},"clickEvent":{"action":"suggest_command","value":"/scoreboard players set #npc_id lc_var "}},{"score":{"name":"#npc_id","objective":"lc_var"}}]
