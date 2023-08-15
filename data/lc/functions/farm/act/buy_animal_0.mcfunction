@@ -1,7 +1,7 @@
 ## called to buy animal
 
 ##check money
-execute unless score @s money matches 25.. run tellraw @s {"text": "没有足够的 LYY 金币","color": "#DD2000"}
+execute unless score @s money matches 25.. run tellraw @s {"text": "> 没有足够的祭","color": "#DD2000"}
 execute unless score @s money matches 25.. run return 1
 
 ##pay

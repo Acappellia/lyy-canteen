@@ -11,5 +11,5 @@ execute as @e[distance=..5,type=interaction,tag=gather] if score @s time_interac
 
 ##determine if the point exists
 execute at @e[distance=..5,type=interaction,tag=gathering,tag=gather,limit=1] run function lc:gather/player_interact
-execute unless entity @e[distance=..5,type=interaction,tag=gather,tag=gathering] run tellraw @s {"text":"离得太远啦，靠近一点再操作啦！","color": "#FF9060"}
+execute unless entity @e[distance=..5,type=interaction,tag=gather,tag=gathering] run tellraw @s [{"text":"> 离得太远啦，靠近一点再操作啦！","color": "#FF9060"}]
 tag @e[type=interaction,tag=gather] remove gathering

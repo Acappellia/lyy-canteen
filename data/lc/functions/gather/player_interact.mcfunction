@@ -5,12 +5,12 @@
 #define score_holder #gather_plant_model
 
 ##check avalibility
-execute as @e[tag=gathering,sort=nearest,limit=1] if entity @s[tag=!can_gather] as @p[distance=..5] run tellraw @s [{"text": "这里还没有可采集的东西……","color": "#CCCCCC"}]
+execute as @e[tag=gathering,sort=nearest,limit=1] if entity @s[tag=!can_gather] as @p[distance=..5] run tellraw @s [{"text": "> 这里还没有可采集的东西……","color": "#CCCCCC"}]
 execute as @e[tag=gathering,sort=nearest,limit=1] if entity @s[tag=!can_gather] run return 1
 
 ##check stamina
 execute if score #gather_check_stamina lc_var matches 1.. run function lc:gather/player_check_stamina
-execute if score #gather_no_stamina lc_var matches 1.. run tellraw @s [{"text": "已经采集了很多东西了，等一会再接着采集吧！","color": "#FF9060"}]
+execute if score #gather_no_stamina lc_var matches 1.. run tellraw @s [{"text": "> 已经采集了很多东西了，等一会再接着采集吧！","color": "#FF9060"}]
 execute if score #gather_no_stamina lc_var matches 1.. run return 1
 execute if score #gather_check_stamina lc_var matches 1.. run scoreboard players operation @s player_gather_stamina -= #gather_stamina_interval lc_var
 

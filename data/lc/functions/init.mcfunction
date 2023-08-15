@@ -166,6 +166,7 @@ scoreboard players set #tp_column lc_var 7
 scoreboard players operation #tp_layer lc_var = #tp_line lc_var
 scoreboard players operation #tp_layer lc_var *= #tp_column lc_var
 
+scoreboard objectives add player_trash_cd custom:time_since_death
 
 ##start slow tick
 function lc:slow_tick

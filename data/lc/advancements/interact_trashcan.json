@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "interact_pot":{
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"trashcan\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "lc:advancements/interact_pot"
+    }
+}

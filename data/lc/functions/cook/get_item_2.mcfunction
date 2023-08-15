@@ -19,7 +19,7 @@ execute if score @s cookskill matches 200..299 run scoreboard players add @s coo
 scoreboard players add @s totalcookcount 1
 
 ##give cook result
-tellraw @s [{"text": "烹饪成功！","color": "#EEFF88"}]
+tellraw @s [{"text": "> 烹饪成功！","color": "#EEFF88"}]
 execute store result score #get_lcid lc_var run data get storage lc:data recipes[0].out_id 1
 scoreboard players operation #get_quality lc_var = #cook_score_sum lc_var
 function lc:items/get_item_fixedquality

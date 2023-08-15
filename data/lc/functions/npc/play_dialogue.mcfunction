@@ -9,7 +9,7 @@ execute if data storage lc:data npc[0].acts[0].dialogues[0].isbg run tellraw @s 
 playsound ui.button.click master @s ~ ~ ~ 0.3 1.2
 
 ##add cooldown
-scoreboard players set @s npc_interact_cd -15
+scoreboard players set @s npc_interact_cd -10
 
 ##record next dialogue
 execute store result score @s player_npc_next run data get storage lc:data npc[0].acts[0].dialogues[0].next

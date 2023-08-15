@@ -298,7 +298,7 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, text:'["……好吧。如果有什么不清楚的，可以去看我给你的书哦！"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:4, require_state:3, end_state:3, require_item:{lc_itemid:161, quality:0}, reward_item:[{lc_itemid:126, quality:80}, {lc_itemid:126, quality:80}]}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["这是……什么情况?]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["这是……什么情况?"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isplayer:1, text:'["好像出现了一些意外……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, text:'["这个交给橙肯定没办法通过的啦！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, isplayer:1, text:'["怎么办，我好像当不了店长了……"]'}
@@ -914,52 +914,52 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 
 data modify storage lc:data npc[0].acts prepend value {act_id:22, require_state:3, end_state:23, require_item:{lc_itemid:0, quality:85}, edit_state:[{npc_id:17, state:5}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……嗯嗯……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去麻薯。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去的麻薯。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["看来她应该是认可了你的料理。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, isbg:1, text:'["看到这里，边上的蕾米莉亚向你招了招手。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:23, require_state:4, end_state:23, require_item:{lc_itemid:0, quality:85}, edit_state:[{npc_id:17, state:5}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……嗯嗯……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去麻薯。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去的麻薯。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["看来她应该是认可了你的料理。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, isbg:1, text:'["看到这里，边上的蕾米莉亚向你招了招手。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:24, require_state:5, end_state:23, require_item:{lc_itemid:0, quality:85}, edit_state:[{npc_id:17, state:5}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……嗯嗯……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去麻薯。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去的麻薯。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["看来她应该是认可了你的料理。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, isbg:1, text:'["看到这里，边上的蕾米莉亚向你招了招手。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:25, require_state:6, end_state:23, require_item:{lc_itemid:0, quality:85}, edit_state:[{npc_id:17, state:5}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……嗯嗯……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去麻薯。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去的麻薯。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["看来她应该是认可了你的料理。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, isbg:1, text:'["看到这里，边上的蕾米莉亚向你招了招手。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:26, require_state:7, end_state:23, require_item:{lc_itemid:0, quality:85}, edit_state:[{npc_id:17, state:5}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……嗯嗯……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去麻薯。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去的麻薯。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["看来她应该是认可了你的料理。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, isbg:1, text:'["看到这里，边上的蕾米莉亚向你招了招手。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:27, require_state:8, end_state:23, require_item:{lc_itemid:0, quality:85}, edit_state:[{npc_id:17, state:5}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……嗯嗯……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["赶在芙兰朵露生气前，你还是及时为她送来了她想要的料理。"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["芙兰朵露满意的吃起了你递去麻薯。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["芙兰朵露满意的吃起了你递去的麻薯。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, isbg:1, text:'["看来她应该是认可了你的料理。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:1, isbg:1, text:'["看到这里，边上的蕾米莉亚向你招了招手。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:28, require_state:9, end_state:23, require_item:{lc_itemid:0, quality:85}, edit_state:[{npc_id:17, state:5}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……嗯嗯……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["赶在芙兰朵露生气前，你还是及时为她送来了她想要的料理。"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["芙兰朵露满意的吃起了你递去麻薯。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["芙兰朵露满意的吃起了你递去的麻薯。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, isbg:1, text:'["看来她应该是认可了你的料理。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:1, isbg:1, text:'["看到这里，边上的蕾米莉亚向你招了招手。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:29, require_state:10, end_state:23, require_item:{lc_itemid:0, quality:85}, edit_state:[{npc_id:17, state:5}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……嗯嗯……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["赶在芙兰朵露生气前，你还是及时为她送来了她想要的料理。"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["她现在满意的吃起了你递去麻薯。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["她现在满意的吃起了你递去的麻薯。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, isbg:1, text:'["看来她应该是认可了你的料理。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:1, isbg:1, text:'["看到这里，边上的蕾米莉亚向你招了招手。"]'}
 
@@ -968,73 +968,73 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["你终于为芙兰朵露准备了料理！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["那就让游戏继续下去吧——"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, text:'["……嗯嗯……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:6, isbg:1, text:'["芙兰朵露满意的吃起了你递去麻薯。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:6, isbg:1, text:'["芙兰朵露满意的吃起了你递去的麻薯。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:6, next:7, isbg:1, text:'["看来她应该是认可了你的料理。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:1, isbg:1, text:'["看到这里，边上的蕾米莉亚向你招了招手。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:31, require_state:12, end_state:23, require_item:{lc_itemid:0, quality:85}, edit_state:[{npc_id:17, state:5}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……嗯嗯……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去麻薯。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去的麻薯。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["看来她应该是认可了你的料理。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, isbg:1, text:'["看到这里，边上的蕾米莉亚向你招了招手。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:32, require_state:13, end_state:23, require_item:{lc_itemid:0, quality:85}, edit_state:[{npc_id:17, state:5}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……嗯嗯……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去麻薯。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去的麻薯。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["看来她应该是认可了你的料理。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, isbg:1, text:'["看到这里，边上的蕾米莉亚向你招了招手。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:33, require_state:14, end_state:23, require_item:{lc_itemid:0, quality:85}, edit_state:[{npc_id:17, state:5}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……嗯嗯……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去麻薯。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去的麻薯。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["看来她应该是认可了你的料理。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, isbg:1, text:'["看到这里，边上的蕾米莉亚向你招了招手。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:34, require_state:15, end_state:23, require_item:{lc_itemid:0, quality:85}, edit_state:[{npc_id:17, state:5}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……嗯嗯……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去麻薯。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去的麻薯。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["看来她应该是认可了你的料理。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, isbg:1, text:'["看到这里，边上的蕾米莉亚向你招了招手。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:35, require_state:16, end_state:23, require_item:{lc_itemid:0, quality:85}, edit_state:[{npc_id:17, state:5}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……嗯嗯……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去麻薯。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去的麻薯。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["看来她应该是认可了你的料理。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, isbg:1, text:'["看到这里，边上的蕾米莉亚向你招了招手。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:36, require_state:17, end_state:23, require_item:{lc_itemid:0, quality:85}, edit_state:[{npc_id:17, state:5}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……嗯嗯……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去麻薯。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去的麻薯。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["看来她应该是认可了你的料理。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, isbg:1, text:'["看到这里，边上的蕾米莉亚向你招了招手。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:37, require_state:18, end_state:23, require_item:{lc_itemid:0, quality:85}, edit_state:[{npc_id:17, state:5}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……嗯嗯……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去麻薯。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去的麻薯。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["看来她应该是认可了你的料理。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, isbg:1, text:'["看到这里，边上的蕾米莉亚向你招了招手。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:38, require_state:19, end_state:23, require_item:{lc_itemid:0, quality:85}, edit_state:[{npc_id:17, state:5}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……嗯嗯……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去麻薯。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去的麻薯。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["看来她应该是认可了你的料理。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, isbg:1, text:'["看到这里，边上的蕾米莉亚向你招了招手。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:39, require_state:20, end_state:23, require_item:{lc_itemid:0, quality:85}, edit_state:[{npc_id:17, state:5}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……嗯嗯……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去麻薯。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去的麻薯。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["看来她应该是认可了你的料理。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, isbg:1, text:'["看到这里，边上的蕾米莉亚向你招了招手。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:40, require_state:21, end_state:23, require_item:{lc_itemid:0, quality:85}, edit_state:[{npc_id:17, state:5}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……嗯嗯……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去麻薯。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去的麻薯。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["看来她应该是认可了你的料理。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, isbg:1, text:'["看到这里，边上的蕾米莉亚向你招了招手。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:42, require_state:22, end_state:23, require_item:{lc_itemid:0, quality:85}, edit_state:[{npc_id:17, state:5}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……嗯嗯……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去麻薯。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露满意的吃起了你递去的麻薯。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["看来她应该是认可了你的料理。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, isbg:1, text:'["看到这里，边上的蕾米莉亚向你招了招手。"]'}
 
@@ -1081,3 +1081,87 @@ data modify storage lc:data npc[0].acts prepend value {act_id:3, require_state:3
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:1, text:'["不拿来我想要的料理，我可不会认可你哦。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:4, require_state:3, end_state:4, require_item:{lc_itemid:0, quality:90}}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, isbg:1, text:'["灵梦拿起饭团吃了一口。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, text:'["做的不错，不愧是紫看上的人。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:1, text:'["下一道料理：",{"text":"爆辣水煮鱼","color":"white"},"。"]'}
+
+data modify storage lc:data npc[0].acts prepend value {act_id:5, require_state:4, end_state:4}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:1, text:'["我没看到满意的料理呢。"]'}
+
+data modify storage lc:data npc[0].acts prepend value {act_id:6, require_state:4, end_state:5, require_item:{lc_itemid:0, quality:90}}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["哦，这份料理光是看着就能想象它的口感。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["灵梦对着这份料理看了一会，最后还是把它放到了一边。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, text:'["最后一道料理：",{"text":"蜂蜜酱萝卜煎肉","color":"white"},"。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, text:'["把它拿过来，你会得到你想要了解的真相。"]'}
+
+data modify storage lc:data npc[0].acts prepend value {act_id:7, require_state:5, end_state:5}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["哇，真的好辣……"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:1, text:'["怎么？还没准备好吗？"]'}
+
+data modify storage lc:data npc[0].acts prepend value {act_id:8, require_state:5, end_state:6, require_item:{lc_itemid:0, quality:90},edit_state:[{npc_id:20, state:2}]}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, isbg:1, text:'["你将最后这道料理交给了灵梦。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["灵梦没有看你的料理，而是看着你的眼睛"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, text:'["看来你已经做好准备了？"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, isbg:1, text:'["你的眼神充满决心。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:6, text:'["我明白了。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:6, next:7, text:'["去找妖梦吧，让她告诉你究竟发生了什么。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:1, text:'["以及你",{"text":"最后的任务","color":"white"},"。"]'}
+
+data modify storage lc:data npc[0].acts prepend value {act_id:9, require_state:6, end_state:6}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:1, text:'["去找妖梦吧，她会告诉你一切的。"]'}
+
+data modify storage lc:data npc[0].acts prepend value {act_id:99, require_state:10, end_state:10}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["作为幻想乡的大英雄，现在是什么感觉呢？"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, text:'["虽然这里的居民们也许并不会察觉究竟发生了什么。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, text:'["在她们的眼中，你仍然是那个小有名气的店长。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, text:'["以后，也请你继续为大家带来幸福吧。"]'}
+
+#20 妖梦
+data modify storage lc:data npc prepend value {npc_id:20}
+data modify storage lc:data npc[0].acts prepend value {act_id:1, require_state:1, end_state:1}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["现在吗？"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:1, text:'["不过现在还不是成熟的时机呢。"]'}
+
+data modify storage lc:data npc[0].acts prepend value {act_id:2, require_state:2, end_state:3, reward_item:[{},{}], edit_state:[{npc_id:21, state:2}]}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["终于到了这一刻呢，",{"selector":"@s"},"。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["妖梦意味深长额看着你，随后转向她背后的门扉。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, text:'["这里就是你要前往的地方。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, text:'["幽幽子就在这里，等待着你的……帮助。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:6, isplayer:1, text:'["幽幽子怎么了吗？"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:6, next:7, text:'["这正是你来到幻想乡的缘由——"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:8, isbg:1, text:'["妖梦说起了对于整个世界而言最为重要的事。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:8, next:9, isbg:1, text:'["你很好奇，这里应该会有一些画面演出，用来烘托剧情的气氛。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:9, next:10, isbg:1, text:'["可你的面前什么都没有发生。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:10, next:11, isbg:1, text:'["于是你只能根据妖梦的描述，想象着对应的画面。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:11, next:12, text:'["幽幽子大人误食了一种禁忌之果。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:12, next:13, text:'["这种果实会把食欲无限放大，让吃了它的人陷入到空虚的噩梦之中。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:13, next:14, text:'["如果放任这种欲望发展下去，那幽幽子大人最终将吞噬整个世界。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:14, next:15, isplayer:1, text:'["把整个世界……都吃掉吗？"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:15, next:16, text:'["我们没办法消灭幽幽子大人，只能将她暂时关在这个结界中。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:16, next:17, text:'["但维持结界的力量终有一日会消散，只有找到真正的救世主才能帮助我们。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:17, next:18, text:'["这个人就是你，",{"selector":"@s"},"。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:18, next:19, isplayer:1, text:'["……"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:19, next:20, text:'["这本菜谱就交给你了。或许幽幽子大人会喜欢里面的料理。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:20, next:21, isplayer:1, text:'["菜谱？不会是让——"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:21, next:22, text:'["接下来，就请你拯救幽幽子大人吧。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:22, next:23, isbg:1, text:'["妖梦为你打开了进入结界的通道。"]'}
+
+data modify storage lc:data npc[0].acts prepend value {act_id:3, require_state:3, end_state:3}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:1, text:'["快去吧，幽幽子大人在等着你呢。"]'}
+
+data modify storage lc:data npc[0].acts prepend value {act_id:4, require_state:4, end_state:4}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:1, text:'["你成功了！你是我们的英雄！"]'}
+
+
+#21 uuz
+data modify storage lc:data npc prepend value {npc_id:21}
+data modify storage lc:data npc[0].acts prepend value {act_id:1, require_state:1, end_state:1}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["我好饿！我好饿！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["你不知所措，因为正常情况下，你不应该来到这里。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["但是面前的幽幽子说她很饿。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, isbg:1, text:'["但是你不知道她想吃什么。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:6, isbg:1, text:'["显然，如果不拿出她想吃的东西，她是不会理会你的。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:6, next:1, isbg:1, text:'["要不还是等剧情发展之后再过来吧。"]'}
+
+data modify storage lc:data npc[0].acts prepend value {act_id:2, require_state:2, end_state:3, require_item:{lc_itemid:0, quality:60}}
+

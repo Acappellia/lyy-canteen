@@ -1,7 +1,7 @@
 ##called to plant crops
 
 ##check validity
-execute unless data storage lc:var crops_plant.tag.is_seed run tellraw @s [{"text": "这个东西不是种子啦！","color": "#FF9060"}]
+execute unless data storage lc:var crops_plant.tag.is_seed run tellraw @s [{"text": "> 这个东西不是种子啦！","color": "#FF9060"}]
 execute unless data storage lc:var crops_plant.tag.is_seed run return 1
 
 ##clear enderchest(item count -1)
