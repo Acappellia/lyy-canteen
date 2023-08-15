@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "change": {
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "rewards": {
+        "function": "lc:advancements/inv_change"
+    }
+}

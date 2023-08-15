@@ -70,7 +70,7 @@ scoreboard players set #650 lc_var 650
 scoreboard players set #36 lc_var 36
 scoreboard players set #30 lc_var 30
 scoreboard players set #default_quality lc_var 60
-scoreboard players set #default_prize lc_var 100
+scoreboard players set #default_prize lc_var 0
 scoreboard players set #default_buy_prize lc_var 200
 scoreboard players set #max_cooktime lc_var 300
 execute unless score #lc_itemid lc_var matches -2147483648..2147483647 run scoreboard players set #lc_itemid lc_var 0
