@@ -5,7 +5,7 @@
 #define score_holder #tp_playerid_res
 
 ##tp to origin
-execute positioned ~ ~ ~5 run scoreboard players operation #tp_playerid lc_var = @e[sort=nearest,distance=..3,tag=kitchen,limit=1] player_id
+execute positioned ~ ~ ~5 run scoreboard players operation #tp_playerid lc_var = @e[sort=nearest,distance=..7,tag=kitchen,limit=1] player_id
 scoreboard players remove #tp_playerid lc_var 1
 
 ##tp layer
