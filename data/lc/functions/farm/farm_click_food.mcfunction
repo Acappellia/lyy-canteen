@@ -11,7 +11,7 @@ execute unless score #search_uuid_out lc_var matches 0 run function lc:farm/play
 
 ##check item
 execute store success score #farm_have_food lc_var run clear @s wheat{farm_food:1} 1
-execute unless score #farm_have_food lc_var matches 1.. run tellraw @s [{"text": "背包里没有牧草啦！","color": "#FF9060"}]
+execute unless score #farm_have_food lc_var matches 1.. run tellraw @s [{"text": "> 背包里没有牧草啦！","color": "#FF9060"}]
 execute unless score #farm_have_food lc_var matches 1.. run return 1
 
 execute if score @s menu_page matches -5 run function lc:farm/clicks/farm_0_food
