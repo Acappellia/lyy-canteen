@@ -4,7 +4,7 @@
 #TODO
 
 ##feed
-effect give @a saturation infinite 0
+effect give @a saturation infinite 0 true
 
 ##schedule after 1m
 schedule function lc:veryslow_tick 60s replace
