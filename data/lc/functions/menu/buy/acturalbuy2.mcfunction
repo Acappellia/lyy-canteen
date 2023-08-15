@@ -4,6 +4,8 @@
 scoreboard players operation @s money -= #menubuy_prize lc_var
 function lc:money/update_display
 
+playsound block.chain.break master @s ~ ~ ~ 1 1.2
+
 ##get item
 execute store result score #get_lcid lc_var run data get storage lc:data shops[0].sell[0].tag.lc_itemid 1
 execute store result score #get_qmin lc_var run data get storage lc:data shops[0].sell[0].tag.buy_qmin 1
