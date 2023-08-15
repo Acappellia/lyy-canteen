@@ -21,7 +21,7 @@ scoreboard players set #getitem_nogive lc_var 1
 function lc:items/get_item_fixedquality
 
 ##summon item on table
-summon item_display ~ ~1 ~ {Tags:["pot_display","new_display"],transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,2]}
+summon item_display ~ ~1 ~ {Tags:["pot_display","new_display"],transformation:[-10,0,0,0,0,0,-10,0,0,-10,0,0,0,0,0,30]}
 data modify entity @e[distance=..2,tag=new_display,limit=1] item set from block 0 2 0 Items[{Slot:0b}]
 
 ##add recipe info for gallery unlocking

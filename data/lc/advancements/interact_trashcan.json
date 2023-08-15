@@ -11,6 +11,6 @@
         }
     },
     "rewards": {
-        "function": "lc:advancements/interact_pot"
+        "function": "lc:advancements/interact_trashcan"
     }
 }
