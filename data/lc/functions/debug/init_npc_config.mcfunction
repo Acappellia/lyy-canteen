@@ -293,9 +293,10 @@ data modify storage lc:data npc[0].acts prepend value {act_id:3, require_state:3
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["诶，还没做完吗？要不要我——"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isplayer:1, text:'["不用啦！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["为了保护的你的鼠标右键微动，你及时打断了响子"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, text:'["……好吧。如果有什么不清楚的，可以去看我给你的书哦！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, text:'["……好吧。如果有什么不清楚的，可以去看我给你的书！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:1, text:'["然后，如果真的做出了奇怪的东西，也可以拿过来看看，没准我能帮你处理。"]'}
 
-data modify storage lc:data npc[0].acts prepend value {act_id:4, require_state:3, end_state:3, require_item:{lc_itemid:161, quality:0}, reward_item:[{lc_itemid:126, quality:80}, {lc_itemid:126, quality:80}]}
+data modify storage lc:data npc[0].acts prepend value {act_id:4, require_state:3, end_state:3, require_item:{lc_itemid:161, quality:0}, reward_item:[{lc_itemid:160, quality:80},{lc_itemid:126, quality:40}, {lc_itemid:126, quality:40}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["这是……什么情况?"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isplayer:1, text:'["好像出现了一些意外……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, text:'["这个交给橙肯定没办法通过的啦！"]'}

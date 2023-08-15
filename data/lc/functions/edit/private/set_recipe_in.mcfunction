@@ -19,5 +19,5 @@ execute unless score #recipe_settype lc_var matches 3 if score #recipe_setcook_w
 
 ##sort id
 scoreboard players reset #recipe_sortout lc_var
-execute store result score #recipe_sortid lc_var run data get entity @s Inventory[{Slot:9b}].tag.lc_itemid
+execute store result score #recipe_sortid lc_var run data get entity @s Inventory[{Slot:0b}].tag.lc_itemid
 function lc:edit/private/set_recipe_sortloop
