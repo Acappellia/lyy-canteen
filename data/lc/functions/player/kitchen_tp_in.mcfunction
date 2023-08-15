@@ -5,7 +5,7 @@
 #define score_holder #tp_playerid_res
 
 ##tp to origin
-execute at @s run tp @s ~-39 ~-118 ~-45 ~ ~
+execute at @s run tp @s ~-38 ~-118 ~-45 ~ ~
 scoreboard players operation #tp_playerid lc_var = @s player_id
 scoreboard players remove #tp_playerid lc_var 1
 

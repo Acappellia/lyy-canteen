@@ -112,17 +112,17 @@ scoreboard players set #farm_honey_id lc_var 6
 #define score_holder #farm_food_consume
 #define score_holder #farm_food_max
 #define score_holder #farm_qdrop_time
-scoreboard players set #farm_grow_time lc_var 21600
+scoreboard players set #farm_grow_time lc_var 40000
 #216000 default
-scoreboard players set #farm_produce_time lc_var 144
+scoreboard players set #farm_produce_time lc_var 260
 #1440 default
-scoreboard players set #farm_interact_time lc_var 72
+scoreboard players set #farm_interact_time lc_var 130
 #720 default
-scoreboard players set #farm_food_consume lc_var 3600
+scoreboard players set #farm_food_consume lc_var 6600
 #36000 default
 scoreboard players operation #farm_food_max lc_var = #farm_food_consume lc_var
 scoreboard players operation #farm_food_max lc_var *= #64 lc_var
-scoreboard players set #farm_qdrop_time lc_var 600
+scoreboard players set #farm_qdrop_time lc_var 1100
 #6000 default
 
 scoreboard objectives add gather_id dummy
