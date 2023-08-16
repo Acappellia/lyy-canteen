@@ -8,4 +8,4 @@ execute if score @s player_trash_words matches 4 run tellraw @s [{"text":"> 垃�
 execute if score @s player_trash_words matches 5 run tellraw @s [{"text":"> 你不断克制着自己想要在垃圾桶里翻找物品的冲动。","color": "#CCCCCC"}]
 
 scoreboard players add @s player_trash_words 1
-execute unless score @s player_trash_words matches 6.. run scoreboard players reset @s player_trash_words
+execute if score @s player_trash_words matches 6.. run scoreboard players reset @s player_trash_words
