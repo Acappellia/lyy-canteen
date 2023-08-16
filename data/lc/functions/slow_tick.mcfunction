@@ -9,5 +9,8 @@ execute as @a at @s run execute as @e[type=interaction,distance=..16,tag=gather]
 ##add player id
 execute as @a unless score @s player_id matches 1.. store result score @s player_id run scoreboard players add #player_id lc_var 1
 
+##player add speed
+execute as @a at @s positioned ~ ~-0.5 ~ if block ~ ~ ~ dirt_path run effect give @s speed 10 2 true
+
 ##schedule after 1s
 schedule function lc:slow_tick 1s replace
