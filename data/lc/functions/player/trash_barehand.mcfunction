@@ -1,7 +1,8 @@
 ##called when player clicked trashcan
 
+scoreboard players set @s player_trash_cd 0
 execute store result score #have_tmp_storage lc_var run function lc:player/search_uuid
-execute unless score #have_tmp_storage lc_var matches 1 run tellraw @s [{"text":"> 这是一个垃圾桶","color": "#CCCCCC"}]
+execute unless score #have_tmp_storage lc_var matches 1 run function lc:player/trash_words
 execute unless score #have_tmp_storage lc_var matches 1 run return 1
 
 execute if data storage lc:user store[0].items[0] run function lc:player/item_return_loop

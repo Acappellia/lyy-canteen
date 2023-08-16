@@ -5,6 +5,7 @@
 
 ##feed
 effect give @a saturation infinite 0 true
+effect give @a resistance infinite 9 true
 
 ##schedule after 1m
 schedule function lc:veryslow_tick 60s replace

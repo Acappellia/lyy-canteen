@@ -53,6 +53,9 @@ gamerule doFireTick false
 gamerule doEntityDrops false
 gamerule doMobSpawning false
 gamerule fallDamage false
+gamerule drowningDamage false
+gamerule fireDamage false
+gamerule freezeDamage false
 gamerule announceAdvancements false
 forceload add 0 0 0 0
 
@@ -168,6 +171,7 @@ scoreboard players operation #tp_layer lc_var = #tp_line lc_var
 scoreboard players operation #tp_layer lc_var *= #tp_column lc_var
 
 scoreboard objectives add player_trash_cd custom:time_since_death
+scoreboard objectives add player_trash_words dummy
 
 ##start slow tick
 schedule function lc:slow_tick 1t replace
