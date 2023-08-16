@@ -92,6 +92,8 @@
       "minecraft:iron_sword",
       "minecraft:spruce_trapdoor",
       "minecraft:clock",
-      "minecraft:bricks"
+      "minecraft:bricks",
+      "minecraft:nautilus_shell",
+      "minecraft:written_book"
     ]
   }

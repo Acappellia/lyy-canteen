@@ -43,7 +43,7 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts prepend value {act_id:2, require_state:2, end_state:2}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["还没有做好吗？效率也是实力的一部分呢。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isplayer:1, text:'["这里的厨房…… 我还不熟悉。"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:1, text:'["这些事去问后面的响子吧，厨房都是她在打理呢。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:1, text:'["这些事去问厨房的响子吧，琐事都是她在打理呢。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:3, require_state:2, end_state:3, require_item:{lc_itemid:167, quality:0}, reward_item:[{lc_itemid:547, quality:80}, {lc_itemid:487, quality:80}], edit_state:[{npc_id:3, state:4}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, isplayer:1, text:'["我做完了！"]'}
@@ -53,14 +53,14 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:6, isplayer:1, text:'["诶——？"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:6, next:7, text:'["我可没说过考验只有一次哦。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:8, text:'["而且这次我可不会给你准备食材了。"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:8, next:9, text:'["自己去",{"text":"菜铺","color":"white"},"逛逛或者外面",{"text":"采集","color":"white"},"吧。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:8, next:9, text:'["自己去",{"text":"肉铺","color":"white"},"逛逛或者外面",{"text":"采集","color":"white"},"吧。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:9, next:10, isbg:1, text:'["谈话间，橙在桌上排出几枚钱币交给你，看样子是要用这些去买食材了"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:10, next:11, text:'["优秀的店长要学会自己收集食材才对哦。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:11, next:1, isplayer:1, text:'["店长的工作真复杂啊……"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:4, require_state:3, end_state:3}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, isplayer:1, text:'["我找不到地方……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, text:'["怎么连菜铺也不知道呢？"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, text:'["怎么连肉铺也不知道呢？"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:1, text:'["问响子去，总不能让我带你去吧。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:5, require_state:3, end_state:4, require_item:{lc_itemid:164, quality:0}, reward_item:[{lc_itemid:521, quality:80},{lc_itemid:488, quality:80}], edit_state:[{npc_id:3, state:6}]}
@@ -119,8 +119,7 @@ data modify storage lc:data npc[0].acts prepend value {act_id:10, require_state:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["从 LYY 牧场那边回来了？"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isplayer:1, text:'["嗯，那边的设施很先进！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:7, isplayer:1, text:'["LYY也让我带她问好！"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:8, text:'["如果你想要种植蔬果，也可以去找西北方向小镇的农场哦～"]'}
-#TODO 西北方向小镇名字
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:8, text:'["如果你想要种植蔬果，也可以去找西北方向星莲泉边的农场哦～"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:8, next:9, text:'["以后这些事情，都要交给你来做呢！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:9, next:10, isplayer:1, text:'["好辛苦哇。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:10, next:11, isplayer:1, text:'["所以——关于店铺……"]'}
@@ -137,9 +136,10 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:21, next:22, text:'["为我准备一道",{"text":"以风干食材为主的海鲜料理","color":"white"},"吧！要五香口味的哦。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:22, next:23, isplayer:1, text:'["没有说是什么料理吗？"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:23, next:24, text:'["作为厨师，当然要能够做出独特的料理才行呢！"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:24, next:25, text:'["赶紧去准备吧，我等着你的作品呢！"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:25, next:26, isbg:1, text:'["你能明显感到橙的两眼闪着星星般的光芒。"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:26, next:1, isplayer:1, text:'["好……！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:24, next:25, text:'["我估计，这道料理大概需要三步工序吧。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:25, next:26, text:'["赶紧去准备吧，我等着你的作品呢！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:26, next:27, isbg:1, text:'["你能明显感到橙的两眼闪闪发光。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:27, next:1, isplayer:1, text:'["好……！"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:11, require_state:8, end_state:8}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["还没有准备好吗？"]'}
@@ -147,10 +147,10 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 
 data modify storage lc:data npc[0].acts prepend value {act_id:12, require_state:8, end_state:9, require_item:{lc_itemid:289, quality:80}, edit_state:[{npc_id:10, state:2}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["哇！就是这个！"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["橙一口一个的吃起了小鱼干。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["橙一口一口的吃起了小鱼干。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, text:'["哼嗯嗯～ 这份料理—— 我很满意！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, isplayer:1, text:'["好耶！"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:6, text:'["去找",{"text":"八云蓝","color":"white"},"吧！她是你的下一名评委."]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:6, text:'["去镇上找",{"text":"八云蓝","color":"white"},"吧！她是你的下一名评委."]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:6, next:1, text:'["她会为你安排后面的考核！"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:13, require_state:9, end_state:9}
@@ -189,7 +189,7 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:14, next:15, isplayer:1, text:'["这真的是升级店铺的考核吗……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:15, next:16, isbg:1, text:'["橙的表情没有给你任何答复。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:16, next:17, isbg:1, text:'["但你相信，这不过是在宝可梦冠军之路上的一次不可或缺的修行罢了。"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:17, next:18, isbg:1, text:'["等等，我刚刚说了宝可梦？"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:17, next:18, isbg:1, text:'["等等，宝可梦是什么？"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:18, next:1, isbg:1, text:'["【 前篇 完 】"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:16, require_state:12, end_state:13, edit_state:[{npc_id:13, state:2}]}
@@ -259,7 +259,8 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:8, text:'["啊呀！我都忘记自我介绍了！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:8, next:9, text:'["我是这家店的临时厨师幽谷响子。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:9, next:10, text:'["迫于某些经济上的压力…… 总之我现在是在这里打工的一个状态……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:10, next:11, text:'["但是！在这里打工的日子，每天不是做料理就是出门买食材，橙还一直抱怨我做的料理不够好吃……"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:10, next:39, text:'["但是！在这里打工的日子太无趣了！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:39, next:11, text:'["每天不是做料理就是出门买食材，橙还一直抱怨我做的料理不够好吃……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:11, next:12, isbg:1, text:'["响子滔滔不绝的说起了她的事，从 3000 祭欠款的由来一直到昨天烧糊的煎肉。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:12, next:13, isbg:1, text:'["尽管一开始听着颇有乐趣，但到后面也不禁乏味起来。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:13, next:14, text:'["……总之如果你来当店长，我就再也不用给橙打工了！"]'}
@@ -267,11 +268,12 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:15, next:16, isplayer:1, text:'["我对自己的厨艺还是有自信的。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:16, next:17, text:'["橙的考验内容是？"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:17, next:18, isplayer:1, text:'["做一道凉菜雕花……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:18, next:19, text:'["那就用这里的料理台吧！"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:19, next:20, text:'["先用",{"text":"右键","color":"white"},"把菜放在上面，然后",{"text":"拿着刀左键","color":"white"},"切菜！"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:20, next:21, text:'["比如凉菜雕花的话，先将一个萝卜放上去，切两次做成萝卜丝"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:18, next:19, text:'["那就用这里的",{"text":"料理台","color":"white"},"吧！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:19, next:20, text:'["先用",{"text":"右键","color":"white"},"把萝卜放在上面，然后",{"text":"拿着刀左键","color":"white"},"切菜！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:20, next:21, text:'["切一次会切成萝卜块，",{"text":"再切一次","color":"white"},"做成萝卜丝。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:21, next:22, text:'["然后用一个",{"text":"干净的碗","color":"white"},"对着料理台",{"text":"右键","color":"white"},"把它拿出来！"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:22, next:23, text:'["之后再将两份萝卜丝一起放在料理台上，用刀再处理一次，就可以制作凉菜雕花了！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:22, next:40, text:'["这样做了两份萝卜丝后，再将两份萝卜丝一起放在料理台上。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:40, next:23, text:'["用刀再处理一次，就可以制作凉菜雕花了！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:23, next:24, text:'["要注意的是下刀的时机…… 啊，好像变成我在教你做菜了……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:24, next:25, text:'["我说的太详细了，你一定会厌烦吧……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:25, next:26, isplayer:1, text:'["没事啦，我其实也不太熟悉这里的厨具操作。"]'}
@@ -290,11 +292,18 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:38, next:1, isbg:1, text:'["就在响子那灼热的期盼中，你走向料理台，准备去完成橙的第一道考验。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:3, require_state:3, end_state:3}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["诶，还没做完吗？要不要我——"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isplayer:1, text:'["不用啦！"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["为了保护的你的鼠标右键微动，你及时打断了响子"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, text:'["……好吧。如果有什么不清楚的，可以去看我给你的书！"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:1, text:'["然后，如果真的做出了奇怪的东西，也可以拿过来看看，没准我能帮你处理。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["诶，还没做完吗？"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isplayer:1, text:'["有点忘记了操作……"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:18, text:'["可以呀，那我再说一遍——"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:18, next:19, text:'["先用",{"text":"右键","color":"white"},"把萝卜放在",{"text":"料理台","color":"white"},"上面。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:19, next:20, text:'["然后",{"text":"拿着刀","color":"white"},"对准料理台",{"text":"左键","color":"white"},"切菜。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:20, next:21, text:'[{"text":"切两次","color":"white"},"之后会得到萝卜丝。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:21, next:22, text:'["然后用一个",{"text":"干净的碗","color":"white"},"对着料理台",{"text":"右键","color":"white"},"把它取出来"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:22, next:4, text:'["把",{"text":"两份萝卜丝","color":"white"},"一起放在料理台上，再",{"text":"用刀左键","color":"white"},"处理就完成了！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, isplayer:1, text:'["非常感谢！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:6, isbg:1, text:'["你感受到橙子十足的热情。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:6, next:7, text:'["如果还有什么不清楚的，可以去看我给你的书！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:1, text:'["然后，如果真的做出了",{"text":"奇怪的东西","color":"white"},"，也可以拿过来看看，没准",{"text":"我能帮你处理","color":"white"},"。"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:4, require_state:3, end_state:3, require_item:{lc_itemid:161, quality:0}, reward_item:[{lc_itemid:160, quality:80},{lc_itemid:126, quality:40}, {lc_itemid:126, quality:40}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["这是……什么情况?"]'}
@@ -309,24 +318,29 @@ data modify storage lc:data npc[0].acts prepend value {act_id:5, require_state:4
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["怎么样怎么样！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isplayer:1, text:'["又有了新的考验。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, text:'["好吧，果然没那么简单。"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, isplayer:1, text:'["橙说去菜铺买鸡蛋，菜铺在哪里呢？"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:6, text:'[{"text":"出门左转一直走","color":"white"},"就是啦，很好找的！"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:6, next:7, text:'["只需要鸡蛋吗？不会……"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:18, isplayer:1, text:'["要做一道露水煮蛋。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:18, next:5, isplayer:1, text:'["橙说去肉铺买鸡蛋，肉铺在哪里呢？"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:6, text:'[{"text":"出门左转走到底","color":"white"},"就是啦，很好找的！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:6, next:7, text:'["只需要鸡蛋吗？难道说……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:8, isplayer:1, text:'["我想想……还需要露水？"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:8, next:9, text:'["果然！每次我做煮鸡蛋的时候，橙总是嫌我用的水不够新鲜"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:8, next:9, text:'["果然！每次我做煮鸡蛋的时候，橙总是嫌我用的水不够新鲜！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:9, next:10, isplayer:1, text:'["诶？原来不同的水真的有区别吗？"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:10, next:11, text:'["根本就没有区别！至少我吃着没区别！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:11, next:12, text:'["唉，但如果是橙的考验，那也没有别的办法。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:12, next:13, text:'["沿路去",{"text":"小镇周围","color":"white"},"找找露水吧，也许在小灌木里就能收集到。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:13, next:14, text:'["回来记得用",{"text":"深口锅","color":"white"},"煮，别用错厨具啦！"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:14, next:1, text:'[{"text":"如果做菜时出了问题，我会帮忙的！","color":"white"}]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:14, next:15, isplayer:1, text:'["需要煮多久呢？"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:15, next:16, text:'["大概两分钟的样子？我也不好掌握……"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:16, next:17, text:'["你可以去对照厨房门口的",{"text":"料理图鉴","color":"white"},"，上面应该会详细的记录！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:17, next:1, text:'[{"text":"如果做菜时出了问题，我会帮忙的！","color":"white"}]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:6, require_state:5, end_state:5}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……真是挑剔……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, text:'["嗯？怎么了嘛？"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, text:'["嗯？怎么了嘛？",{"text":"露水煮蛋","color":"white"},"完成了？"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isplayer:1, text:'["只是还在准备而已啦。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, text:'["加油！为了避免做错，记得对照",{"text":"料理图鉴","color":"white"},"哦！"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:1, isplayer:1, text:'["好！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:6, text:'[{"text":"如果做菜时出了问题，可以找我帮忙！","color":"white"}]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:6, next:1, isplayer:1, text:'["好！"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:7, require_state:5, end_state:5, require_item:{lc_itemid:161, quality:0}, reward_item:[{lc_itemid:150, quality:40}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["这种情况……经常会出现吗?]'}
@@ -340,7 +354,8 @@ data modify storage lc:data npc[0].acts prepend value {act_id:8, require_state:6
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["看起来，又有新的考验了？"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isplayer:1, text:'["这次要钓鱼……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, text:'["钓鱼？"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, isplayer:1, text:'["响子知道怎么钓鱼吗？"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:10, isplayer:1, text:'["……然后做做成烤八目鳗。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:10, next:5, isplayer:1, text:'["响子知道怎么钓鱼吗？"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:6, text:'["我也不会钓鱼诶……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:6, next:7, text:'["但我知道",{"text":"杂货店","color":"white"},"是可以买到鱼竿和鱼饵的！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:8, text:'["如果问问杂货店老板，也许他会知道钓鱼的方法！"]'}
@@ -351,7 +366,8 @@ data modify storage lc:data npc[0].acts prepend value {act_id:9, require_state:7
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["钓鱼收获怎么样？"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, text:'["听说钓上来的鱼比鱼市能买到的要新鲜的多呢！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isplayer:1, text:'["等烤出来就知道了！"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, text:'["嗯嗯，一定很好吃！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, text:'["嗯嗯，期待你的",{"text":"烤八目鳗","color":"white"},"！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:1, text:'["一定会很好吃！"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:10, require_state:7, end_state:7, require_item:{lc_itemid:161, quality:0}}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["诶…… 我还以为新鲜的鱼烤出来会很好吃呢。"]'}

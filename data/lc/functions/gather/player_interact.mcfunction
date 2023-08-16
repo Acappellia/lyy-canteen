@@ -16,7 +16,7 @@ execute if score #gather_check_stamina lc_var matches 1.. run scoreboard players
 
 ##give item
 scoreboard players operation #get_lcid lc_var = @e[tag=gathering,sort=nearest,limit=1] gather_itemid
-scoreboard players set #get_qmin lc_var 75
+scoreboard players set #get_qmin lc_var 65
 scoreboard players set #get_qmax lc_var 100
 function lc:items/get_item
 

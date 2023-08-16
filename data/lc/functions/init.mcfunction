@@ -53,6 +53,7 @@ gamerule doFireTick false
 gamerule doEntityDrops false
 gamerule doMobSpawning false
 gamerule fallDamage false
+gamerule announceAdvancements false
 forceload add 0 0 0 0
 
 scoreboard objectives add lc_var dummy
@@ -98,13 +99,13 @@ scoreboard objectives add pot_qte_rndseed dummy
 scoreboard objectives add pot_qte_timer dummy
 scoreboard objectives add pot_qte_standard dummy
 
-scoreboard players set #farm_pork_id lc_var 1
-scoreboard players set #farm_beef_id lc_var 2
-scoreboard players set #farm_chicken_id lc_var 3
+scoreboard players set #farm_pork_id lc_var 116
+scoreboard players set #farm_beef_id lc_var 120
+scoreboard players set #farm_chicken_id lc_var 119
 
-scoreboard players set #farm_milk_id lc_var 4
-scoreboard players set #farm_egg_id lc_var 5
-scoreboard players set #farm_honey_id lc_var 6
+scoreboard players set #farm_milk_id lc_var 136
+scoreboard players set #farm_egg_id lc_var 150
+scoreboard players set #farm_honey_id lc_var 137
 
 #define score_holder #farm_grow_time
 #define score_holder #farm_interact_time
@@ -116,7 +117,7 @@ scoreboard players set #farm_grow_time lc_var 40000
 #216000 default
 scoreboard players set #farm_produce_time lc_var 260
 #1440 default
-scoreboard players set #farm_interact_time lc_var 130
+scoreboard players set #farm_interact_time lc_var 100
 #720 default
 scoreboard players set #farm_food_consume lc_var 6600
 #36000 default
@@ -147,7 +148,7 @@ scoreboard objectives add fishrod_use minecraft.used:fishing_rod
 
 #define score_holder #crops_grow_time
 #define score_holder #crops_interact_time
-scoreboard players set #crops_interact_time lc_var 72
+scoreboard players set #crops_interact_time lc_var 100
 #720 default
 
 scoreboard objectives add npc_id dummy
