@@ -173,6 +173,8 @@ scoreboard players operation #tp_layer lc_var *= #tp_column lc_var
 scoreboard objectives add player_trash_cd custom:time_since_death
 scoreboard objectives add player_trash_words dummy
 
+scoreboard objectives add player_clock_cd custom:time_since_death
+
 ##start slow tick
 schedule function lc:slow_tick 1t replace
 
