@@ -10,7 +10,7 @@ execute store result score #farm_animal_growth lc_var run data get storage lc:va
 execute if data storage lc:var farm_grow.tag.have_animal store result storage lc:var farm_grow.tag.growth int 1 run scoreboard players operation #farm_animal_growth lc_var += #farm_time lc_var
 execute if score #farm_animal_growth lc_var >= #farm_grow_time lc_var run function lc:farm/calc/calc_extra
 data modify block 0 2 0 Items[{Slot:11b}] set from storage lc:var farm_grow
-execute if score #farm_extra_produce lc_var matches 1.. run data modify block 0 2 0 Items append value {Slot:20,Count:1,id:"minecraft:milk_bucket",tag:{menu_ui:1,farm_harvest:1,display:{Name:'{"text":"牛奶","color":"gold","italic":false}',Lore:['{"text":"点击收获","color":"yellow","italic":false}']}}}
+execute if score #farm_extra_produce lc_var matches 1.. run data modify block 0 2 0 Items append value {Slot:20,Count:1,id:"minecraft:dragon_breath",tag:{menu_ui:1,CustomModelData:1,farm_harvest:1,display:{Name:'{"text":"牛奶","color":"gold","italic":false}',Lore:['{"text":"点击收获","color":"yellow","italic":false}']}}}
 execute if score #farm_extra_produce lc_var matches 1.. store result block 0 2 0 Items[{Slot:20b}].tag.quality int 1 run data get block 0 2 0 Items[{Slot:11b}].tag.quality
 
 scoreboard players reset #farm_extra_produce lc_var
@@ -19,7 +19,7 @@ execute store result score #farm_animal_growth lc_var run data get storage lc:va
 execute if data storage lc:var farm_grow.tag.have_animal store result storage lc:var farm_grow.tag.growth int 1 run scoreboard players operation #farm_animal_growth lc_var += #farm_time lc_var
 execute if score #farm_animal_growth lc_var >= #farm_grow_time lc_var run function lc:farm/calc/calc_extra
 data modify block 0 2 0 Items[{Slot:12b}] set from storage lc:var farm_grow
-execute if score #farm_extra_produce lc_var matches 1.. run data modify block 0 2 0 Items append value {Slot:21,Count:1,id:"minecraft:milk_bucket",tag:{menu_ui:1,farm_harvest:2,display:{Name:'{"text":"牛奶","color":"gold","italic":false}',Lore:['{"text":"点击收获","color":"yellow","italic":false}']}}}
+execute if score #farm_extra_produce lc_var matches 1.. run data modify block 0 2 0 Items append value {Slot:21,Count:1,id:"minecraft:dragon_breath",tag:{menu_ui:1,CustomModelData:1,farm_harvest:2,display:{Name:'{"text":"牛奶","color":"gold","italic":false}',Lore:['{"text":"点击收获","color":"yellow","italic":false}']}}}
 execute if score #farm_extra_produce lc_var matches 1.. store result block 0 2 0 Items[{Slot:21b}].tag.quality int 1 run data get block 0 2 0 Items[{Slot:12b}].tag.quality
 
 scoreboard players reset #farm_extra_produce lc_var
@@ -28,7 +28,7 @@ execute store result score #farm_animal_growth lc_var run data get storage lc:va
 execute if data storage lc:var farm_grow.tag.have_animal store result storage lc:var farm_grow.tag.growth int 1 run scoreboard players operation #farm_animal_growth lc_var += #farm_time lc_var
 execute if score #farm_animal_growth lc_var >= #farm_grow_time lc_var run function lc:farm/calc/calc_extra
 data modify block 0 2 0 Items[{Slot:13b}] set from storage lc:var farm_grow
-execute if score #farm_extra_produce lc_var matches 1.. run data modify block 0 2 0 Items append value {Slot:22,Count:1,id:"minecraft:milk_bucket",tag:{menu_ui:1,farm_harvest:3,display:{Name:'{"text":"牛奶","color":"gold","italic":false}',Lore:['{"text":"点击收获","color":"yellow","italic":false}']}}}
+execute if score #farm_extra_produce lc_var matches 1.. run data modify block 0 2 0 Items append value {Slot:22,Count:1,id:"minecraft:dragon_breath",tag:{menu_ui:1,CustomModelData:1,farm_harvest:3,display:{Name:'{"text":"牛奶","color":"gold","italic":false}',Lore:['{"text":"点击收获","color":"yellow","italic":false}']}}}
 execute if score #farm_extra_produce lc_var matches 1.. store result block 0 2 0 Items[{Slot:22b}].tag.quality int 1 run data get block 0 2 0 Items[{Slot:13b}].tag.quality
 
 ##substrate food

@@ -16,6 +16,7 @@ execute if score @s menu_page matches -2 run scoreboard players operation #get_l
 execute if score @s menu_page matches -4 store result score #get_quality lc_var run data get storage lc:user farm[0].farm_page_1[{Slot:21b}].tag.quality
 execute if score @s menu_page matches -3 store result score #get_quality lc_var run data get storage lc:user farm[0].farm_page_2[{Slot:21b}].tag.quality
 execute if score @s menu_page matches -2 store result score #get_quality lc_var run data get storage lc:user farm[0].farm_page_3[{Slot:21b}].tag.quality
+execute if score #get_quality lc_var matches ..9 run scoreboard players set #get_quality lc_var 10
 
 ##give item
 function lc:items/get_item_fixedquality

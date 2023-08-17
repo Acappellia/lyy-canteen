@@ -4,6 +4,7 @@
 
 ##calc count from quality
 execute store result score #get_quality lc_var run data get storage lc:var farm_var.tag.quality
+execute if score #get_quality lc_var matches ..9 run scoreboard players set #get_quality lc_var 10
 scoreboard players set #farm_sell_count lc_var 3
 scoreboard players set $min random 1
 scoreboard players set $max random 100
