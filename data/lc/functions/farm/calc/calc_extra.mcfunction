@@ -4,6 +4,7 @@
 
 ##set adult
 data modify storage lc:var farm_grow.tag.is_adult set value 1
+data modify storage lc:var farm_grow.tag.CustomModelData set value 2
 
 ##get extra growth
 scoreboard players operation #farm_animal_growth lc_var -= #farm_grow_time lc_var

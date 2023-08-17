@@ -14,4 +14,5 @@ playsound entity.pig.ambient master @s ~ ~ ~ 1 1
 ##update display
 data modify storage lc:var farm_var.tag.have_animal set value 1
 data modify storage lc:var farm_var.id set value "pig_spawn_egg"
+data modify storage lc:var farm_var.tag.CustomModelData set value 1
 data modify storage lc:var farm_var.tag.display set value {Name:'{"text":"小猪","color":"gold","italic":false}',Lore:['{"text":"黄金脆皮猪","color":"yellow","italic":false}']}
