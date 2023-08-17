@@ -7,7 +7,7 @@ execute store result score #farm_crops_growth lc_var run data get storage lc:var
 execute store result score #crops_grow_time lc_var run data get storage lc:var crops.tag.seed_grow_time
 execute if data storage lc:var crops.tag.have_crops store result storage lc:var crops.tag.growth int 1 run scoreboard players operation #farm_crops_growth lc_var += #farm_time lc_var
 execute if score #farm_crops_growth lc_var >= #crops_grow_time lc_var store result storage lc:var crops.tag.growth int 1 run scoreboard players get #crops_grow_time lc_var
-execute if data storage lc:var crops.tag.have_crops if score #farm_crops_growth lc_var >= #crops_grow_time lc_var run data modify storage lc:var crops.tag.is_grown set value 1
+execute if data storage lc:var crops.tag.have_crops if score #farm_crops_growth lc_var >= #crops_grow_time lc_var run function lc:crops/crops_grow
 
 ##calc interaction
 scoreboard players set $min random 1
