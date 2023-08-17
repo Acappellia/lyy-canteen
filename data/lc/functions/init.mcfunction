@@ -175,6 +175,9 @@ scoreboard objectives add player_trash_words dummy
 
 scoreboard objectives add player_clock_cd custom:time_since_death
 
+scoreboard objectives add player_music_timer custom:time_since_death
+scoreboard objectives add player_last_music dummy
+
 ##start slow tick
 schedule function lc:slow_tick 1t replace
 

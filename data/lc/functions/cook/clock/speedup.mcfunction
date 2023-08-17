@@ -5,6 +5,9 @@
 ##check cd
 execute if score @s player_clock_cd matches ..-1 run return 1
 
+##add cd
+scoreboard players set @s player_clock_cd -21
+
 ##check count
 execute store result score #pot_displaycount lc_var positioned ~ ~1 ~ if entity @e[type=item_display,tag=pot_display,distance=..0.5]
 execute unless score #pot_displaycount lc_var matches 1.. run tellraw @s [{"text": "> 这里还没有放入食材","color": "#CCCCCC"}]
@@ -24,6 +27,3 @@ scoreboard players set $max random 95
 function random:uniform
 scoreboard players operation #cook_speed_time lc_var = $out random
 execute positioned ~ ~1 ~ as @e[type=item_display,tag=pot_display,distance=..0.5] at @s run function lc:cook/clock/add_time
-
-##add cd
-scoreboard players set @s player_clock_cd -21

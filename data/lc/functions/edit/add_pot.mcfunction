@@ -16,8 +16,6 @@ execute if score #recipe_settype lc_var matches 3 run tag @e[type=interaction,li
 execute if score #recipe_settype lc_var matches 4 run tag @e[type=interaction,limit=1,sort=nearest] add pot_4
 
 ##summon display model
-#TODO
-
 execute if score #recipe_settype lc_var matches 0 align xz positioned ~0.5 ~0.5 ~0.5 run summon minecraft:item_display ~ ~ ~ {item:{id:"minecraft:feather",Count:1b,tag:{CustomModelData:4}},transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
 execute if score #recipe_settype lc_var matches 1 align xz positioned ~0.5 ~0.5 ~0.5 run summon minecraft:item_display ~ ~ ~ {item:{id:"minecraft:feather",Count:1b,tag:{CustomModelData:3}},transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
 execute if score #recipe_settype lc_var matches 2 align xz positioned ~0.5 ~0.5 ~0.5 run summon minecraft:item_display ~ ~ ~ {item:{id:"minecraft:feather",Count:1b,tag:{CustomModelData:2}},transformation:[1,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1]}
