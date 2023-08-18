@@ -1,7 +1,6 @@
 ## called to insert value in list
 
 ##if current id is smaller than list[0], append to list only once
-execute store result score #achievement_sortcheck lc_var run data get storage lc:user achievement[0].unlock_list[0]
 execute if score #achievement_sortcheck lc_var < #achievement_unlock_id lc_var run return 1
 
 ##append value
