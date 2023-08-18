@@ -17,17 +17,21 @@ scoreboard players operation #achievement_unlock_index lc_var %= #21 lc_var
 execute store result score #search_uuid_out lc_var run function lc:achievement/search_uuid
 execute unless score #search_uuid_out lc_var matches 1 run function lc:achievement/player_init_achievement
 
+tellraw @s "search page"
 ##search page
 execute store result score #search_pageid_out lc_var run function lc:achievement/search_page
 execute unless score #search_pageid_out lc_var matches 1 run return 1
 
+tellraw @s "search index"
 ##search index
 execute store result score #search_index_out lc_var run function lc:achievement/search_index
-execute unless score #search_index_out lc_var matches 1 run return 1
+execute unless score #search_index_out lc_var matches 1 run return 2
 
+tellraw @s "check unlocked"
 ##check if unlocked
-execute if data storage lc:user achievement[0].pages[0][0].tag.achievement_unlocked run return 1
+execute if data storage lc:user achievement[0].pages[0][0].tag.achievement_unlocked run return 3
 
+tellraw @s "unlock"
 ##unlock achievement
 data remove storage lc:user achievement[0].pages[0][0].tag.achievement_locked
 data modify storage lc:user achievement[0].pages[0][0].tag.achievement_unlocked set value 1
@@ -38,6 +42,7 @@ data modify storage lc:user achievement[0].pages[0][0].tag.display.Lore append v
 data modify storage lc:user achievement[0].pages[0][0].tag.display.Lore append value '[{"text":"点击应用称号：","color":"#CCCCCC","italic":false}]'
 data modify storage lc:user achievement[0].pages[0][0].tag.display.Lore append from storage lc:user achievement[0].pages[0][0].tag.out_display.title
 
+tellraw @s "unlock_list"
 ##add to unlock_list
 scoreboard players reset #achievement_sortout lc_var
 function lc:achievement/put_in_list_loop

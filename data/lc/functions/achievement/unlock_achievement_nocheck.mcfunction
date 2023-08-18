@@ -23,10 +23,10 @@ execute unless score #search_pageid_out lc_var matches 1 run return 1
 
 ##search index
 execute store result score #search_index_out lc_var run function lc:achievement/search_index
-execute unless score #search_index_out lc_var matches 1 run return 1
+execute unless score #search_index_out lc_var matches 1 run return 2
 
 ##check if unlocked
-execute if data storage lc:user achievement[0].pages[0][0].tag.achievement_unlocked run return 1
+execute if data storage lc:user achievement[0].pages[0][0].tag.achievement_unlocked run return 3
 
 ##unlock achievement
 data remove storage lc:user achievement[0].pages[0][0].tag.achievement_locked
