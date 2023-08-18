@@ -12,6 +12,7 @@ scoreboard players operation #achievement_unlock_index lc_var = #achievement_unl
 scoreboard players operation #achievement_unlock_page lc_var /= #21 lc_var
 scoreboard players add #achievement_unlock_page lc_var 1
 scoreboard players operation #achievement_unlock_index lc_var %= #21 lc_var
+execute if score #achievement_unlock_index lc_var matches 0 run scoreboard players set #achievement_unlock_index lc_var 21
 
 ##search uuid
 execute store result score #search_uuid_out lc_var run function lc:achievement/search_uuid
@@ -47,12 +48,12 @@ tellraw @s "unlock_list"
 scoreboard players reset #achievement_sortout lc_var
 function lc:achievement/put_in_list_loop
 
+##tellraw
+tellraw @a [{"text": "🔔 ","color":"#EEFF88"},{"selector":"@s","color":"white"},{"text": " 解锁了成就 ","color":"#CCCCCC"},{"text": "[ ","color":"white"},{"nbt":"achievement[0].pages[0][0].tag.display.Name","storage": "lc:user","interpret": true,"color":"yellow"},{"text": " ]","color":"white"}]
+
 ##give money
 execute store result score #get_money lc_var run data get storage lc:user achievement[0].pages[0][0].tag.reward_money
 function lc:money/get_money
-
-##tellraw
-tellraw @a [{"text": "🔔 ","color":"#EEFF88"},{"selector":"@s","color":"white"},{"text": " 解锁了成就 ","color":"#CCCCCC"},{"text": "[ ","color":"white"},{"nbt":"achievement[0].pages[0][0].tag.display.Name","storage": "lc:user","interpret": true,"color":"yellow"},{"text": " ]","color":"white"}]
 
 ##check achievement #38 & #85
 execute if entity @s[tag=!ac38] run function lc:achievement/check/38
