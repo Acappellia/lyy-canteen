@@ -100,7 +100,7 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:6, next:7, text:'["直接去店对面",{"text":"杂货铺","color":"white"},"就行啦！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:1, text:'["其他的事情就问问响子吧。"]'}
 
-data modify storage lc:data npc[0].acts prepend value {act_id:7, require_state:4, end_state:5, require_item:{lc_itemid:171, quality:0}, reward_item:[{lc_itemid:549, quality:80}, {lc_itemid:548, quality:80}, {lc_itemid:541, quality:80}, {lc_itemid:540, quality:80}, {lc_itemid:533, quality:80}, {lc_itemid:527, quality:80}, {lc_itemid:524, quality:80}, {lc_itemid:520, quality:80}, {lc_itemid:519, quality:80}, {lc_itemid:509, quality:80}, {lc_itemid:506, quality:80}, {lc_itemid:503, quality:80}], edit_state:[{npc_id:3, state:8},{npc_id:1, state:4}]}
+data modify storage lc:data npc[0].acts prepend value {act_id:7, require_state:4, end_state:5, unlock_achievement:1, require_item:{lc_itemid:171, quality:0}, reward_item:[{lc_itemid:549, quality:80}, {lc_itemid:548, quality:80}, {lc_itemid:541, quality:80}, {lc_itemid:540, quality:80}, {lc_itemid:533, quality:80}, {lc_itemid:527, quality:80}, {lc_itemid:524, quality:80}, {lc_itemid:520, quality:80}, {lc_itemid:519, quality:80}, {lc_itemid:509, quality:80}, {lc_itemid:506, quality:80}, {lc_itemid:503, quality:80}], edit_state:[{npc_id:3, state:8},{npc_id:1, state:4}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, isplayer:1, text:'["这是您点的烤八目鳗！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, text:'["嗯，这份烤鱼看上去还挺诱人的。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, text:'["我给 9 分吧。"]'}
@@ -191,7 +191,7 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:13, next:14, text:'["当然，只要是这里生活的妖怪，都可以来做评委哦！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:14, next:1, text:'["那就麻烦你和响子说明啦！"]'}
 
-data modify storage lc:data npc[0].acts prepend value {act_id:15, require_state:11, end_state:12, reward_item:[{lc_itemid:602, quality:80}, {lc_itemid:601, quality:80}, {lc_itemid:600, quality:80}, {lc_itemid:599, quality:80}, {lc_itemid:598, quality:80}, {lc_itemid:597, quality:80}, {lc_itemid:546, quality:80}, {lc_itemid:543, quality:80}, {lc_itemid:542, quality:80}, {lc_itemid:539, quality:80}, {lc_itemid:532, quality:80}, {lc_itemid:531, quality:80}, {lc_itemid:505, quality:80}]}
+data modify storage lc:data npc[0].acts prepend value {act_id:15, require_state:11, end_state:12, unlock_achievement:2, reward_item:[{lc_itemid:602, quality:80}, {lc_itemid:601, quality:80}, {lc_itemid:600, quality:80}, {lc_itemid:599, quality:80}, {lc_itemid:598, quality:80}, {lc_itemid:597, quality:80}, {lc_itemid:546, quality:80}, {lc_itemid:543, quality:80}, {lc_itemid:542, quality:80}, {lc_itemid:539, quality:80}, {lc_itemid:532, quality:80}, {lc_itemid:531, quality:80}, {lc_itemid:505, quality:80}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["看来已经顺利完成了响子的题目呢！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isplayer:1, text:'["所以这回……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, text:'["这次可以顺利恭喜你完成考核啦！"]'}
@@ -227,7 +227,7 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isplayer:1, text:'["是的……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:1, text:'["多多积累料理经验，对提升料理品质也会有帮助哦！"]'}
 
-data modify storage lc:data npc[0].acts prepend value {act_id:18, require_state:14, end_state:15, reward_item:[{lc_itemid:605, quality:80}, {lc_itemid:604, quality:80}, {lc_itemid:603, quality:80}, {lc_itemid:596, quality:80}, {lc_itemid:595, quality:80}, {lc_itemid:594, quality:80}, {lc_itemid:593, quality:80}, {lc_itemid:592, quality:80}, {lc_itemid:591, quality:80}, {lc_itemid:590, quality:80}, {lc_itemid:589, quality:80}, {lc_itemid:522, quality:80}, {lc_itemid:507, quality:80}], edit_state:[{npc_id:19, state:2}]}
+data modify storage lc:data npc[0].acts prepend value {act_id:18, require_state:14, end_state:15, unlock_achievement:3, reward_item:[{lc_itemid:605, quality:80}, {lc_itemid:604, quality:80}, {lc_itemid:603, quality:80}, {lc_itemid:596, quality:80}, {lc_itemid:595, quality:80}, {lc_itemid:594, quality:80}, {lc_itemid:593, quality:80}, {lc_itemid:592, quality:80}, {lc_itemid:591, quality:80}, {lc_itemid:590, quality:80}, {lc_itemid:589, quality:80}, {lc_itemid:522, quality:80}, {lc_itemid:507, quality:80}], edit_state:[{npc_id:19, state:2}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["欢迎回来～"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isplayer:1, text:'["我通过红魔馆的考验了！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isplayer:1, text:'["是蕾米莉亚小姐亲自对我说的！"]'}
@@ -1202,7 +1202,7 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:6, next:7, text:'["好吧，或许我不该在这里说让你丧气的话。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:1, text:'["总之拜托你了，幽幽子的事。"]'}
 
-data modify storage lc:data npc[0].acts prepend value {act_id:11, require_state:7, end_state:8, reward_item:[{lc_itemid:581, quality:80}, {lc_itemid:580, quality:80}, {lc_itemid:578, quality:80}, {lc_itemid:576, quality:80}, {lc_itemid:574, quality:80}, {lc_itemid:573, quality:80}, {lc_itemid:572, quality:80}, {lc_itemid:571, quality:80}, {lc_itemid:569, quality:80}, {lc_itemid:568, quality:80}, {lc_itemid:567, quality:80}, {lc_itemid:564, quality:80}, {lc_itemid:563, quality:80}, {lc_itemid:552, quality:80}], edit_state:[{npc_id:20, state:6},{npc_id:21, state:36},{npc_id:2, state:17}]}
+data modify storage lc:data npc[0].acts prepend value {act_id:11, require_state:7, end_state:8, unlock_achievement:4, reward_item:[{lc_itemid:581, quality:80}, {lc_itemid:580, quality:80}, {lc_itemid:578, quality:80}, {lc_itemid:576, quality:80}, {lc_itemid:574, quality:80}, {lc_itemid:573, quality:80}, {lc_itemid:572, quality:80}, {lc_itemid:571, quality:80}, {lc_itemid:569, quality:80}, {lc_itemid:568, quality:80}, {lc_itemid:567, quality:80}, {lc_itemid:564, quality:80}, {lc_itemid:563, quality:80}, {lc_itemid:552, quality:80}], edit_state:[{npc_id:20, state:6},{npc_id:21, state:36},{npc_id:2, state:17}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["这么轻松就解决了么？"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["你觉得这个过程似乎不能用轻松来描述。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, text:'["本来以为可能会花上几年的时间…… 果然还是低估了你的实力啊。"]'}
@@ -1272,14 +1272,18 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["妖梦自言自语着。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:1, text:'["幽幽子大人……一定要平安回来啊。"]'}
 
-data modify storage lc:data npc[0].acts prepend value {act_id:5, require_state:4, end_state:5, edit_state:[{npc_id:21, state:36}]}
+data modify storage lc:data npc[0].acts prepend value {act_id:5, require_state:4, end_state:5, reward_item:[{lc_itemid:488, quality:80},{lc_itemid:488, quality:80},{lc_itemid:488, quality:80},{lc_itemid:488, quality:80},{lc_itemid:488, quality:80}], edit_state:[{npc_id:21, state:36},{npc_id:19, state:7}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, isbg:1, text:'["妖梦向幽幽子讲述了事情的经过，包括你来到这里的缘由。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, text:'["……真的很感谢",{"selector":"@s"},"！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["妖梦高兴的望着你。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, text:'["多亏了",{"selector":"@s"},"，幽幽子大人又回到了我们的身边！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:6, text:'["幻想乡的危机也终于解除了！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:6, next:7, isbg:1, text:'["在这一刻，你感受到了英雄样的尊敬和爱戴。"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:1, text:'["回去找",{"text":"灵梦","color":"white"},"吧！她一定也有很多话想说！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:8, text:'["这些钱是我的一片心意！以表达我对你的感谢！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:8, next:9, isbg:1, text:'["你觉得这时似乎应该礼貌地推辞一下，但当你看到数量之后，却在原地愣住了。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:9, next:10, isbg:1, text:'["一共有 3250 祭。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:10, next:11, text:'["不用客气！我也没有别的东西了！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:11, next:1, text:'["回去找",{"text":"灵梦","color":"white"},"吧！她一定也有很多话想说！"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:6, require_state:5, end_state:5}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:1, text:'["我想",{"text":"灵梦","color":"white"},"一定也会感谢你的！"]'}
@@ -1579,7 +1583,7 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, text:'["……还想吃……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:1, isbg:1, text:'["为她呈上",{"text":"终极的凉菜雕花","color":"white"},"吧。"]'}
 
-data modify storage lc:data npc[0].acts prepend value {act_id:66, require_state:34, end_state:35, require_item:{lc_itemid:167, quality:100}, edit_state:[{npc_id:20, state:4},{npc_id:19, state:7}]}
+data modify storage lc:data npc[0].acts prepend value {act_id:66, require_state:34, end_state:35, require_item:{lc_itemid:167, quality:100}, edit_state:[{npc_id:20, state:4}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, text:'["这是……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isplayer:1, text:'["为你准备的餐后点心。"]'}

@@ -16,7 +16,6 @@ execute if score #cook_score_sum lc_var matches 101.. run scoreboard players set
 
 ##add skill
 execute if score @s cookskill matches 200..299 run scoreboard players add @s cookskill 1
-scoreboard players add @s totalcookcount 1
 
 ##give cook result
 tellraw @s [{"text": "> 烹饪成功！","color": "#EEFF88"}]

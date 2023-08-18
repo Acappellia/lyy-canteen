@@ -17,7 +17,7 @@
             {
                 "score": {
                     "name": "@s",
-                    "objective": "totalcookcount"
+                    "objective": "total_cook"
                 },
                 "italic": false,
                 "color": "#EEFF88"

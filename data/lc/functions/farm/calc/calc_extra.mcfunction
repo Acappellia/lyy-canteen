@@ -2,6 +2,9 @@
 
 #define score_holder #farm_extra_produce
 
+##if first grow up give extra
+execute unless data storage lc:var farm_grow.tag.is_adult run scoreboard players set #farm_extra_produce lc_var 1
+
 ##set adult
 data modify storage lc:var farm_grow.tag.is_adult set value 1
 data modify storage lc:var farm_grow.tag.CustomModelData set value 2

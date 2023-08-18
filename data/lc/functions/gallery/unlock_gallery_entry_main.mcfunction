@@ -15,3 +15,15 @@ tellraw @s {"text": "> 首次制作！","color": "#A0FF50"}
 ##add stat
 execute unless data storage lc:user gallery[0].pages[0][0].tag.is_mid run scoreboard players add @s gallery_unlock 1
 execute unless data storage lc:user gallery[0].pages[0][0].tag.is_mid run scoreboard players add @s gallery_unlock_main 1
+
+execute if score @s gallery_unlock_main matches 10 run scoreboard players set #achievement_unlock_id lc_var 44
+execute if score @s gallery_unlock_main matches 10 run function lc:achievement/unlock_achievement_nocheck
+execute if score @s gallery_unlock_main matches 30 run scoreboard players set #achievement_unlock_id lc_var 45
+execute if score @s gallery_unlock_main matches 30 run function lc:achievement/unlock_achievement_nocheck
+execute if score @s gallery_unlock_main matches 75 run scoreboard players set #achievement_unlock_id lc_var 46
+execute if score @s gallery_unlock_main matches 75 run function lc:achievement/unlock_achievement_nocheck
+execute if score @s gallery_unlock_main = #gallery_maincount lc_var run scoreboard players set #achievement_unlock_id lc_var 47
+execute if score @s gallery_unlock_main = #gallery_maincount lc_var run function lc:achievement/unlock_achievement_nocheck
+
+execute if score @s gallery_unlock = #gallery_totalcount lc_var run scoreboard players set #achievement_unlock_id lc_var 48
+execute if score @s gallery_unlock = #gallery_totalcount lc_var run function lc:achievement/unlock_achievement

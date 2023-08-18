@@ -1,15 +1,12 @@
 ## called to unlock slot
 
-#define score_holder #farm_unlock_prize
-
 ##check money
-execute store result score #farm_unlock_prize lc_var run data get storage lc:var farm_var.tag.unlock_cost
-execute unless score @s money >= #farm_unlock_prize lc_var run tellraw @s {"text": "> 没有足够的祭","color": "#DD2000"}
-execute unless score @s money >= #farm_unlock_prize lc_var run return 1
+execute store result score #pay_money lc_var run data get storage lc:var farm_var.tag.unlock_cost
+execute unless score @s money >= #pay_money lc_var run tellraw @s {"text": "> 没有足够的祭","color": "#DD2000"}
+execute unless score @s money >= #pay_money lc_var run return 1
 
 ##pay
-scoreboard players operation @s money -= #farm_unlock_prize lc_var
-function lc:money/update_display
+function lc:money/pay_money
 
 ##unlock
 data modify storage lc:var farm_var.tag.unlocked set value 1

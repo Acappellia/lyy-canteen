@@ -12,6 +12,12 @@ execute unless score #search_uuid_out lc_var matches 0 run function lc:gallery/p
 ##search item in pages for given recipeid
 function lc:gallery/page_search_loop
 
+##add to cookcount
+execute unless data storage lc:user gallery[0].pages[0][0].tag.is_mid run function lc:gallery/unlock_achievement_1
+
+##check if variant
+execute if entity @s[tag=!ac40] if data storage lc:user gallery[0].pages[0][0].tag.is_variant run function lc:gallery/unlock_achievement_2
+
 ##see if the entry is already unlocked
 execute unless data storage lc:user gallery[0].pages[0][0].tag.unlocked run tellraw @s {"text": "> 并没有学过这道菜的配方诶……是偶然做出来的吗？","color": "#CCCCCC"}
 execute if data storage lc:user gallery[0].pages[0][0].tag.unlocked unless data storage lc:user gallery[0].pages[0][0].tag.new_unlock run function lc:gallery/update_gallery_entry

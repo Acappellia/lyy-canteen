@@ -21,6 +21,14 @@ execute if score #get_quality lc_var matches ..9 run scoreboard players set #get
 ##give item
 function lc:items/get_item_fixedquality
 
+##achievement
+scoreboard players add @s total_farm 1
+scoreboard players set #achievement_unlock_id lc_var 56
+execute as @s[tag=!ac56] run function lc:achievement/unlock_achievement
+tag @s add ac56
+scoreboard players set #achievement_unlock_id lc_var 57
+execute if score @s total_farm matches 30 run function lc:achievement/unlock_achievement
+
 ##play sound
 execute if score @s menu_page matches -4 run playsound entity.cow.milk master @s ~ ~ ~ 1 1
 execute if score @s menu_page matches -3 run playsound entity.chicken.egg master @s ~ ~ ~ 1 1

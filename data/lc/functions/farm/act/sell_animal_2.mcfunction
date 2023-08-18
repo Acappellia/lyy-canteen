@@ -32,3 +32,11 @@ data modify storage lc:var farm_slot_tmp set from storage lc:var farm_var.tag.fa
 data modify storage lc:var farm_var.tag set value {menu_ui:1,farm_slot:1,unlocked:1,unlock_cost:100,growth:0,quality:75,display:{Name:'{"text":"空的栏位","color":"green","italic":false}',Lore:['{"text":"点击为本栏位添加小鸡","color":"dark_green","italic":false}','[{"text":"花费： ","color":"white","italic":false},{"text":"25","color":"yellow","italic":false}]']}}
 data modify storage lc:var farm_var.tag.farm_slot set from storage lc:var farm_slot_tmp
 data modify storage lc:var farm_var.id set value "minecraft:oak_fence"
+
+##achievement
+scoreboard players add @s total_farm 1
+scoreboard players set #achievement_unlock_id lc_var 56
+execute as @s[tag=!ac56] run function lc:achievement/unlock_achievement
+tag @s add ac56
+scoreboard players set #achievement_unlock_id lc_var 57
+execute if score @s total_farm matches 30 run function lc:achievement/unlock_achievement

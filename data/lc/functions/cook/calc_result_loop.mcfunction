@@ -2,8 +2,10 @@
 
 #define score_holder #cook_sortout
 #define score_holder #cook_sortid
+#define score_holder #cook_timeout
 
 ##add basic data
+execute if score @s time_cooked matches 10000.. run scoreboard players set #cook_timeout lc_var 1
 data modify storage lc:var cookinput.in prepend value {}
 data modify storage lc:var cookinput.in[0].in_id set from entity @s item.tag.lc_itemid
 execute store result storage lc:var cookinput.in[0].cooktime int 1 run scoreboard players get @s time_cooked

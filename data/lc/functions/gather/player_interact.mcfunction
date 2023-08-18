@@ -24,6 +24,8 @@ function lc:items/get_item
 playsound entity.sheep.shear block @s ~ ~ ~ 1 1
 playsound entity.item_frame.remove_item block @s ~ ~ ~ 1 1
 
+scoreboard players add @s total_gather 1
+
 ##reset plant
 tag @e[tag=gathering,sort=nearest,limit=1] remove can_gather
 scoreboard players operation @e[tag=gathering,sort=nearest,limit=1] gather_lasttime = @s player_gather_lasttime

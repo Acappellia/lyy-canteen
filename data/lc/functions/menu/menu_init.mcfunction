@@ -4,6 +4,7 @@
 function lc:menu/menu_clear
 
 ##check menu page
+execute if score @s menu_page matches -7 run function lc:menu/menus/achievement
 execute if score @s menu_page matches -6 run function lc:menu/menus/crops
 execute if score @s menu_page matches -5 run function lc:menu/menus/farm/farm_0
 execute if score @s menu_page matches -4 run function lc:menu/menus/farm/farm_1

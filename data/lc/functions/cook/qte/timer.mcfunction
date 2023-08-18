@@ -9,7 +9,7 @@ execute as @e[scores={pot_qte_timer=..-1,pot_qte_rndseed=5}] at @s run function 
 execute as @e[scores={pot_qte_timer=..-1,pot_qte_rndseed=6}] at @s run function lc:cook/qte/display_6
 
 ## qte timeout
-execute as @e[scores={pot_qte_timer=-1}] at @s run function lc:cook/qte/qte_hit
+execute as @e[scores={pot_qte_timer=-1}] at @s run function lc:cook/qte/qte_timeout
 
 ## add time and loop
 scoreboard players add @e[scores={pot_qte_timer=..-1}] pot_qte_timer 1

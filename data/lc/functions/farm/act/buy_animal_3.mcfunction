@@ -5,8 +5,8 @@ execute unless score @s money matches 10.. run tellraw @s {"text": "> 没有足�
 execute unless score @s money matches 10.. run return 1
 
 ##pay
-scoreboard players remove @s money 10
-function lc:money/update_display
+scoreboard players set #pay_money lc_var 10
+function lc:money/pay_money
 
 ##sound
 playsound block.beehive.work master @s ~ ~ ~ 3 1

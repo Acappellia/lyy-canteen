@@ -32,3 +32,11 @@ data modify storage lc:var crops_slot_tmp set from storage lc:user crops[0].page
 data modify storage lc:user crops[0].page[0].tag set value {menu_ui:1,crops_menu:1,unlocked:1,unlock_cost:25,growth:0,display:{Name:'{"text":"空的蔬果架","color":"green","italic":false}',Lore:['{"text":"将背包内的种子放到这里播种","color":"dark_green","italic":false}']}}
 data modify storage lc:user crops[0].page[0].tag.crops_slot set from storage lc:var crops_slot_tmp
 data modify storage lc:user crops[0].page[0].id set value "minecraft:flower_pot"
+
+##achievement
+scoreboard players add @s total_crops 1
+scoreboard players set #achievement_unlock_id lc_var 58
+execute as @s[tag=!ac58] run function lc:achievement/unlock_achievement
+tag @s add ac58
+scoreboard players set #achievement_unlock_id lc_var 59
+execute if score @s total_crops matches 100 run function lc:achievement/unlock_achievement

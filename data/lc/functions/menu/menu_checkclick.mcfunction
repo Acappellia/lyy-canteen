@@ -14,6 +14,22 @@ execute store result score @s menu_click run clear @s minecraft:arrow{menu_ui:1,
 execute as @s[scores={menu_click=1..}] run scoreboard players set #menu_gallery lc_var 2
 scoreboard players reset @s menu_click
 
+##achievement turn page
+execute store result score @s menu_click run clear @s minecraft:arrow{menu_ui:1,achievement_next:1} 0
+execute as @s[scores={menu_click=1..}] run scoreboard players set #menu_achievement lc_var 1
+scoreboard players reset @s menu_click
+execute store result score @s menu_click run clear @s minecraft:arrow{menu_ui:1,achievement_prev:1} 0
+execute as @s[scores={menu_click=1..}] run scoreboard players set #menu_achievement lc_var 2
+scoreboard players reset @s menu_click
+
+##achievement click
+execute store result score @s menu_click run clear @s minecraft:enchanted_book{menu_ui:1,achievement_unlocked:1} 0
+execute as @s[scores={menu_click=1..}] run function lc:menu/achievement/checkclick
+
+execute store result score @s menu_click run clear @s minecraft:enchanted_book{menu_ui:1,achievement_locked:1} 0
+execute as @s[scores={menu_click=1..}] run tellraw @s {"text": "> 这个成就还没有解锁","color": "#CCCCCC"}
+scoreboard players reset @s menu_click
+
 ##check buy items index
 execute store result score @s menu_click run clear @s #lc:ui_items{menu_ui:1,menu_buy:1} 0
 execute as @s[scores={menu_click=1..}] run function lc:menu/menu_checkbuy

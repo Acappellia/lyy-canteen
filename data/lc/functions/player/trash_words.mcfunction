@@ -7,5 +7,9 @@ execute if score @s player_trash_words matches 3 run tellraw @s [{"text":"> 垃�
 execute if score @s player_trash_words matches 4 run tellraw @s [{"text":"> 垃圾桶的造型让你感受到家一般的亲切。","color": "#CCCCCC"}]
 execute if score @s player_trash_words matches 5 run tellraw @s [{"text":"> 你不断克制着自己想要在垃圾桶里翻找物品的冲动。","color": "#CCCCCC"}]
 
+scoreboard players set #achievement_unlock_id lc_var 53
+execute if score @s player_trash_words matches 5 as @s[tag=!ac53] run function lc:achievement/unlock_achievement
+execute if score @s player_trash_words matches 5 run tag @s add ac53
+
 scoreboard players add @s player_trash_words 1
 execute if score @s player_trash_words matches 6.. run scoreboard players reset @s player_trash_words

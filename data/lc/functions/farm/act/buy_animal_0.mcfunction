@@ -5,8 +5,8 @@ execute unless score @s money matches 25.. run tellraw @s {"text": "> 没有足�
 execute unless score @s money matches 25.. run return 1
 
 ##pay
-scoreboard players remove @s money 25
-function lc:money/update_display
+scoreboard players set #pay_money lc_var 25
+function lc:money/pay_money
 
 ##sound
 playsound entity.pig.ambient master @s ~ ~ ~ 1 1

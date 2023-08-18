@@ -65,6 +65,7 @@ scoreboard players set #2 lc_var 2
 scoreboard players set #-1 lc_var -1
 scoreboard players set #5 lc_var 5
 scoreboard players set #10 lc_var 10
+scoreboard players set #21 lc_var 21
 scoreboard players set #100 lc_var 100
 scoreboard players set #200 lc_var 200
 scoreboard players set #1000 lc_var 1000
@@ -83,9 +84,13 @@ execute unless score #recipe_id lc_var matches -2147483648..2147483647 run score
 execute unless score #player_id lc_var matches -2147483648..2147483647 run scoreboard players set #player_id lc_var 0
 execute unless data storage lc:data items run data modify storage lc:data items set value []
 
-scoreboard objectives add money dummy {"text": "LYY 金币","color": "#EEFF88"}
+scoreboard objectives add money dummy {"text": "LYY的大金币","color": "#EEFF88"}
+scoreboard objectives add total_money_get dummy
+scoreboard objectives add total_money_spend dummy
 scoreboard objectives add gallery_unlock dummy {"text": "全图鉴解锁数","color": "#EEFF88"}
 scoreboard objectives add gallery_unlock_main dummy {"text": "主图鉴解锁数","color": "#EEFF88"}
+scoreboard objectives add achievement_unlock dummy {"text": "成就解锁数","color": "#EEFF88"}
+scoreboard players set #achievement_totalcount lc_var 85
 scoreboard objectives add player_id dummy
 
 scoreboard objectives add menu_page dummy
@@ -93,7 +98,15 @@ scoreboard objectives add menu_index dummy
 scoreboard objectives add menu_click dummy
 scoreboard objectives add cookskill dummy
 ## cook skill range: 200~300
-scoreboard objectives add totalcookcount dummy {"text": "烹饪熟练度","color": "#EEFF88"}
+scoreboard objectives add total_cook dummy {"text": "烹饪熟练度","color": "#EEFF88"}
+scoreboard objectives add total_fish dummy
+scoreboard objectives add total_farm dummy
+scoreboard objectives add total_crops dummy
+scoreboard objectives add total_gather dummy
+scoreboard objectives add total_walk custom:walk_one_cm
+scoreboard objectives add total_sprint custom:sprint_one_cm
+scoreboard objectives add total_distance dummy
+
 
 scoreboard objectives add pot_type dummy
 scoreboard objectives add time_interaction dummy
@@ -122,11 +135,11 @@ scoreboard players set #farm_produce_time lc_var 260
 #1440 default
 scoreboard players set #farm_interact_time lc_var 100
 #720 default
-scoreboard players set #farm_food_consume lc_var 6600
+scoreboard players set #farm_food_consume lc_var 20000
 #36000 default
 scoreboard players operation #farm_food_max lc_var = #farm_food_consume lc_var
 scoreboard players operation #farm_food_max lc_var *= #64 lc_var
-scoreboard players set #farm_qdrop_time lc_var 1100
+scoreboard players set #farm_qdrop_time lc_var 12000
 #6000 default
 
 scoreboard objectives add gather_id dummy
