@@ -466,9 +466,9 @@ data modify storage lc:data achievement.pages[0][{Slot:25b}].tag.reward_money se
 
 ##add page 5 data
 
-data modify storage lc:data achievement.pages prepend value [{Count:1b,Slot:0b,id:"minecraft:dark_oak_sign",tag:{menu_ui:1,page:4,index:100,BlockEntityTag:{},display:{Name:'{"text":"成就收集","color":"#FFBB00","italic":false}'}}},{Count:1b,Slot:18b,id:"minecraft:arrow",tag:{menu_ui:1,page:4,index:101,achievement_prev:1,display:{Name:'{"text":"上一页","color":"#88FF00","italic":false}'}}},{Count:1b,Slot:26b,id:"minecraft:arrow",tag:{menu_ui:1,page:4,index:102,achievement_next:1,display:{Name:'{"text":"下一页","color":"#88FF00","italic":false}'}}}]
+data modify storage lc:data achievement.pages prepend value [{Count:1b,Slot:0b,id:"minecraft:dark_oak_sign",tag:{menu_ui:1,page:5,index:100,BlockEntityTag:{},display:{Name:'{"text":"成就收集","color":"#FFBB00","italic":false}'}}},{Count:1b,Slot:18b,id:"minecraft:arrow",tag:{menu_ui:1,page:5,index:101,achievement_prev:1,display:{Name:'{"text":"上一页","color":"#88FF00","italic":false}'}}},{Count:1b,Slot:26b,id:"minecraft:arrow",tag:{menu_ui:1,page:5,index:102,achievement_next:1,display:{Name:'{"text":"下一页","color":"#88FF00","italic":false}'}}}]
 
-data modify storage lc:data achievement.pages[0] append value {Count:1b,Slot:13b,id:"minecraft:structure_void",tag:{index:1,menu_ui:1,achievement_locked:1,page:4,display:{Name:'{"text":"未解锁的成就","color":"#CCCCCC","italic":false}',Lore:['[{"text":"# 85","color":"#CCCCCC"}]']}}}
+data modify storage lc:data achievement.pages[0] append value {Count:1b,Slot:13b,id:"minecraft:structure_void",tag:{index:1,menu_ui:1,achievement_locked:1,page:5,display:{Name:'{"text":"未解锁的成就","color":"#CCCCCC","italic":false}',Lore:['[{"text":"# 85","color":"#CCCCCC"}]']}}}
 
 data modify storage lc:data achievement.pages[0][{Slot:13b}].tag.out_display.Name set value '{"text":"东方毛玉食堂","color":"yellow"}'
 data modify storage lc:data achievement.pages[0][{Slot:13b}].tag.Lore prepend value '{"text":"完成所有成就","color":"white"}'
