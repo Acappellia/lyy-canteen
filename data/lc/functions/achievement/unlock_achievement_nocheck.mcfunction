@@ -6,6 +6,8 @@
 #define score_holder #achievement_unlock_page
 #define score_holder #achievement_unlock_index
 
+execute unless score #achievement_unlock_id lc_var matches 1..85 run return 5
+
 scoreboard players operation #achievement_unlock_page lc_var = #achievement_unlock_id lc_var
 scoreboard players operation #achievement_unlock_index lc_var = #achievement_unlock_id lc_var
 
@@ -18,21 +20,17 @@ execute if score #achievement_unlock_index lc_var matches 0 run scoreboard playe
 execute store result score #search_uuid_out lc_var run function lc:achievement/search_uuid
 execute unless score #search_uuid_out lc_var matches 1 run function lc:achievement/player_init_achievement
 
-tellraw @s "search page"
 ##search page
 execute store result score #search_pageid_out lc_var run function lc:achievement/search_page
 execute unless score #search_pageid_out lc_var matches 1 run return 1
 
-tellraw @s "search index"
 ##search index
 execute store result score #search_index_out lc_var run function lc:achievement/search_index
 execute unless score #search_index_out lc_var matches 1 run return 2
 
-tellraw @s "check unlocked"
 ##check if unlocked
 execute if data storage lc:user achievement[0].pages[0][0].tag.achievement_unlocked run return 3
 
-tellraw @s "unlock"
 ##unlock achievement
 data remove storage lc:user achievement[0].pages[0][0].tag.achievement_locked
 data modify storage lc:user achievement[0].pages[0][0].tag.achievement_unlocked set value 1
@@ -54,6 +52,10 @@ tellraw @a [{"text": "🔔 ","color":"#EEFF88"},{"selector":"@s","color":"white"
 
 ##add count
 scoreboard players add @s achievement_unlock 1
+
+##effect
+execute at @s run particle end_rod ~ ~0.5 ~ 0 0 0 0.1 10
+playsound block.note_block.chime master @s ~ ~ ~ 1 0.8
 
 ##give money
 execute store result score #get_money lc_var run data get storage lc:user achievement[0].pages[0][0].tag.reward_money

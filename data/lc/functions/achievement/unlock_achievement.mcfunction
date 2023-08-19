@@ -6,6 +6,8 @@
 #define score_holder #achievement_unlock_page
 #define score_holder #achievement_unlock_index
 
+execute unless score #achievement_unlock_id lc_var matches 1..85 run return 5
+
 scoreboard players operation #achievement_unlock_page lc_var = #achievement_unlock_id lc_var
 scoreboard players operation #achievement_unlock_index lc_var = #achievement_unlock_id lc_var
 
@@ -49,6 +51,10 @@ tellraw @a [{"text": "🔔 ","color":"#EEFF88"},{"selector":"@s","color":"white"
 
 ##add count
 scoreboard players add @s achievement_unlock 1
+
+##effect
+execute at @s run particle end_rod ~ ~0.5 ~ 0 0 0 0.1 10
+playsound block.note_block.chime master @s ~ ~ ~ 1 0.8
 
 ##give money
 execute store result score #get_money lc_var run data get storage lc:user achievement[0].pages[0][0].tag.reward_money
