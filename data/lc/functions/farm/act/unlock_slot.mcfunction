@@ -15,4 +15,4 @@ execute if score @s menu_page matches -4 run data modify storage lc:var farm_var
 execute if score @s menu_page matches -3 run data modify storage lc:var farm_var.tag.display set value {Name:'{"text":"空的栏位","color":"green","italic":false}',Lore:['{"text":"点击为本栏位添加小鸡","color":"dark_green","italic":false}','[{"text":"花费： ","color":"white","italic":false},{"text":"25","color":"yellow","italic":false}]']}
 execute if score @s menu_page matches -2 run data modify storage lc:var farm_var.tag.display set value {Name:'{"text":"空的栏位","color":"green","italic":false}',Lore:['{"text":"点击为本栏位添加蜜蜂","color":"dark_green","italic":false}','[{"text":"花费： ","color":"white","italic":false},{"text":"10","color":"yellow","italic":false}]']}
 data modify storage lc:var farm_var.id set from storage lc:var farm_var.tag.origin_item
-playsound block.fence_gate.open master @s ~ ~ ~ 1 1
+playsound block.fence_gate.open voice @s ~ ~ ~ 1 1

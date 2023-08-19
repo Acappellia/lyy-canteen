@@ -21,8 +21,8 @@ scoreboard players set #get_qmax lc_var 100
 function lc:items/get_item
 
 ##play sound
-playsound entity.sheep.shear block @s ~ ~ ~ 1 1
-playsound entity.item_frame.remove_item block @s ~ ~ ~ 1 1
+playsound entity.sheep.shear block @a ~ ~ ~ 1 1
+playsound entity.item_frame.remove_item block @a ~ ~ ~ 1 1
 
 scoreboard players add @s total_gather 1
 

@@ -12,4 +12,4 @@ function lc:money/pay_money
 data modify storage lc:user crops[0].page[0].tag.unlocked set value 1
 data modify storage lc:user crops[0].page[0].tag.display set value {Name:'{"text":"空的蔬果架","color":"green","italic":false}',Lore:['{"text":"将背包内的种子放到这里播种","color":"dark_green","italic":false}']}
 data modify storage lc:user crops[0].page[0].id set value "minecraft:flower_pot"
-playsound entity.armor_stand.place master @s ~ ~ ~ 1 1
+playsound entity.armor_stand.place voice @s ~ ~ ~ 1 1

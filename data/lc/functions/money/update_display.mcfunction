@@ -9,4 +9,4 @@ scoreboard players operation #money_add_to_level lc_var = @s money
 function lc:money/add_xp_loop
 
 ##playsound
-playsound item.book.page_turn master @s ~ ~ ~ 3 1
+playsound block.note_block.bell voice @s ~ ~ ~ 1 1

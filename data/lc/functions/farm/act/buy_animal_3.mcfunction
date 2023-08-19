@@ -9,7 +9,7 @@ scoreboard players set #pay_money lc_var 10
 function lc:money/pay_money
 
 ##sound
-playsound block.beehive.work master @s ~ ~ ~ 3 1
+playsound block.beehive.work voice @s ~ ~ ~ 3 1
 
 ##update display
 data modify storage lc:var farm_var.tag.have_animal set value 1

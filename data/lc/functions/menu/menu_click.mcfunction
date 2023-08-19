@@ -1,7 +1,7 @@
 ##called when someone click ui items in menu
 
 ##sound
-playsound ui.button.click master @s ~ ~ ~ 1 1
+playsound ui.button.click voice @s ~ ~ ~ 1 1
 
 ##reset score
 scoreboard players reset @s menu_click

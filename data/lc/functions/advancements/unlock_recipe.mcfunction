@@ -2,7 +2,7 @@
 
 advancement revoke @s only lc:unlock_recipe
 execute if entity @s[tag=edit] run return 1
-playsound entity.player.levelup master @a ~ ~ ~ 0.3 1
+playsound entity.player.levelup voice @s ~ ~ ~ 0.3 1
 
 ##search for each slot
 execute store result score #search_recipe lc_var run data get entity @s Inventory[{Slot:0b}].tag.recipe_id_unlock

@@ -22,7 +22,7 @@ item modify entity @s enderchest.23 lc:set_count_-1
 item modify entity @s enderchest.24 lc:set_count_-1
 
 ##sound
-playsound block.cherry_sapling.place master @s ~ ~ ~ 1 1
+playsound block.cherry_sapling.place voice @s ~ ~ ~ 1 1
 
 ##update value
 data modify storage lc:user crops[0].page[0].tag.have_crops set value 1

@@ -25,7 +25,7 @@ function lc:items/get_item_giveonly
 scoreboard players reset #getitem_nogive lc_var
 
 ##playsound
-playsound block.cherry_leaves.break master @s ~ ~ ~ 1 1
+playsound block.cherry_leaves.break voice @s ~ ~ ~ 1 1
 
 ##reset slot
 data modify storage lc:var crops_slot_tmp set from storage lc:user crops[0].page[0].tag.crops_slot

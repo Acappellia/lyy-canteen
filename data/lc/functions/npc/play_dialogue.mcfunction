@@ -6,7 +6,7 @@ execute if data storage lc:data npc[0].acts[0].dialogues[0].isplayer run tellraw
 execute if data storage lc:data npc[0].acts[0].dialogues[0].isbg run tellraw @s [{"text": "--\n  ","color": "#CCCCCC"},{"nbt":"npc[0].acts[0].dialogues[0].text","storage": "lc:data","interpret": true,"color": "#CCCCCC"}]
 
 ##play sound
-playsound ui.button.click master @s ~ ~ ~ 0.3 1.2
+playsound minecraft:block.note_block.bit voice @s ~ ~ ~ 1 1.4
 
 ##add cooldown
 scoreboard players set @s npc_interact_cd -10

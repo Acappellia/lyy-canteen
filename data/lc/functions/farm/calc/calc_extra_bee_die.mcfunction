@@ -1,7 +1,7 @@
 ##called to calc milk produce
 
 ##playsound
-playsound entity.bee.death master @s ~ ~ ~ 1 1
+playsound entity.bee.death voice @s ~ ~ ~ 1 1
 
 ##reset slot
 data modify storage lc:var farm_slot_tmp set from storage lc:var farm_grow.tag.farm_slot

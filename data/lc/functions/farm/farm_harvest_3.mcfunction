@@ -30,9 +30,9 @@ scoreboard players set #achievement_unlock_id lc_var 57
 execute if score @s total_farm matches 30 run function lc:achievement/unlock_achievement
 
 ##play sound
-execute if score @s menu_page matches -4 run playsound entity.cow.milk master @s ~ ~ ~ 1 1
-execute if score @s menu_page matches -3 run playsound entity.chicken.egg master @s ~ ~ ~ 1 1
-execute if score @s menu_page matches -2 run playsound item.honey_bottle.drink master @s ~ ~ ~ 1 1
+execute if score @s menu_page matches -4 run playsound entity.cow.milk voice @s ~ ~ ~ 1 1
+execute if score @s menu_page matches -3 run playsound entity.chicken.egg voice @s ~ ~ ~ 1 1
+execute if score @s menu_page matches -2 run playsound item.honey_bottle.drink voice @s ~ ~ ~ 1 1
 
 ##clear slot
 execute if score @s menu_page matches -4 run data remove storage lc:user farm[0].farm_page_1[{Slot:22b}]

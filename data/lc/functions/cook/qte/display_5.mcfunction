@@ -2,7 +2,7 @@
 # perfect time 32-36 standard -8
 
 title @p[distance=..5] times 0t 10t 5t
-playsound block.note_block.snare block @p[distance=..5] ~ ~ ~ 0.3 1
+playsound block.note_block.snare voice @p[distance=..5] ~ ~ ~ 0.3 1
 
 execute if score @s pot_qte_timer matches -41 run title @p[distance=..5] subtitle [{"text":"<","color":"yellow"},{"text":" ","color":"white"},{"text":"|","color":"aqua"},{"text":"-------------------------------","color":"white"},{"text":"====","color":"yellow"},{"text":"----- ","color":"white"},{"text":">","color":"yellow"}]
 execute if score @s pot_qte_timer matches -40 run title @p[distance=..5] subtitle [{"text":"<","color":"yellow"},{"text":" -","color":"white"},{"text":"|","color":"aqua"},{"text":"------------------------------","color":"white"},{"text":"====","color":"yellow"},{"text":"----- ","color":"white"},{"text":">","color":"yellow"}]

@@ -172,7 +172,7 @@ execute if score #money_add_to_score lc_var matches 1.. run scoreboard players o
 execute unless score #get_money lc_var matches 1.. run tellraw @s [{"text": "> 没有准备餐品呢……","color": "#CCCCCC"}]
 execute unless score #get_money lc_var matches 1.. run return 1
 tellraw @s [{"text": "> 出餐成功！本次共收入 ","color": "#EEFF88"},{"score":{"name": "#get_money","objective": "lc_var"},"color": "yellow"},{"text": " 祭！","color": "#EEFF88"}]
-playsound block.chain.break master @s ~ ~ ~ 1 1.2
+playsound block.chain.break voice @s ~ ~ ~ 1 1.2
 
 ##achievement
 scoreboard players set #achievement_unlock_id lc_var 60

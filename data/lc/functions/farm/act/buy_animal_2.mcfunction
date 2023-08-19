@@ -9,7 +9,7 @@ scoreboard players set #pay_money lc_var 25
 function lc:money/pay_money
 
 ##sound
-playsound entity.chicken.ambient master @s ~ ~ ~ 1 1
+playsound entity.chicken.ambient voice @s ~ ~ ~ 1 1
 
 ##update display
 data modify storage lc:var farm_var.tag.have_animal set value 1

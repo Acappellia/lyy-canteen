@@ -25,7 +25,7 @@ function lc:items/get_item_giveonly
 scoreboard players reset #getitem_nogive lc_var
 
 ##playsound
-playsound entity.pig.death master @s ~ ~ ~ 1 1
+playsound entity.pig.death voice @s ~ ~ ~ 1 1
 
 ##reset slot
 data modify storage lc:var farm_slot_tmp set from storage lc:var farm_var.tag.farm_slot

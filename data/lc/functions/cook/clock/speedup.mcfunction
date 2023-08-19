@@ -15,7 +15,7 @@ execute unless score #pot_displaycount lc_var matches 1.. run return 1
 
 ##sound & effect
 tellraw @s [{"text": "> 你感觉时间飞逝而过","color": "white"}]
-playsound minecraft:block.chest.locked master @a ~ ~ ~ 1 1.2
+playsound minecraft:block.chest.locked block @a ~ ~ ~ 1 1.2
 particle flash ~ ~1 ~ 0 0 0 0 1
 
 ##check turned on

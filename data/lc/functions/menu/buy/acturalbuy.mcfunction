@@ -9,7 +9,7 @@ execute unless score @s money >= #pay_money lc_var run return 1
 ##pay
 function lc:money/pay_money
 
-playsound block.chain.break master @s ~ ~ ~ 1 1.2
+playsound block.chain.break voice @s ~ ~ ~ 1 1.2
 
 ##get item
 execute store result score #get_lcid lc_var run data get storage lc:data shops[0].sell[0].tag.lc_itemid 1
