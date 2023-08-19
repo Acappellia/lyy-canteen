@@ -37,8 +37,8 @@ tellraw @s ["cook_calc_score ",{"score":{"name": "#cook_calc_score","objective":
 ##add to sum
 scoreboard players operation #cook_score_sum lc_var += #cook_calc_score lc_var
 scoreboard players operation #cook_weight_sum lc_var += #cook_calc_weight lc_var
-tellraw @s ["cook_score_sum ",{"score":{"name": "#cook_calc_score","objective": "lc_var"}}]
-tellraw @s ["cook_weight_sum ",{"score":{"name": "#cook_calc_score","objective": "lc_var"}}]
+tellraw @s ["cook_score_sum ",{"score":{"name": "#cook_score_sum","objective": "lc_var"}}]
+tellraw @s ["cook_weight_sum ",{"score":{"name": "#cook_weight_sum","objective": "lc_var"}}]
 
 ##remove first item in input and loop
 data remove storage lc:var cookinput.in[0]
