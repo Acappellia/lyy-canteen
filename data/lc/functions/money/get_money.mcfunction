@@ -23,5 +23,5 @@ scoreboard players set #achievement_unlock_id lc_var 67
 execute if score @s money matches 1000.. as @s[tag=!ac67] run function lc:achievement/unlock_achievement
 execute if score @s money matches 1000.. run tag @s add ac67
 scoreboard players set #achievement_unlock_id lc_var 68
-execute if score @s money matches 5000.. as @s[tag=!ac68] run function lc:achievement/unlock_achievement
-execute if score @s money matches 5000.. run tag @s add ac68
+execute if score @s money matches 10000.. as @s[tag=!ac68] run function lc:achievement/unlock_achievement
+execute if score @s money matches 10000.. run tag @s add ac68
