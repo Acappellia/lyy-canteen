@@ -38,7 +38,7 @@ data remove storage lc:user achievement[0].pages[0][0].tag.achievement_locked
 data modify storage lc:user achievement[0].pages[0][0].tag.achievement_unlocked set value 1
 
 ##update display
-data modify storage lc:user achievement[0].pages[0][0].tag.display.id set value "minecraft:enchanted_book"
+data modify storage lc:user achievement[0].pages[0][0].id set value "minecraft:enchanted_book"
 data modify storage lc:user achievement[0].pages[0][0].tag.display.Name set from storage lc:user achievement[0].pages[0][0].tag.out_display.Name
 data modify storage lc:user achievement[0].pages[0][0].tag.display.Lore append value '""'
 data modify storage lc:user achievement[0].pages[0][0].tag.display.Lore append value '[{"text":"点击应用称号：","color":"#CCCCCC","italic":false}]'
