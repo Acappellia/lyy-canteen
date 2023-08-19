@@ -131,11 +131,11 @@ scoreboard players set #farm_honey_id lc_var 137
 #define score_holder #farm_qdrop_time
 scoreboard players set #farm_grow_time lc_var 40000
 #216000 default
-scoreboard players set #farm_produce_time lc_var 260
+scoreboard players set #farm_produce_time lc_var 160
 #1440 default
-scoreboard players set #farm_interact_time lc_var 100
+scoreboard players set #farm_interact_time lc_var 80
 #720 default
-scoreboard players set #farm_food_consume lc_var 20000
+scoreboard players set #farm_food_consume lc_var 40000
 #36000 default
 scoreboard players operation #farm_food_max lc_var = #farm_food_consume lc_var
 scoreboard players operation #farm_food_max lc_var *= #64 lc_var
