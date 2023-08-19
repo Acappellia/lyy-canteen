@@ -31,5 +31,6 @@ scoreboard objectives remove total_sprint
 scoreboard objectives remove total_distance
 
 function lc:init
+function lc:debug/init_teams
 
-tellraw @s "cleared all playerdata, playerid & kitchen location reserved"
+tellraw @s "Cleared all playerdata, playerid & kitchen location reserved.\nServer files still need to be deleted"
