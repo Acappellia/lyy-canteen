@@ -9,5 +9,4 @@ playsound block.beacon.power_select block @a ~ ~ ~ 10 2
 particle minecraft:totem_of_undying ~ ~1 ~ 0 0 0 0.5 50
 
 ##tp
-tp @s ~ ~ ~
-#TODO
+tp @s 996 41 920

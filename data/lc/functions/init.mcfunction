@@ -197,6 +197,8 @@ scoreboard objectives add player_tp_energy dummy
 scoreboard objectives add player_tp_lasttime dummy
 scoreboard objectives add player_tpanchor_cd dummy
 
+scoreboard objectives add anchor_out_dest dummy
+
 #define score_holder #player_tp_cost
 #define score_holder #player_tp_emax
 scoreboard players set #player_tp_cost lc_var 12000
