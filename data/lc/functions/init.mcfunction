@@ -195,7 +195,7 @@ scoreboard objectives add deco_rotation dummy
 
 scoreboard objectives add player_tp_energy dummy
 scoreboard objectives add player_tp_lasttime dummy
-scoreboard objectives add player_tpanchor_cd dummy
+scoreboard objectives add player_tpanchor_cd custom:time_since_death
 
 scoreboard objectives add anchor_out_dest dummy
 

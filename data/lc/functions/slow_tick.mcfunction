@@ -16,6 +16,7 @@ execute as @a at @s positioned ~ ~-0.5 ~ if block ~ ~ ~ dirt_path run effect giv
 function lc:player/teleport/check_unlock
 
 ##anchor particle
-execute as @e[type=item_display,tag=tpanchor] at @s run particle minecraft:witch ~ ~ ~ 0.5 0 0.5 0 5
+execute as @e[type=interaction,tag=tpanchor] at @s run particle minecraft:witch ~ ~0.5 ~ 0.5 0 0.5 0 5
+
 ##schedule after 1s
 schedule function lc:slow_tick 1s replace

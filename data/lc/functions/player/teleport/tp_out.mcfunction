@@ -4,7 +4,7 @@
 scoreboard players operation #tpanchor_dest lc_var = @e[type=interaction,tag=tpanchoring,sort=nearest,limit=1] anchor_out_dest
 
 execute if score #tpanchor_dest lc_var matches 1 run tp @s 1005 56 914
-execute if score #tpanchor_dest lc_var matches 1 run tellraw @s [{"text": "> 你通过隙间来到神社","color": "white"}]
+execute if score #tpanchor_dest lc_var matches 1 run tellraw @s [{"text": "> 你通过隙间来到花映乡","color": "white"}]
 execute if score #tpanchor_dest lc_var matches 2 run tp @s[tag=ac71] 1059 93 642
 execute if score #tpanchor_dest lc_var matches 2 run tellraw @s[tag=ac71] [{"text": "> 你通过隙间来到神社","color": "white"}]
 execute if score #tpanchor_dest lc_var matches 2 run tellraw @s[tag=!ac71] [{"text": "> 神社的出口被封死了，首先得去世界中对应位置激活才行。","color": "#CCCCCC"}]
