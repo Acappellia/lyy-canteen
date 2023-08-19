@@ -52,10 +52,14 @@ function lc:achievement/put_in_list_loop
 ##tellraw
 tellraw @a [{"text": "🔔 ","color":"#EEFF88"},{"selector":"@s","color":"white"},{"text": " 解锁了成就 ","color":"#CCCCCC"},{"text": "[ ","color":"white"},{"nbt":"achievement[0].pages[0][0].tag.display.Name","storage": "lc:user","interpret": true,"color":"yellow"},{"text": " ]","color":"white"}]
 
+##add count
+scoreboard players add @s achievement_unlock 1
+
 ##give money
 execute store result score #get_money lc_var run data get storage lc:user achievement[0].pages[0][0].tag.reward_money
 function lc:money/get_money
 
 ##check achievement #38 & #85
 execute if entity @s[tag=!ac38] run function lc:achievement/check/38
-function lc:achievement/check/85
+execute if score @s achievement_unlock matches 84 run scoreboard players set #achievement_unlock_id lc_var 85
+execute if score @s achievement_unlock matches 84 run function lc:achievement/unlock_achievement_nocheck
