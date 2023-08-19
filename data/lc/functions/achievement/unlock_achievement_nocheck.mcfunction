@@ -55,7 +55,3 @@ tellraw @a [{"text": "🔔 ","color":"#EEFF88"},{"selector":"@s","color":"white"
 ##give money
 execute store result score #get_money lc_var run data get storage lc:user achievement[0].pages[0][0].tag.reward_money
 function lc:money/get_money
-
-##check achievement #38 & #85
-execute if entity @s[tag=!ac38] run function lc:achievement/check/38
-function lc:achievement/check/85
