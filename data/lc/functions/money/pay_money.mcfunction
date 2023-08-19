@@ -14,4 +14,7 @@ execute if score @s total_money_spend matches 2000.. as @s[tag=!ac65] run functi
 execute if score @s total_money_spend matches 2000.. run tag @s add ac65
 scoreboard players set #achievement_unlock_id lc_var 66
 execute if score @s total_money_spend matches 10000.. as @s[tag=!ac66] run function lc:achievement/unlock_achievement
+execute if score @s total_money_spend matches 10000.. as @s[tag=!ac66] run scoreboard players set #get_quality lc_var 100
+execute if score @s total_money_spend matches 10000.. as @s[tag=!ac66] run scoreboard players set #get_lcid lc_var 555
+execute if score @s total_money_spend matches 10000.. as @s[tag=!ac66] run function lc:items/get_item_first_fixed
 execute if score @s total_money_spend matches 10000.. run tag @s add ac66

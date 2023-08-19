@@ -212,3 +212,6 @@ schedule function lc:veryslow_tick 1t replace
 
 ##init npc
 function lc:debug/init_npc_config
+
+##start backup tick
+schedule function lc:backup_tick 3600s replace

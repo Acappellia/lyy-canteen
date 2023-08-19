@@ -14,6 +14,7 @@ scoreboard players operation #achievement_unlock_index lc_var = #achievement_unl
 scoreboard players operation #achievement_unlock_page lc_var /= #21 lc_var
 scoreboard players add #achievement_unlock_page lc_var 1
 scoreboard players operation #achievement_unlock_index lc_var %= #21 lc_var
+execute if score #achievement_unlock_index lc_var matches 0 run scoreboard players remove #achievement_unlock_page lc_var 1
 execute if score #achievement_unlock_index lc_var matches 0 run scoreboard players set #achievement_unlock_index lc_var 21
 
 ##search uuid
