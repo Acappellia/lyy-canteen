@@ -191,6 +191,17 @@ scoreboard objectives add player_clock_cd custom:time_since_death
 scoreboard objectives add player_music_timer custom:time_since_death
 scoreboard objectives add player_last_music dummy
 
+scoreboard objectives add deco_rotation dummy
+
+scoreboard objectives add player_tp_energy dummy
+scoreboard objectives add player_tp_lasttime dummy
+scoreboard objectives add player_tpanchor_cd dummy
+
+#define score_holder #player_tp_cost
+#define score_holder #player_tp_emax
+scoreboard players set #player_tp_cost lc_var 12000
+scoreboard players set #player_tp_emax lc_var 36000
+
 ##start slow tick
 schedule function lc:slow_tick 1t replace
 

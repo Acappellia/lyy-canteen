@@ -12,5 +12,8 @@ execute as @a unless score @s player_id matches 1.. store result score @s player
 ##player add speed
 execute as @a at @s positioned ~ ~-0.5 ~ if block ~ ~ ~ dirt_path run effect give @s speed 10 2 true
 
+##check location unlock
+function lc:player/teleport/check_unlock
+
 ##schedule after 1s
 schedule function lc:slow_tick 1s replace

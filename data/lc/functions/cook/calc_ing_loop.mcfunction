@@ -18,6 +18,8 @@ scoreboard players operation #cook_calc_dtime lc_var -= #cook_calc_sttime lc_var
 execute if score #cook_calc_dtime lc_var matches ..-1 run scoreboard players operation #cook_calc_dtime lc_var *= #-1 lc_var
 execute if score #cook_calc_dtime lc_var matches 0 run scoreboard players set #cook_calc_dtime lc_var 1
 execute store result score #cook_calc_score lc_var run data get storage lc:data recipes[0].in[0].tolerance
+scoreboard players operation #cook_calc_score lc_var *= #cook_buff_tol lc_var
+scoreboard players operation #cook_calc_score lc_var /= #100 lc_var
 scoreboard players operation #cook_calc_score lc_var *= #200 lc_var
 scoreboard players operation #cook_calc_score lc_var /= #cook_calc_dtime lc_var
 execute if score #cook_calc_score lc_var > @s cookskill run scoreboard players operation #cook_calc_score lc_var = @s cookskill

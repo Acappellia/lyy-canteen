@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "deco":{
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"deco\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "lc:advancements/interact_deco_atk"
+    }
+}

@@ -3,14 +3,17 @@
 #define score_holder #cook_score_sum
 #define score_holder #cook_weight_sum
 
+execute store result score #cook_buff_quality lc_var run data get entity @s Inventory[{Slot:103b}].tag.buff_quality
+
 ##loop each item and calc score
 scoreboard players reset #cook_score_sum lc_var
 scoreboard players reset #cook_weight_sum lc_var
 function lc:cook/qte/calc_ing_loop
 scoreboard players operation #cook_score_sum lc_var /= #cook_weight_sum lc_var
 execute if score #qte_gradescore lc_var matches ..0 run scoreboard players operation #cook_score_sum lc_var -= #10 lc_var
-scoreboard players operation #qte_gradescore lc_var -= #5 lc_var
+scoreboard players remove #qte_gradescore lc_var 7
 scoreboard players operation #cook_score_sum lc_var += #qte_gradescore lc_var
+scoreboard players operation #cook_score_sum lc_var += #cook_buff_quality lc_var
 execute if score #cook_score_sum lc_var matches 101.. run scoreboard players set #cook_score_sum lc_var 100
 execute if score #cook_score_sum lc_var matches ..9 run scoreboard players set #cook_score_sum lc_var 10
 
