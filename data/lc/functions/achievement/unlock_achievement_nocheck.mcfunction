@@ -52,6 +52,9 @@ function lc:achievement/put_in_list_loop
 ##tellraw
 tellraw @a [{"text": "🔔 ","color":"#EEFF88"},{"selector":"@s","color":"white"},{"text": " 解锁了成就 ","color":"#CCCCCC"},{"text": "[ ","color":"white"},{"nbt":"achievement[0].pages[0][0].tag.display.Name","storage": "lc:user","interpret": true,"color":"yellow"},{"text": " ]","color":"white"}]
 
+##add count
+scoreboard players add @s achievement_unlock 1
+
 ##give money
 execute store result score #get_money lc_var run data get storage lc:user achievement[0].pages[0][0].tag.reward_money
 function lc:money/get_money
