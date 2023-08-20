@@ -3,7 +3,7 @@
 #define score_holder #cook_score_sum
 #define score_holder #cook_weight_sum
 
-execute store result score #cook_buff_quality lc_var run data get entity @s Inventory[{Slot:103b}].tag.buff_quality
+execute store result score #cook_buff_quality lc_var run data get entity @p[distance=..5] Inventory[{Slot:103b}].tag.buff_quality
 
 ##loop each item and calc score
 scoreboard players reset #cook_score_sum lc_var

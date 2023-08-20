@@ -496,8 +496,6 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts prepend value {act_id:16, require_state:12, end_state:12}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:1, text:'["看到你的厨艺成长的这么快，我真的很开心呢！"]'}
 
-
-
 #4 杂货店老板 诶币
 data modify storage lc:data npc prepend value {npc_id:4}
 data modify storage lc:data npc[0].acts prepend value {act_id:1, require_state:1, end_state:2}
@@ -1329,7 +1327,7 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:21, next:22, isbg:1, text:'["—— ",{"text":"此即开始","color":"#CC88FF"}]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:22, next:1, isbg:1, text:'["【 终篇 完 】"}]'}
 
-data modify storage lc:data npc[0].acts prepend value {act_id:12, require_state:8, end_state:9, reward_item:[{lc_itemid:651, quality:100}], unlock_achievement:15}
+data modify storage lc:data npc[0].acts prepend value {act_id:12, require_state:8, end_state:10, reward_item:[{lc_itemid:651, quality:100}], unlock_achievement:15}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["作为幻想乡的大英雄，现在是什么感觉呢？"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, text:'["虽然这里的居民们也许并不会察觉究竟发生了什么。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, text:'["在她们的眼中，你仍然是那个小有名气的店长。"]'}
@@ -1337,22 +1335,22 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:6, isbg:1, text:'["你回想起居酒屋的日常。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:6, next:1, text:'["以后，也请你继续为大家带来幸福吧。"]'}
 
-data modify storage lc:data npc[0].acts prepend value {act_id:20, require_state:9, end_state:10,edit_state:[{npc_id:203,state:2}]}
+data modify storage lc:data npc[0].acts prepend value {act_id:20, require_state:10, end_state:11,edit_state:[{npc_id:203,state:2}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["话说回来，我在红魔馆玩水的时候，不小心把一张符咒弄丢了。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, text:'["如果你能帮我找回来的话，我会很感激你的！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:1, isplayer:1, text:'["没问题，包在我身上吧！"]'}
 
-data modify storage lc:data npc[0].acts prepend value {act_id:21, require_state:10, end_state:10}
+data modify storage lc:data npc[0].acts prepend value {act_id:21, require_state:11, end_state:11}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:1, text:'["怎么样？在红魔馆找到符咒了吗？"]'}
 
 #需要湿透的符咒
-data modify storage lc:data npc[0].acts prepend value {act_id:22, require_state:10, end_state:11, require_item:{lc_itemid:618,quality:100},reward_item:[{lc_itemid:514,quality:100}]}
+data modify storage lc:data npc[0].acts prepend value {act_id:22, require_state:11, end_state:12, require_item:{lc_itemid:618,quality:100},reward_item:[{lc_itemid:514,quality:100}]}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["啊？你还真能找回来啊，谢谢你啦！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isplayer:1, text:'["不客气，搜东西我是专业的！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:1, text:'["这个当作给你的奖励吧，这可是超豪华饭团！"]'}
 #解锁板栗糯米饭团
 
-data modify storage lc:data npc[0].acts prepend value {act_id:23, require_state:11, end_state:11}
+data modify storage lc:data npc[0].acts prepend value {act_id:23, require_state:12, end_state:12}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["以后去居酒屋的时候，你可得好好招待哦！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:1, isplayer:1, text:'["没问题！"]'}
 
