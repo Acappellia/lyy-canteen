@@ -1014,7 +1014,7 @@ data modify storage lc:data npc[0].acts prepend value {act_id:8, require_state:8
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["芙兰朵露有些不耐烦了，她觉得你似乎在逗弄她。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["你感受到了前所未有的恐惧。"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, isbg:1, text:'["如果再不把料理交给他，"{"text":"可怕的事","color":"white"},"就要发生了……"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:1, isbg:1, text:'["如果再不把料理交给她，",{"text":"可怕的事","color":"white"},"就要发生了……"]'}
 
 data modify storage lc:data npc[0].acts prepend value {act_id:9, require_state:9, end_state:10}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:1, isbg:1, text:'["一份",{"text":"加了桃子的麻薯","color":"white"},"。"]'}
@@ -1026,7 +1026,7 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, isbg:1, text:'["没关系，我来帮你找一找wiki上的描述……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:6, isbg:1, text:'["……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:6, next:7, isbg:1, text:'["啊，找到了。"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:8, isbg:1, text:'["这里："{"text":"把所有存在之物都破坏掉的程度的能力","color":"white"},"。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:7, next:8, isbg:1, text:'["这里：",{"text":"把所有存在之物都破坏掉的程度的能力","color":"white"},"。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:8, next:9, isbg:1, text:'["所以你看，于情于理，在这里你都应该满足芙兰朵露的要求。否则，她会在这里引起一场巨大的破坏！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:9, next:10, isbg:1, text:'["这种破坏会直接摧毁这个红魔馆，甚至牵连到这个世界，还有这个存档和你的游戏账号！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:10, next:1, isbg:1, text:'["为了避免这种破坏发生，这里你应该准备一份",{"text":"加了桃子的麻薯","color":"white"},"，把它交给芙兰朵露。"]'}
@@ -2054,7 +2054,7 @@ data modify storage lc:data npc prepend value {npc_id:121}
 data modify storage lc:data npc[0].acts prepend value {act_id:1, require_state:1, end_state:2, reward_item:[{lc_itemid:670,quality:100},{lc_itemid:544, quality:100}], unlock_achievement:31}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["文文新闻，近期一料理大师天降幻想乡…… "]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["文文在认真写稿的样子。"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["你靠近观察，他似乎发现你了。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["你靠近观察，她似乎发现你了。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, text:'["……果然非同凡响……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:1, isbg:1, text:'["文文的桌边掉落了一页纸张，你捡起查看。"]'}
 #解锁赛熊掌
