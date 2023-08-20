@@ -58,6 +58,7 @@ gamerule fireDamage false
 gamerule freezeDamage false
 gamerule announceAdvancements false
 forceload add 0 0 0 0
+gamemode adventure @a
 
 scoreboard objectives add lc_var dummy
 scoreboard players set #0 lc_var 0

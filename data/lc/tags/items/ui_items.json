@@ -94,6 +94,10 @@
       "minecraft:clock",
       "minecraft:bricks",
       "minecraft:nautilus_shell",
-      "minecraft:written_book"
+      "minecraft:written_book",
+      "minecraft:chain",
+      "minecraft:campfire",
+      "minecraft:spruce_sign",
+      "minecraft:heart_of_the_sea"
     ]
   }

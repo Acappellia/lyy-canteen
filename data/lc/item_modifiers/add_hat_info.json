@@ -1,0 +1,78 @@
+{
+    "function": "set_lore",
+    "entity": "this",
+    "replace": false,
+    "lore": [
+        [
+            {
+                "text": ""
+            }
+        ],
+        [
+            {
+                "text": "-< ",
+                "color": "#AA88FF",
+                "italic": false
+            },
+            {
+                "text": "✧ ",
+                "color": "#EECCFF",
+                "italic": false
+            },
+            {
+                "text": "烹饪增益",
+                "color": "#AA88FF",
+                "italic": false
+            },
+            {
+                "text": " ✧",
+                "color": "#EECCFF",
+                "italic": false
+            },
+            {
+                "text": " >-",
+                "color": "#AA88ff",
+                "italic": false
+            }
+        ],
+        [
+            {
+                "text": "   + ",
+                "color": "#CCCCCC",
+                "italic": false
+            },
+            {
+                "nbt": "SelectedItem.tag.buff_tol",
+                "entity": "@s",
+                "color": "aqua"
+            },
+            {
+                "text": "%",
+                "color": "blue",
+                "italic": false
+            },
+            {
+                "text": " 时间宽容度",
+                "color": "#CCCCCC",
+                "italic": false
+            }
+        ],
+        [
+            {
+                "text": "   + ",
+                "color": "#CCCCCC",
+                "italic": false
+            },
+            {
+                "nbt":"SelectedItem.tag.buff_quality",
+                "entity": "@s",
+                "color": "aqua"
+            },
+            {
+                "text": " 固定品质",
+                "color": "#CCCCCC",
+                "italic": false
+            }
+        ]
+    ]
+}
