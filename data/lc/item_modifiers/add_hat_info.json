@@ -34,45 +34,6 @@
                 "color": "#AA88ff",
                 "italic": false
             }
-        ],
-        [
-            {
-                "text": "   + ",
-                "color": "#CCCCCC",
-                "italic": false
-            },
-            {
-                "nbt": "SelectedItem.tag.buff_tol",
-                "entity": "@s",
-                "color": "#22AAFF"
-            },
-            {
-                "text": "%",
-                "color": "#22AAFF",
-                "italic": false
-            },
-            {
-                "text": " 时间宽容度",
-                "color": "#CCCCCC",
-                "italic": false
-            }
-        ],
-        [
-            {
-                "text": "   + ",
-                "color": "#CCCCCC",
-                "italic": false
-            },
-            {
-                "nbt":"SelectedItem.tag.buff_quality",
-                "entity": "@s",
-                "color": "aqua"
-            },
-            {
-                "text": " 固定品质",
-                "color": "#CCCCCC",
-                "italic": false
-            }
         ]
     ]
 }

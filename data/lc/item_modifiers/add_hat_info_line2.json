@@ -1,0 +1,26 @@
+{
+    "function": "set_lore",
+    "entity": "this",
+    "replace": false,
+    "lore": [
+        [
+            {
+                "text": "   + ",
+                "color": "#CCCCCC",
+                "italic": false
+            },
+            {
+                "score":{
+                    "name": "#buff_quality",
+                    "objective": "lc_var"
+                },
+                "color": "aqua"
+            },
+            {
+                "text": " 固定品质",
+                "color": "#CCCCCC",
+                "italic": false
+            }
+        ]
+    ]
+}

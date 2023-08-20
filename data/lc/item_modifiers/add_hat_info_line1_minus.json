@@ -1,0 +1,31 @@
+{
+    "function": "set_lore",
+    "entity": "this",
+    "replace": false,
+    "lore": [
+        [
+            {
+                "text": "   - ",
+                "color": "#CCCCCC",
+                "italic": false
+            },
+            {
+                "score":{
+                    "name": "#buff_tol",
+                    "objective": "lc_var"
+                },
+                "color": "red"
+            },
+            {
+                "text": "%",
+                "color": "red",
+                "italic": false
+            },
+            {
+                "text": " 时间宽容度",
+                "color": "#CCCCCC",
+                "italic": false
+            }
+        ]
+    ]
+}
