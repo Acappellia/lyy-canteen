@@ -602,7 +602,7 @@ data modify storage lc:data npc[0].acts prepend value {act_id:3, require_state:3
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["做一道",{"text":"葡萄味的西式甜点","color":"white"},"，别忘了考题"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:1, text:'["品相太差我可不会接受。"]'}
 
-data modify storage lc:data npc[0].acts prepend value {act_id:4, require_state:3, end_state:4, require_item:{lc_itemid:300, quality:80}, edit_state:[{npc_id:11, state:2}], reward_item:[{lc_itemid:644, quality:100}], unlock_achievement:9}
+data modify storage lc:data npc[0].acts prepend value {act_id:4, require_state:3, end_state:4, require_item:{lc_itemid:300, quality:80}, edit_state:[{npc_id:11, state:2}], reward_item:[{lc_itemid:645, quality:100}], unlock_achievement:9}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["嗯……"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isplayer:1, text:'["这道甜点……怎么样？"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, text:'["造型精致，口味也确实有独到之处。"]'}
@@ -1881,7 +1881,7 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 #110 曲奇
 data modify storage lc:data npc prepend value {npc_id:110}
 data modify storage lc:data npc[0].acts prepend value {act_id:1, require_state:1, end_state:2, reward_item:[{lc_itemid:511,quality:100}]}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["嗨，{"selector":"@s"}，这是我的秘密咖啡馆！"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["嗨，",{"selector":"@s"},"，这是我的秘密咖啡馆！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, text:'["众所周知，我是一个热情好客的人。初次见面，这个送给你！"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:1, isbg:1, text:'["你感觉眼前这个男人散发着一股迷人的气味。"]'}
 #获得曲奇料理
@@ -2054,9 +2054,9 @@ data modify storage lc:data npc prepend value {npc_id:121}
 data modify storage lc:data npc[0].acts prepend value {act_id:1, require_state:1, end_state:2, reward_item:[{lc_itemid:670,quality:100},{lc_itemid:544, quality:100}], unlock_achievement:31}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["文文新闻，近期一料理大师天降幻想乡…… "]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["文文在认真写稿的样子。"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isbg:1, text:'["你靠近观察，他似乎发现你了。"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, text:'["……果然非同凡响……"]'}
-data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, isbg:1, text:'["文文的桌边掉落了一页纸张，你捡起查看。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, isbg:1, text:'["你靠近观察，他似乎发现你了。"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:4, next:5, text:'["……果然非同凡响……"]'}
+data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:5, next:1, isbg:1, text:'["文文的桌边掉落了一页纸张，你捡起查看。"]'}
 #解锁赛熊掌
 
 data modify storage lc:data npc[0].acts prepend value {act_id:2, require_state:2, end_state:2}
@@ -2073,7 +2073,7 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, text:'["算了，味道似乎不错。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:1, text:'["给你这个当作报酬吧。"]'}
 
-data modify storage lc:data npc[0].acts prepend value {act_id:3, require_state:1, end_state:1}
+data modify storage lc:data npc[0].acts prepend value {act_id:3, require_state:2, end_state:2}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:1, text:'["我要做汐斯塔！"]'}
 
 #123 洩矢诹访子
