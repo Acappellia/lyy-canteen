@@ -2163,7 +2163,7 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 
 
 #125 爱丽丝
-data modify storage lc:data npc prepend value {npc_id:124}
+data modify storage lc:data npc prepend value {npc_id:125}
 data modify storage lc:data npc[0].acts prepend value {act_id:1, require_state:1, end_state:2}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, isplayer:1, text:'["你好，请问有菜谱卖吗？"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, text:'["没有，但我可以给你松露。"]'}

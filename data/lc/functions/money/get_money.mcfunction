@@ -19,7 +19,7 @@ scoreboard players set #achievement_unlock_id lc_var 63
 execute if score @s total_money_get matches 20000.. as @s[tag=!ac63] run function lc:achievement/unlock_achievement
 execute if score @s total_money_get matches 20000.. as @s[tag=!ac63] run scoreboard players set #get_quality lc_var 100
 execute if score @s total_money_get matches 20000.. as @s[tag=!ac63] run scoreboard players set #get_lcid lc_var 554
-execute if score @s total_money_get matches 20000.. as @s[tag=!ac63] run function lc:items/get_item_first_fixed
+execute if score @s total_money_get matches 20000.. as @s[tag=!ac63] run function lc:items/get_item_fixedquality
 execute if score @s total_money_get matches 20000.. run tag @s add ac63
 
 scoreboard players set #achievement_unlock_id lc_var 67
@@ -29,5 +29,5 @@ scoreboard players set #achievement_unlock_id lc_var 68
 execute if score @s money matches 10000.. as @s[tag=!ac68] run function lc:achievement/unlock_achievement
 execute if score @s money matches 10000.. as @s[tag=!ac68] run scoreboard players set #get_quality lc_var 100
 execute if score @s money matches 10000.. as @s[tag=!ac68] run scoreboard players set #get_lcid lc_var 556
-execute if score @s money matches 10000.. as @s[tag=!ac68] run function lc:items/get_item_first_fixed
+execute if score @s money matches 10000.. as @s[tag=!ac68] run function lc:items/get_item_fixedquality
 execute if score @s money matches 10000.. run tag @s add ac68

@@ -2,7 +2,7 @@
 
 ##check menu type
 scoreboard players set @s menu_page 0
-scoreboard players operation @s menu_page = @e[distance=..10,tag=menu,limit=1,sort=nearest] menu_page
+scoreboard players operation @s menu_page = @e[distance=..7,tag=menu,limit=1,sort=nearest] menu_page
 
 ##open menu
 advancement revoke @s only lc:open_menu
