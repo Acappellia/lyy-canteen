@@ -44,11 +44,11 @@
             {
                 "nbt": "SelectedItem.tag.buff_tol",
                 "entity": "@s",
-                "color": "aqua"
+                "color": "#22AAFF"
             },
             {
                 "text": "%",
-                "color": "blue",
+                "color": "#22AAFF",
                 "italic": false
             },
             {
