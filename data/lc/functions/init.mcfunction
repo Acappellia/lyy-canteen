@@ -204,6 +204,8 @@ scoreboard objectives add anchor_out_dest dummy
 scoreboard players set #player_tp_cost lc_var 12000
 scoreboard players set #player_tp_emax lc_var 36000
 
+scoreboard objectives add spring_timer dummy
+
 ##start slow tick
 schedule function lc:slow_tick 1t replace
 

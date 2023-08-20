@@ -18,5 +18,8 @@ function lc:player/teleport/check_unlock
 ##anchor particle
 execute as @e[type=interaction,tag=tpanchor] at @s run particle minecraft:witch ~ ~0.5 ~ 0.5 0 0.5 0 5
 
+##spring timer
+execute positioned 573 97 633 as @a[distance=..55] at @s run function lc:player/spring_timer
+
 ##schedule after 1s
 schedule function lc:slow_tick 1s replace
