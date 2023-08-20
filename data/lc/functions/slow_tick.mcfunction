@@ -18,6 +18,9 @@ function lc:player/teleport/check_unlock
 ##anchor particle
 execute as @e[type=interaction,tag=tpanchor] at @s run particle minecraft:witch ~ ~0.5 ~ 0.5 0 0.5 0 5
 
+##npc glowing
+execute as @e[type=interaction,scores={npc_id=204..216}] at @s run particle minecraft:firework ~ ~0.5 ~ 0.5 0 0 0 1
+
 ##spring timer
 execute positioned 573 97 633 as @a[distance=..55] at @s run function lc:player/spring_timer
 
