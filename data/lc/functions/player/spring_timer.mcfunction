@@ -8,7 +8,7 @@ execute unless block ~ ~ ~ water unless block ~ ~ ~ #slabs[waterlogged=true] run
 effect give @s[scores={spring_timer=1..}] slow_falling 20 1 true
 
 ##check buff
-execute if score @s spring_timer matches ..179 run return 1
+execute unless score @s spring_timer matches 180.. run return 1
 effect give @s speed 600 1 true
 effect give @s speed 600 1 true
 
