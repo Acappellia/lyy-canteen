@@ -13,8 +13,10 @@ data modify storage lc:user gallery[0].pages[0][0].tag.cook_count set value 1
 tellraw @s {"text": "> 首次制作！","color": "#A0FF50"}
 
 ##add stat
-execute unless data storage lc:user gallery[0].pages[0][0].tag.is_mid run scoreboard players add @s gallery_unlock 1
-execute unless data storage lc:user gallery[0].pages[0][0].tag.is_mid run scoreboard players add @s gallery_unlock_main 1
+execute if data storage lc:user gallery[0].pages[0][0].tag.is_mid run return 1
+
+scoreboard players add @s gallery_unlock 1
+scoreboard players add @s gallery_unlock_main 1
 
 scoreboard players set #get_quality lc_var 100
 execute if score @s gallery_unlock_main matches 10 run scoreboard players set #achievement_unlock_id lc_var 44
