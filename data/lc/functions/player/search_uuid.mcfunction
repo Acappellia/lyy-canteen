@@ -15,4 +15,4 @@ data modify storage lc:var UUID_check set from storage lc:user store[0].UUID
 data modify storage lc:var UUID_mark set from storage lc:user store[0].UUID
 
 ##if it has a value, enter loop
-execute if data storage lc:var UUID_check run function lc:npc/search_uuid_loop
+execute if data storage lc:var UUID_check run function lc:player/search_uuid_loop

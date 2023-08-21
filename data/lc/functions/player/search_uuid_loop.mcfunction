@@ -19,4 +19,4 @@ data modify storage lc:var UUID_check set from storage lc:user store[0].UUID
 execute if score #search_uuid_check lc_var matches 0 run return -1
 
 ##loop
-function lc:npc/search_uuid_loop
+function lc:player/search_uuid_loop
