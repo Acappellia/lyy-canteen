@@ -10,6 +10,7 @@ execute unless score #npc_search_result lc_var matches 1 run return 1
 
 ##find uuid
 execute store result score #npc_search_result lc_var run function lc:npc/search_uuid
+tellraw @s [{"text": "#npc_search_result"},{"score":{"name": "#npc_search_result","objective": "lc_var"}}]
 execute unless score #npc_search_result lc_var matches 1 run function lc:npc/player_init_record
 
 ##find npc_id
