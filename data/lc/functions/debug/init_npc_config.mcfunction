@@ -2029,7 +2029,7 @@ data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:1, isbg:1, text:'["你记起来要给四季做一份烤蘑菇披萨。"]'}
 
 #需要烤蘑菇披萨
-data modify storage lc:data npc[0].acts prepend value {act_id:3, require_state:2, end_state:3, require_item:{lc_itemid:262,quality:0}, reward_item:[{lc_itemid:669,quality:100},{lc_itemid:262, quality:100}], unlock_achievement:30}
+data modify storage lc:data npc[0].acts prepend value {act_id:3, require_state:2, end_state:3, require_item:{lc_itemid:262,quality:0}, reward_item:[{lc_itemid:669,quality:100},{lc_itemid:526, quality:100}], unlock_achievement:30}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:1, next:2, text:'["为什么烤蘑菇披萨是诚实的料理？"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:2, next:3, isplayer:1, text:'["披萨有六片，有八片，没有七片。"]'}
 data modify storage lc:data npc[0].acts[0].dialogues prepend value {dialogue_id:3, next:4, text:'["……"]'}
