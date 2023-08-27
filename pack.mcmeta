@@ -1,13 +1,13 @@
 {
     "pack": {
-        "pack_format": 15,
+        "pack_format": 17,
         "description": [
             {
                 "text": "Lyy's canteen event datapack\n",
                 "color": "#a8e64c"
             },
             {
-                "text": "Version 0.3 - MC 1.20.1",
+                "text": "Version 2 - MC 1.20.2",
                 "color": "#909090"
             }
         ]
