@@ -1,7 +1,7 @@
 {
     "replace": false,
     "values": [
-        "lc:init",
+        "lc2:init",
         "random:private/load"
     ]
 }
