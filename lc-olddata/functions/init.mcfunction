@@ -1,11 +1,7 @@
 ##initialize
 
 # Definitions for Data-pack Helper Plus
-#define storage lc:data stores items shops for look up
-#define storage lc:edit tmp storage in editing
-#define storage lc:debug tmp storage in debugging
-#define storage lc:var player-using tmp storage
-#define storage lc:user stores player data 
+
 #define score_holder #default_quality default quality of items
 #define score_holder #default_prize default sell prize of items
 #define score_holder #default_buy_prize default buy prize of items
