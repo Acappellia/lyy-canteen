@@ -3,20 +3,20 @@
 #define score_holder #search_uuid_check
 
 ##check the current id
-execute store success score #search_uuid_check lc_var run data modify storage lc:var UUID_check set from entity @s UUID
+execute store success score #search_uuid_check lc_var run data modify storage lc2:tmp search.check_UUID set from storage lc2:tmp search.target_UUID
 execute if score #search_uuid_check lc_var matches 0 run return 1
 
 ##move list top to bottom
-data modify storage lc:user npc append from storage lc:user npc[0]
-data remove storage lc:user npc[0]
+data modify storage lc2:player uuid_check append from storage lc2:player uuid_check[0]
+data remove storage lc2:player uuid_check[0]
 
 ##get current id again
-data modify storage lc:var UUID_check set from storage lc:user npc[0].UUID
+data modify storage lc2:tmp search.check_UUID set from storage lc2:player uuid_check[0].UUID
 
 ##check if looped a full cucle
-execute store success score #search_uuid_check lc_var run data modify storage lc:var UUID_check set from storage lc:var UUID_mark
-data modify storage lc:var UUID_check set from storage lc:user npc[0].UUID
+execute store success score #search_uuid_check lc_var run data modify storage lc2:tmp search.check_UUID set from storage lc2:tmp search.init_UUID
+data modify storage lc2:tmp search.check_UUID set from storage lc2:player uuid_check[0].UUID
 execute if score #search_uuid_check lc_var matches 0 run return -1
 
 ##loop
-function lc:npc/search_uuid_loop
+function lc2:player/search_uuid_loop
