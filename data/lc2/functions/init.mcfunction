@@ -33,7 +33,7 @@ scoreboard players set #64 lc_var 64
 scoreboard players set #650 lc_var 650
 scoreboard players set #36 lc_var 36
 scoreboard players set #30 lc_var 30
-execute unless score #player_id lc_var matches -2147483648..2147483647 run scoreboard players set #player_id lc_var 0
+execute unless score #player_id lc_var matches -2147483648..2147483647 run scoreboard players set #player_id lc_var -1
 
 scoreboard objectives add p_id dummy
 scoreboard objectives add p_money dummy {"text": "祭","color": "#EEFF88"}
@@ -48,14 +48,15 @@ scoreboard objectives add p_st_money_get dummy
 scoreboard objectives add p_st_money_spend dummy
 scoreboard objectives add p_st_cook dummy {"text": "烹饪熟练度","color": "#EEFF88"}
 scoreboard objectives add p_st_fish dummy
-scoreboard objectives add p_st_farm dummy
-scoreboard objectives add p_st_crops dummy
+scoreboard objectives add p_st_farm_a dummy
+scoreboard objectives add p_st_farm_c dummy
 scoreboard objectives add p_st_gather dummy
 scoreboard objectives add p_st_walk custom:walk_one_cm
 scoreboard objectives add p_st_sprint custom:sprint_one_cm
 scoreboard objectives add p_st_distance dummy
 
 ##start tick 
+function lc2:3gt_tick
 function lc2:slow_tick
 function lc2:veryslow_tick
 function lc2:backup_tick
