@@ -19,4 +19,10 @@ data modify storage lc2:player uuid_check[0].name set from block 0 2 0 Items[0].
 setblock 0 2 0 air
 
 ##init data
-function lc2:player/init_bossbar with storage lc2:player uuid_check[0]
+data modify storage lc2:player players append value {}
+data modify storage lc2:player players[-1].playerid set from storage lc2:player uuid_check[0].playerid
+function lc2:player/inits/npc_states
+
+
+##init other things
+function lc2:player/inits/bossbar with storage lc2:player uuid_check[0]

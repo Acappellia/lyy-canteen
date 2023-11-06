@@ -1,0 +1,27 @@
+{
+    "criteria": {
+        "interact":{
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"npc\"]}"
+                },
+                "player": [
+                    {
+                        "condition": "entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "p_npc_cd": {
+                                "min": 0
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "lc2:advancements/interact_npc"
+    }
+}

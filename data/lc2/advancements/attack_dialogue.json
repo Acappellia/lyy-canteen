@@ -1,0 +1,27 @@
+{
+    "criteria": {
+        "attack":{
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"dialogue\"]}"
+                },
+                "player": [
+                    {
+                        "condition": "entity_scores",
+                        "entity": "this",
+                        "scores": {
+                            "p_dialogue_cd": {
+                                "min": 0
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "lc2:advancements/attack_dialogue"
+    }
+}

@@ -43,6 +43,12 @@ scoreboard objectives add p_ac_unlock dummy {"text": "成就解锁数","color": 
 scoreboard objectives add p_menu_page dummy
 scoreboard objectives add p_menu_index dummy
 scoreboard objectives add p_menu_click dummy
+scoreboard objectives add p_npc_cd custom:time_since_death
+scoreboard objectives add p_dialogue_cd dummy
+scoreboard objectives add p_npc_id dummy
+scoreboard objectives add p_state_id dummy
+scoreboard objectives add p_dialogue_id dummy
+scoreboard objectives add p_state_withitem dummy
 
 scoreboard objectives add p_st_money_get dummy
 scoreboard objectives add p_st_money_spend dummy
@@ -54,6 +60,10 @@ scoreboard objectives add p_st_gather dummy
 scoreboard objectives add p_st_walk custom:walk_one_cm
 scoreboard objectives add p_st_sprint custom:sprint_one_cm
 scoreboard objectives add p_st_distance dummy
+
+scoreboard objectives add npc_id dummy
+
+scoreboard objectives add interact_time dummy
 
 ##start tick 
 function lc2:3gt_tick
