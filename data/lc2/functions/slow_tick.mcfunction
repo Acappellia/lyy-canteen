@@ -12,6 +12,16 @@ gamemode adventure @a[gamemode=survival]
 ##add player id
 execute as @a unless score @s p_id matches 1.. run function lc2:player/init
 
+##handle rejoin
+execute as @a[scores={p_leave=1..}] run function lc2:player/rejoin
+
+##reset dialogue
+execute as @a at @s positioned ~ ~1.62 ~ unless entity @e[distance=..0.05,type=interaction,tag=dialogue] run function lc2:dialogue/reset_dialogue
+
+##kill empty dialogue interaction
+execute as @e[type=interaction,tag=dialogue] at @s positioned ~ ~-1.62 ~ unless entity @a[distance=..0.05] run kill @s
+execute as @e[type=item_display,tag=dialogue_seat] at @s positioned ~ ~-0.6 ~ unless entity @a[distance=..0.05] run kill @s
+
 ##player add speed
 #execute as @a at @s positioned ~ ~-0.5 ~ if block ~ ~ ~ dirt_path run effect give @s speed 10 2 true
 

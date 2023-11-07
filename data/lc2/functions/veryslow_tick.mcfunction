@@ -16,5 +16,5 @@ effect give @a resistance infinite 9 true
 ##calc distance
 #execute as @a run function lc2:player/calc_distance
 
-##schedule after 1m
+##schedule after 10s
 schedule function lc2:veryslow_tick 10s replace

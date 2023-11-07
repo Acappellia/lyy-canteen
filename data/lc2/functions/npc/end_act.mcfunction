@@ -1,30 +1,26 @@
 ##called to end the act
 
-#define score_holder #editstate_npc_id
-
-##ending words
-tellraw @s [{"text":"                                        -------- < ","color":"#CCCCCC"},{"text":"对话完","color":"#E5FFFF"},{"text":" >","color":"#CCCCCC"}]
-
 ##add cooldown
-scoreboard players set @s npc_interact_cd -60
+scoreboard players set @s p_npc_cd -20
+scoreboard players set @s p_dialogue_cd -1
 
-##find uuid
-function lc:npc/search_uuid
-
-##find npc_id
-scoreboard players operation #editstate_npc_id lc_var = #interact_npc_id lc_var
-function lc:npc/search_playerst_npcid
-
-##modify state
-data modify storage lc:user npc[0].npc_states[0].state set from storage lc:data npc[0].acts[0].end_state
+##edit npc state
+$data modify storage lc2:player players[$(playerid)].npc.states[$(npcid)].state set from storage lc2:data npc[$(npcid)].states[$(stateid)].withitem[$(withitem)].end_state
 
 ##unlock achievement
-execute if data storage lc:data npc[0].acts[0].unlock_achievement run function lc:npc/unlock_achievement
+data remove storage lc2:tmp achievement_info
+$data modify storage lc2:tmp achievement_info set from storage lc2:data npc[$(npcid)].states[$(stateid)].withitem[$(withitem)].achievement
+execute if data storage lc2:tmp achievement_info run function lc2:achievement/unlock_achievement with storage lc2:tmp achievement_info
 
 ##give reward item
-data modify storage lc:var npc_act_reward set from storage lc:data npc[0].acts[0].reward_item
-execute if data storage lc:var npc_act_reward[0] run function lc:npc/give_act_reward_loop
+$data modify storage lc2:tmp act_reward set from storage lc2:data npc[$(npcid)].states[$(stateid)].withitem[$(withitem)].rewards
+execute if data storage lc2:tmp act_reward[0] run function lc2:npc/give_act_reward_loop
 
 ##edit other state
-data modify storage lc:var npc_act_edit_state set from storage lc:data npc[0].acts[0].edit_state
-execute if data storage lc:var npc_act_edit_state[0] run function lc:npc/edit_state_loop
+$data modify storage lc2:tmp act_editstate set from storage lc2:data npc[$(npcid)].states[$(stateid)].withitem[$(withitem)].edit_state
+data modify storage lc2:tmp npc_info.editnpcid set from storage lc2:tmp act_editstate[0].npcid
+execute if data storage lc2:tmp act_editstate[0] run function lc2:npc/edit_state_loop with storage lc2:tmp npc_info
+
+##kill interaction
+kill @e[distance=..0.01,type=interaction,tag=dialogue]
+execute positioned ~ ~-1.02 ~ run kill @e[distance=..0.01,type=item_display,tag=dialogue_seat]

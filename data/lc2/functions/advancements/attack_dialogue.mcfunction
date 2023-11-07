@@ -12,6 +12,9 @@ execute as @e[distance=..5,type=interaction,tag=dialogue] if score @s interact_t
 ##add attack tag
 tag @s add dialogue_attack
 
+##play sound
+playsound minecraft:ui.button.click voice @s ~ ~ ~ 0.5 1.4
+
 ##determine if the point exists
 execute at @e[distance=..5,type=interaction,tag=interact_target,tag=dialogue,limit=1] run function lc2:dialogue/player_interact
 tag @e[type=interaction,tag=dialogue] remove interact_target

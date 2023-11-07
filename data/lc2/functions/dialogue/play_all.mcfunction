@@ -4,7 +4,7 @@
 #define score_holder #dialogue_listcurrent
 
 ##init index
-execute store result score #dialogue_listall lc_var run data get storage lc2:player dialogues[]
+execute store result score #dialogue_listall lc_var if data storage lc2:player dialogues[]
 scoreboard players set #dialogue_listcurrent lc_var 1
 
 ##run loop

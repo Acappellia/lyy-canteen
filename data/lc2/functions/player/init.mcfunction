@@ -26,3 +26,4 @@ function lc2:player/inits/npc_states
 
 ##init other things
 function lc2:player/inits/bossbar with storage lc2:player uuid_check[0]
+scoreboard players set @s p_dialogue_cd 0

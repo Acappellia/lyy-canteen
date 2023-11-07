@@ -3,7 +3,8 @@
 #define score_holder #npc_check_handitemid
 
 ##record state
-$execute store result score @s p_state_id run data modify storage lc2:tmp npc_info.stateid set from storage lc2:player players[$(playerid)].npc.states[$(npcid)].state
+$data modify storage lc2:tmp npc_info.stateid set from storage lc2:player players[$(playerid)].npc.states[$(npcid)].state
+execute store result score @s p_state_id run data get storage lc2:tmp npc_info.stateid
 
 ##record hand Item
 scoreboard players set #npc_check_handitemid lc_var -1

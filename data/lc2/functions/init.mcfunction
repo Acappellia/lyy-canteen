@@ -33,12 +33,15 @@ scoreboard players set #64 lc_var 64
 scoreboard players set #650 lc_var 650
 scoreboard players set #36 lc_var 36
 scoreboard players set #30 lc_var 30
+
+#define score_holder #player_id
 execute unless score #player_id lc_var matches -2147483648..2147483647 run scoreboard players set #player_id lc_var -1
 
 scoreboard objectives add p_id dummy
 scoreboard objectives add p_money dummy {"text": "祭","color": "#EEFF88"}
 scoreboard objectives add p_ga_unlock dummy {"text": "图鉴解锁数","color": "#EEFF88"}
 scoreboard objectives add p_ac_unlock dummy {"text": "成就解锁数","color": "#EEFF88"}
+scoreboard objectives add p_leave custom:leave_game
 
 scoreboard objectives add p_menu_page dummy
 scoreboard objectives add p_menu_index dummy
@@ -66,7 +69,7 @@ scoreboard objectives add npc_id dummy
 scoreboard objectives add interact_time dummy
 
 ##start tick 
-function lc2:3gt_tick
+function lc2:2gt_tick
 function lc2:slow_tick
 function lc2:veryslow_tick
 function lc2:backup_tick

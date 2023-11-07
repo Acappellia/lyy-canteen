@@ -1,5 +1,7 @@
 ##recover old scores
 
+$scoreboard players operation @s p_money = $(name) p_money
+$scoreboard players operation @s p_leave = $(name) p_leave
 $scoreboard players operation @s p_ga_unlock = $(name) p_ga_unlock
 $scoreboard players operation @s p_ac_unlock = $(name) p_ac_unlock
 
@@ -14,6 +16,8 @@ $scoreboard players operation @s p_st_walk = $(name) p_st_walk
 $scoreboard players operation @s p_st_sprint = $(name) p_st_sprint
 $scoreboard players operation @s p_st_distance = $(name) p_st_distance
 
+$scoreboard players reset $(name) p_money
+$scoreboard players reset $(name) p_leave
 $scoreboard players reset $(name) p_ga_unlock
 $scoreboard players reset $(name) p_ac_unlock
 

@@ -3,6 +3,10 @@
 advancement revoke @s only lc2:interact_npc
 
 #define score_holder #current_time
+#define score_holder #check_motion
+
+##play sound
+playsound minecraft:entity.villager.celebrate voice @s ~ ~ ~ 1 1
 
 ##identifying the npc point
 execute store result score #current_time lc_var run time query gametime

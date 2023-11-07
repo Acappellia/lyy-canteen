@@ -1,18 +1,18 @@
-##called to continue current act
+##called to continue act
 
-#define score_holder #npc_search_result
+#define score_holder #dialogue_islast
 
-##search for npc id in storage
-execute store result score #npc_search_result lc_var run function lc:npc/search_storage_npcid
-execute unless score #npc_search_result lc_var matches 1 run return 1
+##check if last
+scoreboard players reset #dialogue_islast lc_var
+$execute if data storage lc2:data npc[$(npcid)].states[$(stateid)].withitem[$(withitem)].dialogues[$(dialogueid)].islast run scoreboard players set #dialogue_islast lc_var 1
+execute if score #dialogue_islast lc_var matches 1 run function lc2:npc/end_act with storage lc2:tmp npc_info
+execute if score #dialogue_islast lc_var matches 1 run return 0
 
-##search for act id in storage
-execute store result score #npc_search_result lc_var run function lc:npc/search_storage_actid
-execute unless score #npc_search_result lc_var matches 1 run return 1
-
-##search for dialogue id in storage
-execute store result score #npc_search_result lc_var run function lc:npc/search_storage_diaid
-execute unless score #npc_search_result lc_var matches 1 run return 1
+##check left or right
+$execute if entity @s[tag=dialogue_attack] run data modify storage lc2:tmp npc_info.dialogueid set from storage lc2:data npc[$(npcid)].states[$(stateid)].withitem[$(withitem)].dialogues[$(dialogueid)].next_left
+$execute unless entity @s[tag=dialogue_attack] run data modify storage lc2:tmp npc_info.dialogueid set from storage lc2:data npc[$(npcid)].states[$(stateid)].withitem[$(withitem)].dialogues[$(dialogueid)].next_right
+execute store result score @s p_dialogue_id run data get storage lc2:tmp npc_info.dialogueid
+tag @s remove dialogue_attack
 
 ##play dialogue
-function lc:npc/play_dialogue
+function lc2:npc/continue_dialogue with storage lc2:tmp npc_info

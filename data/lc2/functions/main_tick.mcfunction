@@ -6,6 +6,3 @@
 
 ##check if item dropped
 #execute as @e[type=item,nbt={Item:{tag:{menu_ui:1}}}] at @s run function lc2:menu/menu_drop
-
-##check if fishrod used
-#execute as @a[scores={fishrod_use=1..}] at @s run function lc2:fish/use_fishrod
