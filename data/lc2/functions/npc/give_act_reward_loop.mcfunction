@@ -1,5 +1,5 @@
 ##loop to give act rewards
-function lc:items/get_item_fixedquality with storage lc2:tmp act_reward[0]
+function lc2:items/get_item_fixedquality with storage lc2:tmp act_reward[0]
 
 ##loop
 data remove storage lc2:tmp act_reward[0]
