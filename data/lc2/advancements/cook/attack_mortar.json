@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "attack":{
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"mortar\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "lc2:advancements/cook/attack_mortar"
+    }
+}

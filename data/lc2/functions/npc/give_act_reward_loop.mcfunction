@@ -1,4 +1,5 @@
 ##loop to give act rewards
+execute store result score #getitem_quality lc_var run data get storage lc2:tmp act_reward[0].quality
 function lc2:items/get_item_fixedquality with storage lc2:tmp act_reward[0]
 
 ##loop

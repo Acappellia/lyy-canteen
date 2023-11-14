@@ -52,6 +52,8 @@ scoreboard objectives add p_npc_id dummy
 scoreboard objectives add p_state_id dummy
 scoreboard objectives add p_dialogue_id dummy
 scoreboard objectives add p_state_withitem dummy
+scoreboard objectives add p_trash_cd custom:time_since_death
+scoreboard objectives add p_trash_words dummy
 
 scoreboard objectives add p_st_money_get dummy
 scoreboard objectives add p_st_money_spend dummy

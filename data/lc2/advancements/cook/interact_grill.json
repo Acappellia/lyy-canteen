@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "interact":{
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"grill\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "lc2:advancements/cook/interact_grill"
+    }
+}
