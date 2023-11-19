@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "interact_pot":{
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"deco\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "lc2:advancements/attack_deco"
+    }
+}

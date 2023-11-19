@@ -3,8 +3,8 @@
 ##gamemode
 gamemode adventure @a[gamemode=survival]
 
-##pot loop
-#execute as @e[type=interaction,tag=pot,tag=on] at @s run function lc2:cook/loop/pot_loop
+##cook loop
+execute as @e[type=interaction,tag=pot,scores={cook_status=1}] at @s run function lc2:cook/loop/pot
 
 ##gather loop
 #execute as @a at @s run execute as @e[type=interaction,distance=..16,tag=gather] at @s run function lc2:gather/plant_loop

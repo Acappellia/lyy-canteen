@@ -54,6 +54,8 @@ scoreboard objectives add p_dialogue_id dummy
 scoreboard objectives add p_state_withitem dummy
 scoreboard objectives add p_trash_cd custom:time_since_death
 scoreboard objectives add p_trash_words dummy
+scoreboard objectives add p_cook_startcd custom:time_since_death
+scoreboard objectives add p_cook_stopcd custom:time_since_death
 
 scoreboard objectives add p_st_money_get dummy
 scoreboard objectives add p_st_money_spend dummy
@@ -69,6 +71,12 @@ scoreboard objectives add p_st_distance dummy
 scoreboard objectives add npc_id dummy
 
 scoreboard objectives add interact_time dummy
+
+scoreboard objectives add cook_status dummy
+scoreboard objectives add cook_duration dummy
+scoreboard objectives add cook_qte_progress dummy
+
+scoreboard objectives add deco_rotation dummy
 
 ##start tick 
 function lc2:2gt_tick
