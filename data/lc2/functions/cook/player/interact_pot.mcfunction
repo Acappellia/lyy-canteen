@@ -19,4 +19,4 @@ execute if score #cook_status lc_var matches 0 if score #cook_mat_count lc_var m
 
 ##cook qte
 execute if score #cook_status lc_var matches 2 if data storage lc2:tmp p_hand.tag.isspoon as @e[type=interaction,distance=..1,tag=interact_target] run function lc2:cook/qte/start_qte
-execute if score #cook_status lc_var matches 3 run function lc2:cook/qte/continue_qte_r
+execute if score #cook_status lc_var matches 3 as @e[type=interaction,tag=interact_target,distance=..1] run function lc2:cook/qte/continue_qte_r

@@ -1,5 +1,7 @@
 ##play title
 
 title @s times 0s 1s 5t
-$title @s subtitle {"nbt":"qte[$(match)][5]","storage": "lc2:tmp","interpret": true, "bold": true}
-title @s title [{"text":"x ","color":"dark_gray"},{"text":"FAIL","color":"dark_red"},{"text":" x","color":"dark_gray"}]
+title @s subtitle [{"text":"x ","color":"dark_gray"},{"text":"FAIL","color":"dark_red"},{"text":" x","color":"dark_gray"}]
+$title @s title {"nbt":"qte[$(match)][5]","storage": "lc2:data","interpret": true, "bold": true}
+
+playsound block.note_block.snare voice @s ~ ~ ~ 1 1.5

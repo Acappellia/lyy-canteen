@@ -77,6 +77,8 @@ scoreboard objectives add cook_duration dummy
 scoreboard objectives add cook_qte_match dummy
 scoreboard objectives add cook_qte_progress dummy
 scoreboard objectives add cook_qte_timeout dummy
+scoreboard objectives add cook_qte_next dummy
+scoreboard objectives add cook_qte_nextcheck dummy
 
 scoreboard objectives add deco_rotation dummy
 
