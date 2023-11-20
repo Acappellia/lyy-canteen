@@ -12,3 +12,6 @@ execute if score #cook_status lc_var matches 0 if score #cook_mat_count lc_var m
 
 ##stop cook
 execute if score #cook_status lc_var matches 1 run function lc2:cook/stop_cook
+
+##cook qte
+execute if score #cook_status lc_var matches 3 run function lc2:cook/qte/continue_qte_l
