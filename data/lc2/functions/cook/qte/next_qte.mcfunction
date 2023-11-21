@@ -9,4 +9,4 @@ scoreboard players operation @s cook_qte_nextcheck %= #2 lc_var
 $data modify storage lc2:tmp cook_qte_title.sound_pitch set from storage lc2:data qte_sound[$(sound)]
 
 ##title
-execute as @p[distance=..5] run function lc2:cook/qte/play_title with storage lc2:tmp cook_qte_title
+execute as @p[distance=..5,tag=interact_pot] run function lc2:cook/qte/play_title with storage lc2:tmp cook_qte_title
