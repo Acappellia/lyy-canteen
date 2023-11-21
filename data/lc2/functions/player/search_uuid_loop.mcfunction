@@ -4,7 +4,7 @@
 
 ##check the current id
 execute store success score #search_uuid_check lc_var run data modify storage lc2:tmp search.check_UUID set from storage lc2:tmp search.target_UUID
-execute if score #search_uuid_check lc_var matches 0 run return 1
+execute if score #search_uuid_check lc_var matches 0 run return 2
 
 ##move list top to bottom
 data modify storage lc2:player uuid_check append from storage lc2:player uuid_check[0]

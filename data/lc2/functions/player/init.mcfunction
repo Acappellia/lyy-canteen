@@ -6,8 +6,8 @@
 data remove storage lc2:tmp search
 data modify storage lc2:tmp search.target_UUID set from entity @s UUID
 execute store result score #search_result lc_var run function lc2:player/search_uuid
-execute if score #search_result lc_var matches 1 run function lc2:player/recover_data
-execute if score #search_result lc_var matches 1 run return 1
+execute if score #search_result lc_var matches 2 run function lc2:player/recover_data
+execute if score #search_result lc_var matches 2 run return 1
 
 ##add data in uuid_check
 data modify storage lc2:player uuid_check prepend value {}

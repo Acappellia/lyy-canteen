@@ -79,7 +79,10 @@ scoreboard objectives add cook_qte_progress dummy
 scoreboard objectives add cook_qte_timeout dummy
 scoreboard objectives add cook_qte_next dummy
 scoreboard objectives add cook_qte_nextcheck dummy
+scoreboard objectives add cook_result_id dummy
+scoreboard objectives add cook_result_variant dummy
 scoreboard objectives add cook_result_quality dummy
+scoreboard objectives add cook_result_count dummy
 scoreboard objectives add cook_time_target dummy
 scoreboard objectives add cook_time_dif dummy
 

@@ -10,7 +10,7 @@ execute as @e[type=interaction,tag=pot,scores={cook_status=1..}] at @s run funct
 #execute as @a at @s run execute as @e[type=interaction,distance=..16,tag=gather] at @s run function lc2:gather/plant_loop
 
 ##add player id
-execute as @a unless score @s p_id matches 1.. run function lc2:player/init
+execute as @a unless score @s p_id matches 0.. run function lc2:player/init
 
 ##handle rejoin
 execute as @a[scores={p_leave=1..}] run function lc2:player/rejoin
