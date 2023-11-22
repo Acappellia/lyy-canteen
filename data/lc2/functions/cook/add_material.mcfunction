@@ -2,8 +2,7 @@
 
 ##effect
 playsound item.brush.brushing.generic block @a ~ ~ ~ 1 1
-particle wax_off ~ ~1 ~ 0.2 0.2 0.2 0 2
-particle wax_on ~ ~1 ~ 0.2 0.2 0.2 0 2
+particle happy_villager ~ ~1 ~ 0.2 0.2 0.2 0 3
 
 ##summon a display above 
 execute if score #cook_mat_count lc_var matches 0 run summon item_display ~-0.2 ~1 ~-0.2 {Tags:["cook_display","new_display"],transformation:[-10,0,0,0,0,0,10,0,0,10,0,0,0,0,0,25],view_range:0.16f,item_display:"fixed"}

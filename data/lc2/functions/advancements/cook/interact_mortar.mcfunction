@@ -10,5 +10,5 @@ execute as @e[distance=..5,type=interaction,tag=mortar] store result score @s in
 execute as @e[distance=..5,type=interaction,tag=mortar] if score @s interact_time = #current_time lc_var run tag @s add interact_target
 
 ##determine if the point exists
-execute at @e[distance=..5,type=interaction,tag=interact_target,tag=mortar,limit=1] run function lc2:cook/player/interact_mortar
+execute at @e[distance=..5,type=interaction,tag=interact_target,tag=mortar,limit=1] run function lc2:cook/player/interact_chop
 tag @e[type=interaction,tag=mortar] remove interact_target

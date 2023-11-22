@@ -1,19 +1,13 @@
-##pot stop cooking
-
-##change status
-scoreboard players set @s cook_status 0
+##chop success find result
 
 ##set final result
-scoreboard players operation #getitem_quality lc_var = @s cook_result_quality
-scoreboard players operation #getitem_count lc_var = @s cook_result_count
-scoreboard players operation #getitem_variant lc_var = @s cook_result_variant
-execute store result storage lc2:tmp cook_result.itemid int 1 run scoreboard players get @s cook_result_id
+scoreboard players operation #getitem_quality lc_var = #cook_quality lc_var
+scoreboard players operation #getitem_count lc_var = #cook_search_count lc_var
+scoreboard players operation #getitem_variant lc_var = #cook_search_primep_diff lc_var
+execute store result storage lc2:tmp cook_result.itemid int 1 run scoreboard players get #cook_search_resultid lc_var
 
 ##calc quality
 scoreboard players remove #getitem_quality lc_var 30
-execute if score @s cook_time_dif matches -10..10 run scoreboard players add #getitem_quality lc_var 5
-execute if score @s cook_time_dif matches -25..25 run scoreboard players add #getitem_quality lc_var 15
-execute if score @s cook_time_dif matches -60..60 run scoreboard players add #getitem_quality lc_var 20
 
 execute if score #getitem_variant lc_var matches 60.. run scoreboard players remove #getitem_quality lc_var 10
 execute if score #getitem_variant lc_var matches 2000.. run scoreboard players remove #getitem_quality lc_var 15
@@ -40,9 +34,7 @@ execute positioned ~ ~1 ~ run kill @e[type=item_display,tag=cook_display,distanc
 execute positioned ~ ~1 ~ run kill @e[type=text_display,distance=..0.1,tag=pot_text_display_name]
 
 ##effect
-playsound block.fire.extinguish block @a ~ ~ ~ 1 1
+playsound block.anvil.use block @a ~ ~ ~ 1 2
 playsound entity.player.levelup block @a ~ ~ ~ 0.5 2
+particle poof ~ ~1 ~ 0.3 0.2 0.3 0.1 10
 particle scrape ~ ~1 ~ 0.4 0.3 0.4 0 10
-
-##reset cd
-scoreboard players reset @p[distance=..5,tag=interact_pot] p_cook_stopcd

@@ -21,7 +21,9 @@ execute if score #cook_status lc_var matches 0 if score #cook_mat_count lc_var m
 execute if score #cook_status lc_var matches 0 if score #cook_mat_count lc_var matches 1.. unless data storage lc2:tmp p_hand.Count run function lc2:cook/start_cook
 
 ##cook qte
-execute if score #cook_status lc_var matches 2 if data storage lc2:tmp p_hand.tag.isspoon as @e[type=interaction,distance=..1,tag=interact_target] run function lc2:cook/qte/start_qte
+execute if score #cook_status lc_var matches 2 if data storage lc2:tmp p_hand.tag.isspoon as @e[type=interaction,distance=..1,tag=interact_target,tag=pot] run function lc2:cook/qte/start_qte
+execute if score #cook_status lc_var matches 2 if data storage lc2:tmp p_hand.tag.isshovel as @e[type=interaction,distance=..1,tag=interact_target,tag=pan] run function lc2:cook/qte/start_qte
+execute if score #cook_status lc_var matches 2 if data storage lc2:tmp p_hand.tag.isfork as @e[type=interaction,distance=..1,tag=interact_target,tag=grill] run function lc2:cook/qte/start_qte
 execute if score #cook_status lc_var matches 3 as @e[type=interaction,tag=interact_target,distance=..1] run function lc2:cook/qte/continue_qte_r
 
 ##remove tag

@@ -10,17 +10,15 @@ scoreboard players operation #getitem_variant lc_var = @s cook_result_variant
 execute store result storage lc2:tmp cook_result.itemid int 1 run scoreboard players get @s cook_result_id
 
 ##calc quality
-scoreboard players remove #getitem_quality lc_var 30
-execute if score @s cook_time_dif matches -10..10 run scoreboard players add #getitem_quality lc_var 5
-execute if score @s cook_time_dif matches -25..25 run scoreboard players add #getitem_quality lc_var 15
-execute if score @s cook_time_dif matches -60..60 run scoreboard players add #getitem_quality lc_var 20
+execute if score @s cook_duration matches 901.. run scoreboard players add #getitem_quality lc_var 1
+execute if score @s cook_duration matches 191..250 run scoreboard players remove #getitem_quality lc_var 1
+execute if score @s cook_duration matches ..190 run scoreboard players remove #getitem_quality lc_var 3
 
-execute if score #getitem_variant lc_var matches 60.. run scoreboard players remove #getitem_quality lc_var 10
-execute if score #getitem_variant lc_var matches 2000.. run scoreboard players remove #getitem_quality lc_var 15
+execute if score #getitem_variant lc_var matches 60.. run scoreboard players remove #getitem_quality lc_var 1
+execute if score #getitem_variant lc_var matches 2000.. run scoreboard players remove #getitem_quality lc_var 2
 
-execute if score #getitem_quality lc_var matches ..9 run scoreboard players set #getitem_quality lc_var 10
-execute if score #getitem_quality lc_var matches 51.. run scoreboard players set #getitem_quality lc_var 50
-scoreboard players operation #getitem_quality lc_var /= #10 lc_var
+execute if score #getitem_quality lc_var matches ..0 run scoreboard players set #getitem_quality lc_var 1
+execute if score #getitem_quality lc_var matches 6.. run scoreboard players set #getitem_quality lc_var 5
 
 ##give item
 scoreboard players set #getitem_nogive lc_var 1
@@ -40,7 +38,7 @@ execute positioned ~ ~1 ~ run kill @e[type=item_display,tag=cook_display,distanc
 execute positioned ~ ~1 ~ run kill @e[type=text_display,distance=..0.1,tag=pot_text_display_name]
 
 ##effect
-playsound block.fire.extinguish block @a ~ ~ ~ 1 1
+playsound entity.item_frame.remove_item block @a ~ ~ ~ 1 1
 playsound entity.player.levelup block @a ~ ~ ~ 0.5 2
 particle scrape ~ ~1 ~ 0.4 0.3 0.4 0 10
 

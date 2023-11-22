@@ -10,5 +10,5 @@ execute as @e[distance=..5,type=interaction,tag=grill] store result score @s int
 execute as @e[distance=..5,type=interaction,tag=grill] if score @s interact_time = #current_time lc_var run tag @s add interact_target
 
 ##determine if the point exists
-execute at @e[distance=..5,type=interaction,tag=interact_target,tag=grill,limit=1] run function lc2:cook/player/interact_grill
+execute at @e[distance=..5,type=interaction,tag=interact_target,tag=grill,limit=1] run function lc2:cook/player/interact_pot
 tag @e[type=interaction,tag=grill] remove interact_target
